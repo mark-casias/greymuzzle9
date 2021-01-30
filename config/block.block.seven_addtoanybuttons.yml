@@ -1,0 +1,20 @@
+uuid: 0c9a909a-e087-419f-b12f-e4f5c26b70f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - seven
+id: seven_addtoanybuttons
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  provider: addtoany
+  label_display: '0'
+visibility: {  }

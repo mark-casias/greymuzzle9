@@ -12,3 +12,6 @@ favicon:
   use_default: 1
   path: ''
   mimetype: image/vnd.microsoft.icon
+third_party_settings:
+  shortcut:
+    module_link: true

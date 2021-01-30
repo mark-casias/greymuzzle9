@@ -1,0 +1,23 @@
+uuid: 15a1149a-4922-4823-8ee0-9704102558c1
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - seven
+_core:
+  default_config_hash: oxx42senoNVyvKqVWyrphaynw-aZ1ijr1OmHNM3UVW4
+id: seven_syndicate
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  provider: node
+  label_display: '0'
+  block_count: 10
+visibility: {  }
