@@ -10,8 +10,8 @@ _core:
   default_config_hash: kZCp4h7S-QCo6ENXEyv5I6jbxtIFGrDT8hDDFUfuNjY
 id: greymuzzle_help
 theme: greymuzzle
-region: header
-weight: 0
+region: content_above
+weight: -7
 provider: null
 plugin: help_block
 settings:

@@ -9,7 +9,7 @@ _core:
 id: greymuzzle_secondary_local_tasks
 theme: greymuzzle
 region: content_above
-weight: -7
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:
