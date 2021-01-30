@@ -1,0 +1,18 @@
+uuid: 3df02bfe-a4dd-4ea7-b386-db277e4382bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.our_volunteers
+id: node.our_volunteers.title
+field_name: title
+entity_type: node
+bundle: our_volunteers
+label: 'Volunteer Spotlight:'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

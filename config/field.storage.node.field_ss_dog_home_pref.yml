@@ -1,0 +1,33 @@
+uuid: e43dfcd1-d220-43a7-a89d-063f119c5aab
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ss_dog_home_pref
+field_name: field_ss_dog_home_pref
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cats
+      label: 'Cats OK'
+    -
+      value: dogs
+      label: 'Dogs OK'
+    -
+      value: critters
+      label: 'Small Animals OK'
+    -
+      value: nokids
+      label: 'Adults Only'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

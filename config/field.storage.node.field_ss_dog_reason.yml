@@ -1,0 +1,33 @@
+uuid: 6b83bbbf-9cf4-431d-8f4b-2950a6fa841d
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ss_dog_reason
+field_name: field_ss_dog_reason
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: stray
+      label: Stray
+    -
+      value: surrendered
+      label: Surrendered
+    -
+      value: ownerpassed
+      label: 'Owner Passed Away'
+    -
+      value: rescue
+      label: 'Rescued (Seized)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

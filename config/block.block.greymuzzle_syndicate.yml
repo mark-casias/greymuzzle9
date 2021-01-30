@@ -1,0 +1,23 @@
+uuid: 5ecb1277-33c4-4674-9ef6-4640915e0abf
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - greymuzzle
+_core:
+  default_config_hash: oxx42senoNVyvKqVWyrphaynw-aZ1ijr1OmHNM3UVW4
+id: greymuzzle_syndicate
+theme: greymuzzle
+region: accessibility_bar
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  provider: node
+  label_display: '0'
+  block_count: 10
+visibility: {  }

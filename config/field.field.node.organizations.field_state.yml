@@ -1,0 +1,26 @@
+uuid: 584afea3-e823-4264-a79d-67c68979107e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state
+    - node.type.organizations
+    - taxonomy.vocabulary.u_s_states
+id: node.organizations.field_state
+field_name: field_state
+entity_type: node
+bundle: organizations
+label: State
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      u_s_states: u_s_states
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

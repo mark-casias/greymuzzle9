@@ -1,11 +1,11 @@
 uuid: f06ec93d-1df3-40e1-b936-759cb57e11c6
-name: Greymuzzle
-mail: mark@greymuzzle.org
+name: 'The Grey Muzzle Organization'
+mail: info@greymuzzle.org
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /
+  404: /
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

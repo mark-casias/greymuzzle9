@@ -1,0 +1,19 @@
+uuid: 961a0738-4f78-4c6a-be5f-0b58e4d0e2ee
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_related_meet_the_dog
+field_name: field_related_meet_the_dog
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

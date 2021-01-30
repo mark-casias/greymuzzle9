@@ -1,0 +1,19 @@
+uuid: ec2cbb00-3ae3-41db-bc0e-62330f407e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_age
+    - node.type.senior_spotlights
+id: node.senior_spotlights.field_ss_dog_age
+field_name: field_ss_dog_age
+entity_type: node
+bundle: senior_spotlights
+label: 'Approximate Age'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

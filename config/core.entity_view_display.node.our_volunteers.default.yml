@@ -1,0 +1,39 @@
+uuid: 70e20aa1-2bf0-4318-b933-a37959011b4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_volunteers.body
+    - field.field.node.our_volunteers.field_volunteer_image
+    - node.type.our_volunteers
+  module:
+    - text
+    - user
+id: node.our_volunteers.default
+targetEntityType: node
+bundle: our_volunteers
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_volunteer_image:
+    label: hidden
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

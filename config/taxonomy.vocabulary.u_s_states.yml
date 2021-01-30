@@ -1,0 +1,8 @@
+uuid: 76db2802-fcd0-45e4-ae9e-a364b0d9744e
+langcode: en
+status: true
+dependencies: {  }
+name: 'U.S. States'
+vid: u_s_states
+description: ''
+weight: 0

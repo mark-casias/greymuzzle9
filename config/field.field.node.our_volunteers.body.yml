@@ -1,0 +1,23 @@
+uuid: ed165be5-e1bc-40b5-959d-8772a6b71c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.our_volunteers
+  module:
+    - text
+id: node.our_volunteers.body
+field_name: body
+entity_type: node
+bundle: our_volunteers
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

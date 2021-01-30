@@ -1,0 +1,23 @@
+uuid: 19d1f45c-5318-4d8e-b3f7-42e9cc4bc731
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - greymuzzle
+_core:
+  default_config_hash: WcXqPc7NoExO03VwGjmiiEkqTr7N2YqKzsq9Bz9Orh8
+id: greymuzzle_search_form_narrow
+theme: greymuzzle
+region: accessibility_bar
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

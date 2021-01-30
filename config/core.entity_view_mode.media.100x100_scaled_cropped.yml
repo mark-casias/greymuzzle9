@@ -1,0 +1,10 @@
+uuid: 544e769a-0ed6-4a09-bd9b-debbfe9b01d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.100x100_scaled_cropped
+label: 100x100_scaled_cropped
+targetEntityType: media
+cache: true

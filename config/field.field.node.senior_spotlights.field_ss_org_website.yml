@@ -1,0 +1,23 @@
+uuid: e345f230-e79c-4704-bdde-c65f4795f7b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_org_website
+    - node.type.senior_spotlights
+  module:
+    - link
+id: node.senior_spotlights.field_ss_org_website
+field_name: field_ss_org_website
+entity_type: node
+bundle: senior_spotlights
+label: 'Organization Website'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

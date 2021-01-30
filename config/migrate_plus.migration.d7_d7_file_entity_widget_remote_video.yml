@@ -1,0 +1,47 @@
+uuid: c6b57973-6721-48a2-be17-bbb9b71ee8be
+langcode: en
+status: true
+dependencies: {  }
+id: d7_d7_file_entity_widget_remote_video
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'File Entity media source field widget (Remote video)'
+source:
+  plugin: d7_file_entity_field_widget
+  constants:
+    entity_type_id: media
+    form_mode: default
+  schemes: youtube
+  types: video
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type_id
+  bundle:
+    -
+      plugin: get
+      source: bundle
+  form_mode:
+    -
+      plugin: get
+      source: constants/form_mode
+  field_name:
+    -
+      plugin: get
+      source: source_field_name
+  options:
+    -
+      plugin: get
+      source: options
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - d7_d7_file_entity_source_field_config_remote_video
+  optional: {  }

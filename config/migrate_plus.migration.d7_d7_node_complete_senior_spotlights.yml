@@ -1,0 +1,190 @@
+uuid: 7f078f58-abad-45e8-a94b-f4d59be28c8d
+langcode: en
+status: true
+dependencies: {  }
+id: d7_d7_node_complete_senior_spotlights
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Senior Spotlights)'
+source:
+  plugin: d7_node_complete
+  node_type: senior_spotlights
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_senior_spotlights/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: media_wysiwyg_filter
+  field_ss_dog_age:
+    -
+      plugin: get
+      source: field_ss_dog_age
+  field_ss_dog_breed:
+    -
+      plugin: get
+      source: field_ss_dog_breed
+  field_ss_dog_fee:
+    -
+      plugin: get
+      source: field_ss_dog_fee
+  field_ss_dog_home_pref:
+    -
+      plugin: get
+      source: field_ss_dog_home_pref
+  field_ss_dog_link:
+    -
+      plugin: field_link
+      source: field_ss_dog_link
+  field_ss_dog_out_of_area:
+    -
+      plugin: get
+      source: field_ss_dog_out_of_area
+  field_ss_dog_reason:
+    -
+      plugin: get
+      source: field_ss_dog_reason
+  field_ss_dog_sex:
+    -
+      plugin: get
+      source: field_ss_dog_sex
+  field_ss_dog_weight:
+    -
+      plugin: get
+      source: field_ss_dog_weight
+  field_ss_org_contact_name:
+    -
+      plugin: get
+      source: field_ss_org_contact_name
+  field_ss_org_email:
+    -
+      plugin: sub_process
+      source: field_ss_org_email
+      process:
+        value: email
+  field_ss_org_name:
+    -
+      plugin: get
+      source: field_ss_org_name
+  field_ss_org_website:
+    -
+      plugin: field_link
+      source: field_ss_org_website
+  field_ss_photos:
+    -
+      plugin: media_migration_delta_sort
+      source: field_ss_photos
+    -
+      plugin: sub_process
+      process:
+        target_id: fid
+  field_ss_youtube:
+    -
+      plugin: get
+      source: field_ss_youtube
+  field_ss_is_adopted:
+    -
+      plugin: get
+      source: field_ss_is_adopted
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: senior_spotlights
+migration_dependencies:
+  required:
+    - d7_d7_user
+    - d7_d7_node_type
+  optional:
+    - d7_d7_field_instance

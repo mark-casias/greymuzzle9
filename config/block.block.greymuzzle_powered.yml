@@ -1,0 +1,22 @@
+uuid: 7b1c887c-6c9a-4307-9742-30e902c4b939
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - greymuzzle
+_core:
+  default_config_hash: ygYOxNV388KKajE2oZsiM9hejoed0gu5WeXcLR_zfzM
+id: greymuzzle_powered
+theme: greymuzzle
+region: footer_bottom
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

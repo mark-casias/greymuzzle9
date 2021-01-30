@@ -1,0 +1,31 @@
+uuid: fc17db8d-1843-4992-a24a-47f9a837adbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.why_i_give.body
+    - field.field.node.why_i_give.field_image
+    - node.type.why_i_give
+  module:
+    - text
+    - user
+id: node.why_i_give.default
+targetEntityType: node
+bundle: why_i_give
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_image: true

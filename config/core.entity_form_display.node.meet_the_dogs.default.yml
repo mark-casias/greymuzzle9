@@ -1,0 +1,121 @@
+uuid: 6425d610-80c7-4ea8-a3de-ecf8832da398
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.meet_the_dogs.body
+    - field.field.node.meet_the_dogs.field_meet_additional_image
+    - field.field.node.meet_the_dogs.field_meet_deceased
+    - field.field.node.meet_the_dogs.field_meet_how_we_helped
+    - field.field.node.meet_the_dogs.field_meet_main_image
+    - field.field.node.meet_the_dogs.field_meet_organization
+    - node.type.meet_the_dogs
+  module:
+    - file
+    - link
+    - path
+    - text
+id: node.meet_the_dogs.default
+targetEntityType: node
+bundle: meet_the_dogs
+mode: default
+content:
+  body:
+    weight: 1
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meet_additional_image:
+    weight: 6
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_meet_deceased:
+    weight: 7
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_meet_how_we_helped:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_meet_main_image:
+    weight: 5
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_meet_organization:
+    weight: 3
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

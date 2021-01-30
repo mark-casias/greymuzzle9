@@ -1,0 +1,20 @@
+uuid: 9943da39-d889-4e65-b03f-7601303117a2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - greymuzzle
+_core:
+  default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
+id: greymuzzle_page_title
+theme: greymuzzle
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

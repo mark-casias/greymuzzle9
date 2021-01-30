@@ -1,0 +1,44 @@
+uuid: e03711a8-d971-4bfc-8cf2-904ed05bec94
+langcode: en
+status: true
+dependencies: {  }
+id: always_in_my_heart
+label: 'Always in My Heart'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content overview'
+  - 'access media browser'
+  - 'administer comments'
+  - 'create always_in_my_heart content'
+  - 'create files'
+  - 'delete any always_in_my_heart content'
+  - 'delete own always_in_my_heart content'
+  - 'delete own audio files'
+  - 'delete own document files'
+  - 'delete own image files'
+  - 'delete own video files'
+  - 'download any audio files'
+  - 'download any image files'
+  - 'download any video files'
+  - 'download own audio files'
+  - 'download own document files'
+  - 'download own image files'
+  - 'download own video files'
+  - 'edit any always_in_my_heart content'
+  - 'edit any image files'
+  - 'edit own always_in_my_heart content'
+  - 'edit own audio files'
+  - 'edit own comments'
+  - 'edit own document files'
+  - 'edit own image files'
+  - 'edit own video files'
+  - 'post comments'
+  - 'use media wysiwyg'
+  - 'view files'
+  - 'view own files'
+  - 'view own private files'
+  - 'view private files'

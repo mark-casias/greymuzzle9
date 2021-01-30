@@ -1,0 +1,10 @@
+uuid: 72351488-a7dc-47a5-a92e-11db25116328
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.blog_header_520x350_
+label: 'Blog Header (520x350)'
+targetEntityType: media
+cache: true

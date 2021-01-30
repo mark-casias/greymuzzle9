@@ -1,0 +1,10 @@
+uuid: 830e2d7a-2644-4cb8-bfe3-0289f5e9cb80
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+icon_uuid: null
+icon_default: null
+description: 'Hero paragraph for pages and stuff'
+behavior_plugins: {  }

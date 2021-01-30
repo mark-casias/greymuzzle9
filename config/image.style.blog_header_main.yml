@@ -1,0 +1,7 @@
+uuid: 14d8cebd-fcd7-43a9-9517-02a129449d13
+langcode: en
+status: true
+dependencies: {  }
+name: blog_header_main
+label: 'Blog Header Main'
+effects: {  }

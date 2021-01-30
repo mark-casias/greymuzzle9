@@ -1,0 +1,21 @@
+uuid: 46cad0a3-9dc0-4555-a475-8e1d18dc0825
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_faq_question
+field_name: field_faq_question
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,57 @@
+uuid: 3728d29f-7957-440a-995a-a1b79b5706f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.always_in_my_heart.body
+    - field.field.node.always_in_my_heart.field_heart_dogs_name
+    - field.field.node.always_in_my_heart.field_heart_image
+    - field.field.node.always_in_my_heart.field_heart_year
+    - node.type.always_in_my_heart
+  module:
+    - options
+    - text
+    - user
+id: node.always_in_my_heart.default
+targetEntityType: node
+bundle: always_in_my_heart
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_heart_dogs_name:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_heart_image:
+    label: above
+    weight: 1
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_heart_year:
+    label: above
+    weight: 2
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

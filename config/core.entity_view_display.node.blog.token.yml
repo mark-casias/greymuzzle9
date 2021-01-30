@@ -1,0 +1,45 @@
+uuid: e5047de3-2416-4db1-b0af-10f813ef8434
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.blog.body
+    - field.field.node.blog.field_blog_categories
+    - field.field.node.blog.field_image
+    - field.field.node.blog.field_metatag
+    - field.field.node.blog.field_tags
+    - node.type.blog
+  module:
+    - options
+    - text
+    - user
+id: node.blog.token
+targetEntityType: node
+bundle: blog
+mode: token
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_blog_categories:
+    label: hidden
+    weight: 2
+    type: list_key
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_image: true
+  field_metatag: true
+  field_tags: true

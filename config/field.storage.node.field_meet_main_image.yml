@@ -1,0 +1,20 @@
+uuid: 570ea1e7-bdbf-4a71-9559-7826bc430611
+langcode: und
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_meet_main_image
+field_name: field_meet_main_image
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

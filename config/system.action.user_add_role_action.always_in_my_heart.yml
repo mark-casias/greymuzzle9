@@ -1,0 +1,14 @@
+uuid: 2eadfa02-a654-4b0d-bd9a-972d8c8a3ace
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.always_in_my_heart
+  module:
+    - user
+id: user_add_role_action.always_in_my_heart
+label: 'Add the Always in My Heart role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: always_in_my_heart

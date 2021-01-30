@@ -1,0 +1,21 @@
+uuid: ddab032a-bb51-4c28-a70d-86cdf8681fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_sex
+    - node.type.senior_spotlights
+  module:
+    - options
+id: node.senior_spotlights.field_ss_dog_sex
+field_name: field_ss_dog_sex
+entity_type: node
+bundle: senior_spotlights
+label: Sex
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

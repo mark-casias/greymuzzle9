@@ -1,0 +1,21 @@
+uuid: 27a2eefe-3d25-44b8-8de5-d52a22a88f48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_reason
+    - node.type.senior_spotlights
+  module:
+    - options
+id: node.senior_spotlights.field_ss_dog_reason
+field_name: field_ss_dog_reason
+entity_type: node
+bundle: senior_spotlights
+label: 'Reason at shelter / rescue'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

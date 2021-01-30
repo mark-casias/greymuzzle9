@@ -1,0 +1,69 @@
+uuid: 5a444a97-ddcf-41e8-b948-35282e3bb79f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.senior_spotlights.body
+    - field.field.node.senior_spotlights.field_ss_dog_age
+    - field.field.node.senior_spotlights.field_ss_dog_breed
+    - field.field.node.senior_spotlights.field_ss_dog_fee
+    - field.field.node.senior_spotlights.field_ss_dog_home_pref
+    - field.field.node.senior_spotlights.field_ss_dog_link
+    - field.field.node.senior_spotlights.field_ss_dog_out_of_area
+    - field.field.node.senior_spotlights.field_ss_dog_reason
+    - field.field.node.senior_spotlights.field_ss_dog_sex
+    - field.field.node.senior_spotlights.field_ss_dog_weight
+    - field.field.node.senior_spotlights.field_ss_is_adopted
+    - field.field.node.senior_spotlights.field_ss_org_contact_name
+    - field.field.node.senior_spotlights.field_ss_org_email
+    - field.field.node.senior_spotlights.field_ss_org_name
+    - field.field.node.senior_spotlights.field_ss_org_website
+    - field.field.node.senior_spotlights.field_ss_photos
+    - node.type.senior_spotlights
+  module:
+    - text
+    - user
+id: node.senior_spotlights.teaser
+targetEntityType: node
+bundle: senior_spotlights
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_ss_photos:
+    label: hidden
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_ss_dog_age: true
+  field_ss_dog_breed: true
+  field_ss_dog_fee: true
+  field_ss_dog_home_pref: true
+  field_ss_dog_link: true
+  field_ss_dog_out_of_area: true
+  field_ss_dog_reason: true
+  field_ss_dog_sex: true
+  field_ss_dog_weight: true
+  field_ss_is_adopted: true
+  field_ss_org_contact_name: true
+  field_ss_org_email: true
+  field_ss_org_name: true
+  field_ss_org_website: true

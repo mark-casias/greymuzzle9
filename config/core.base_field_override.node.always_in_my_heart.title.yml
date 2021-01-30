@@ -1,0 +1,18 @@
+uuid: a763ee1d-55fe-488f-a07c-4d0fc8097b17
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.always_in_my_heart
+id: node.always_in_my_heart.title
+field_name: title
+entity_type: node
+bundle: always_in_my_heart
+label: Donor
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

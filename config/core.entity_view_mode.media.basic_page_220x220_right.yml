@@ -1,0 +1,10 @@
+uuid: 1c7a8042-819b-4919-8232-e3db78c66dbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.basic_page_220x220_right
+label: basic_page_220x220_right
+targetEntityType: media
+cache: true

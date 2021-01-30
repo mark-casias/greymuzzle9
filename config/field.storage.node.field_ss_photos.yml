@@ -1,0 +1,20 @@
+uuid: 822e06f1-714f-43c6-9e07-844a95057fa4
+langcode: und
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_ss_photos
+field_name: field_ss_photos
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

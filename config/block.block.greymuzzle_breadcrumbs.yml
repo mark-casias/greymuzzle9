@@ -1,0 +1,22 @@
+uuid: 27d60980-a425-4c07-b3a0-75dd38234b71
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - greymuzzle
+_core:
+  default_config_hash: XMsRP1YhWAcorbrFWZglMYJ_SgWHyF3fyCh5vDXaUN4
+id: greymuzzle_breadcrumbs
+theme: greymuzzle
+region: breadcrumb
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

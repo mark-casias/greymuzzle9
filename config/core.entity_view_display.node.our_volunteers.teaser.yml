@@ -1,0 +1,33 @@
+uuid: 5535b0fa-0fb7-450e-8d99-57a3a91f6ff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_volunteers.body
+    - field.field.node.our_volunteers.field_volunteer_image
+    - node.type.our_volunteers
+  module:
+    - text
+    - user
+id: node.our_volunteers.teaser
+targetEntityType: node
+bundle: our_volunteers
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_volunteer_image: true

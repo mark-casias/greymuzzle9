@@ -1,0 +1,81 @@
+uuid: 0c99d762-e585-4dcc-814d-d503038473d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.meet_the_dogs.body
+    - field.field.node.meet_the_dogs.field_meet_additional_image
+    - field.field.node.meet_the_dogs.field_meet_deceased
+    - field.field.node.meet_the_dogs.field_meet_how_we_helped
+    - field.field.node.meet_the_dogs.field_meet_main_image
+    - field.field.node.meet_the_dogs.field_meet_organization
+    - node.type.meet_the_dogs
+  module:
+    - link
+    - options
+    - text
+    - user
+id: node.meet_the_dogs.default
+targetEntityType: node
+bundle: meet_the_dogs
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_meet_additional_image:
+    label: hidden
+    weight: 5
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_meet_deceased:
+    label: hidden
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_meet_how_we_helped:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_meet_main_image:
+    label: hidden
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_meet_organization:
+    label: above
+    weight: 3
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

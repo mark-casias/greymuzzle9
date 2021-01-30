@@ -1,0 +1,47 @@
+uuid: 5006200f-7db5-4e1c-a575-be2756ce20d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organizations.body
+    - field.field.node.organizations.field_funded_year
+    - field.field.node.organizations.field_org_dog_s_name
+    - field.field.node.organizations.field_org_funded
+    - field.field.node.organizations.field_org_how_we_help
+    - field.field.node.organizations.field_org_image
+    - field.field.node.organizations.field_org_website
+    - field.field.node.organizations.field_related_meet_the_dog
+    - field.field.node.organizations.field_state
+    - node.type.organizations
+  module:
+    - text
+    - user
+id: node.organizations.teaser
+targetEntityType: node
+bundle: organizations
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_funded_year: true
+  field_org_dog_s_name: true
+  field_org_funded: true
+  field_org_how_we_help: true
+  field_org_image: true
+  field_org_website: true
+  field_related_meet_the_dog: true
+  field_state: true

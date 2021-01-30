@@ -1,0 +1,41 @@
+uuid: f90d9d2d-76a2-4065-a38e-334a174fcfa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.meet_the_dogs.body
+    - field.field.node.meet_the_dogs.field_meet_additional_image
+    - field.field.node.meet_the_dogs.field_meet_deceased
+    - field.field.node.meet_the_dogs.field_meet_how_we_helped
+    - field.field.node.meet_the_dogs.field_meet_main_image
+    - field.field.node.meet_the_dogs.field_meet_organization
+    - node.type.meet_the_dogs
+  module:
+    - text
+    - user
+id: node.meet_the_dogs.teaser
+targetEntityType: node
+bundle: meet_the_dogs
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_meet_additional_image: true
+  field_meet_deceased: true
+  field_meet_how_we_helped: true
+  field_meet_main_image: true
+  field_meet_organization: true

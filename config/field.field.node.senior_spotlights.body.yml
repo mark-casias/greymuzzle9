@@ -1,0 +1,23 @@
+uuid: 5d222e81-2595-4b40-830d-45d71a465873
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.senior_spotlights
+  module:
+    - text
+id: node.senior_spotlights.body
+field_name: body
+entity_type: node
+bundle: senior_spotlights
+label: Bio/Personality
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

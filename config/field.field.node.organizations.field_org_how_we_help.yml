@@ -1,0 +1,21 @@
+uuid: 2e8cf5f6-c1ca-49ec-a3e6-73059238b938
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_org_how_we_help
+    - node.type.organizations
+  module:
+    - text
+id: node.organizations.field_org_how_we_help
+field_name: field_org_how_we_help
+entity_type: node
+bundle: organizations
+label: 'How we help'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

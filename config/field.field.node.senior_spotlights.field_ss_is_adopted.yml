@@ -1,0 +1,23 @@
+uuid: 47a23f17-bf43-479b-9320-fa9289b3cb9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_is_adopted
+    - node.type.senior_spotlights
+id: node.senior_spotlights.field_ss_is_adopted
+field_name: field_ss_is_adopted
+entity_type: node
+bundle: senior_spotlights
+label: 'IS ADOPTED'
+description: 'Check this box if dog has been adopted.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

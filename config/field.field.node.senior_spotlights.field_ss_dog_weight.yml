@@ -1,0 +1,19 @@
+uuid: 444bcf5a-224e-4db0-88aa-cf4847757adb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_weight
+    - node.type.senior_spotlights
+id: node.senior_spotlights.field_ss_dog_weight
+field_name: field_ss_dog_weight
+entity_type: node
+bundle: senior_spotlights
+label: 'Approximate Weight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

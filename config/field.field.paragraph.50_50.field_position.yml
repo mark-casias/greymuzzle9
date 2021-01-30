@@ -1,0 +1,23 @@
+uuid: 8d1ad47a-41c8-4f24-a2b8-2d2a689009da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.50_50
+  module:
+    - options
+id: paragraph.50_50.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: '50_50'
+label: 'Media Position'
+description: 'This is the position of the media.'
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

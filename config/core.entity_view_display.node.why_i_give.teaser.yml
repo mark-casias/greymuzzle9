@@ -1,0 +1,33 @@
+uuid: 033323f2-4923-4619-8ccc-49ca9e6e47f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.why_i_give.body
+    - field.field.node.why_i_give.field_image
+    - node.type.why_i_give
+  module:
+    - text
+    - user
+id: node.why_i_give.teaser
+targetEntityType: node
+bundle: why_i_give
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_image: true

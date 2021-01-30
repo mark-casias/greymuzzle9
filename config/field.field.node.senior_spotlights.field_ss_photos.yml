@@ -1,0 +1,24 @@
+uuid: a3dc71b1-99a5-4f51-93f5-febe5b35b93c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_photos
+    - media.type.image
+    - node.type.senior_spotlights
+id: node.senior_spotlights.field_ss_photos
+field_name: field_ss_photos
+entity_type: node
+bundle: senior_spotlights
+label: Photos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image: image
+  handler: 'default:media'
+field_type: entity_reference

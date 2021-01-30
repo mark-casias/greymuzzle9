@@ -1,0 +1,24 @@
+uuid: afbceb2a-fed2-430c-8ded-746b8038b488
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heart_image
+    - media.type.image
+    - node.type.always_in_my_heart
+id: node.always_in_my_heart.field_heart_image
+field_name: field_heart_image
+entity_type: node
+bundle: always_in_my_heart
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image: image
+  handler: 'default:media'
+field_type: entity_reference

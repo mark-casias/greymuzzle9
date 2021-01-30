@@ -1,0 +1,18 @@
+uuid: b22a1b5e-8a4f-4ad7-aecb-dffdd28279eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.why_i_give
+id: node.why_i_give.title
+field_name: title
+entity_type: node
+bundle: why_i_give
+label: 'Why I Give:'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

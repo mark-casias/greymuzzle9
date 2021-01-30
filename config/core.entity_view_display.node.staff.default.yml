@@ -1,0 +1,79 @@
+uuid: 492ec2c7-62e9-4880-9a1c-6965fee000e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.staff.body
+    - field.field.node.staff.field_staff_email
+    - field.field.node.staff.field_staff_image
+    - field.field.node.staff.field_staff_position_type
+    - field.field.node.staff.field_staff_title
+    - field.field.node.staff.field_staff_website
+    - node.type.staff
+  module:
+    - link
+    - options
+    - text
+    - user
+id: node.staff.default
+targetEntityType: node
+bundle: staff
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_staff_email:
+    label: above
+    weight: 4
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_staff_image:
+    label: hidden
+    weight: 2
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_staff_position_type:
+    label: hidden
+    weight: 0
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_staff_title:
+    label: hidden
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_staff_website:
+    label: above
+    weight: 5
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

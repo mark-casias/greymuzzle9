@@ -1,0 +1,10 @@
+uuid: d3b80a25-1830-4ccc-9080-c2a673012cad
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.search_result
+label: 'Search result'
+targetEntityType: media
+cache: true

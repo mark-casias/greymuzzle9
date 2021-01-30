@@ -1,0 +1,15 @@
+uuid: c62a2ab4-5582-4683-9009-1f06b94f0e75
+langcode: en
+status: true
+dependencies: {  }
+name: basic_page_320x240
+label: 'Basic page - 320x240'
+effects:
+  afe2ee35-f39d-411d-a160-491598c51b44:
+    uuid: afe2ee35-f39d-411d-a160-491598c51b44
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: null
+      upscale: false

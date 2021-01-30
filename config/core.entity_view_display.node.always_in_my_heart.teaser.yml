@@ -1,0 +1,37 @@
+uuid: e6033083-404c-4938-a66c-51bbc8541d8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.always_in_my_heart.body
+    - field.field.node.always_in_my_heart.field_heart_dogs_name
+    - field.field.node.always_in_my_heart.field_heart_image
+    - field.field.node.always_in_my_heart.field_heart_year
+    - node.type.always_in_my_heart
+  module:
+    - text
+    - user
+id: node.always_in_my_heart.teaser
+targetEntityType: node
+bundle: always_in_my_heart
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_heart_dogs_name: true
+  field_heart_image: true
+  field_heart_year: true
