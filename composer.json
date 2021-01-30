@@ -1,7 +1,13 @@
 {
-    "name": "pantheon-upstreams/drupal-project",
-    "description": "Install Drupal 9 with Composer on Pantheon.",
+    "name": "mark-casias/greymuzzle",
+    "description": "Drupal 9 version of greymuzzle.org hosted on Pantheon",
     "type": "project",
+    "authors": [
+        {
+            "name": "Mark Casias",
+            "email": "mark@greymuzzle.org"
+        }
+    ],
     "license": "MIT",
     "repositories": [
         {
@@ -14,11 +20,26 @@
         }
     ],
     "require": {
-        "drupal/admin_toolbar": "^2.4",
+        "drupal/addtoany": "^1.14",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/components": "^2",
+        "drupal/entity_embed": "^1.1",
+        "drupal/entity_usage": "^2.0@beta",
+        "drupal/media_entity_browser": "^2",
+        "drupal/media_migration": "^1.0@alpha",
+        "drupal/metatag": "^1.15",
+        "drupal/migrate_file": "^2.0",
+        "drupal/migrate_plus": "^5.1",
+        "drupal/migrate_upgrade": "^3.2",
+        "drupal/paragraphs": "^1.12",
+        "drupal/smart_trim": "^1.3",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.0",
+        "drupal/xmlsitemap": "^1.0",
         "pantheon-upstreams/upstream-configuration": "*"
     },
     "conflict": {
-            "drupal/drupal": "*"
+        "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
