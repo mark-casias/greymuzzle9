@@ -1,0 +1,22 @@
+.btn {
+  display: block;
+  position: relative;
+  letter-spacing: 0.5px;
+  transition: background-color 0.5s ease;
+  @apply cursor-pointer text-white text-sm bg-blue-chill uppercase border-none px-5 py-2 text-center no-underline w-max hover:bg-blue-botticelli;
+
+  &.alt {
+    @apply bg-sunglow hover:bg-daffodil text-black
+  }
+
+  &.donate {
+    @apply bg-sunglow hover:bg-daffodil text-black
+  }
+
+  &.disabled {
+    @apply text-gray-tundora bg-gray-gallery-light cursor-not-allowed;
+  }
+
+}
+
+

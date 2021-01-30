@@ -1,0 +1,34 @@
+{
+  "name": "greymuzzle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "patternlab build --config ./patternlab-config.json",
+    "build:css": "postcss source/css/style.css -o public/css/style.css",
+    "build:uikit": "cross-env-shell PL_CONFIG_PATH='${INIT_CWD}/.patternlabrc.js' npm run build --prefix node_modules/@pattern-lab/uikit-workshop -- --patternlabrc '$PL_CONFIG_PATH'",
+    "help": "patternlab --help",
+    "install": "patternlab install --config ./patternlab-config.json",
+    "serve": "patternlab serve --config ./patternlab-config.json",
+    "start": "npm run serve",
+    "version": "patternlab --version",
+    "dev": "node ./node_modules/@pattern-lab/uikit-workshop/build-tools.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pattern-lab/cli": "^5.13.3",
+    "@pattern-lab/core": "^5.13.3",
+    "@pattern-lab/engine-twig-php": "^5.13.3",
+    "@pattern-lab/starterkit-twig-demo": "^5.10.1",
+    "@pattern-lab/uikit-workshop": "^5.13.3",
+    "autoprefixer": "^10.1.0",
+    "create-pattern-lab": "^5.13.3",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.3",
+    "tailwindcss": "^2.0.2"
+  }
+}

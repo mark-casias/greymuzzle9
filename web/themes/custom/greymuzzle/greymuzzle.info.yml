@@ -1,0 +1,30 @@
+name: Greymuzzle Theme
+type: theme
+base theme: olivero
+description: 'Greymuzzle.org theme.'
+alt text: 'I should do somethign with this.'
+core_version_requirement: ^8 || ^9
+libraries:
+  - greymuzzle/global
+component-libraries:
+  - greymuzzle:
+    paths:
+      - source/_patterns
+regions:
+  accessibility_bar: 'Accessibility Bar'
+  donate: 'Donate'
+  branding: 'Branding'
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  hero: 'Hero'
+  highlighted: 'Highlighted'
+  breadcrumb: Breadcrumb
+  social: 'Social Bar'
+  content_above: 'Help (Content Above)'
+  content: 'Content'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  content_below: 'Content Below'
+  footer: 'Footer'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'

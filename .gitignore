@@ -130,3 +130,5 @@ upstream/web/
 # Ignore .env files as they are personal
 #/.env
 /.vscode
+node_modules
+/web/themes/custom/greymuzzle/public
