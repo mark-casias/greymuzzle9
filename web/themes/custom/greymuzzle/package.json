@@ -15,6 +15,7 @@
     "version": "patternlab --version",
     "dev": "node ./node_modules/@pattern-lab/uikit-workshop/build-tools.js",
     "theme": "postcss -o public/css/patterns.css source/css/style.css",
+    "styleguide": "npm run theme",
     "theme:watch": "postcss -o public/css/patterns.css -w source/css/style.css"
   },
   "author": "",

@@ -5,13 +5,17 @@ module.exports = {
     colors: {
       white: '#fff',
       black: '#000',
-      'gray-tundora': '#444',
-      'gray-gallery': '#ccc',
-      'gray-gallery-light': '#eee',
-      'blue-chill': '#067799',
-      'blue-botticelli': '#cfe5eb',
-      aliceblue: '#f3f8fa',
-      'burnt-sienna': '#f06667',
+      gray: {
+        tundora: '#444',
+        gallery: '#ccc',
+        light: '#eee'
+      },
+      blue: {
+        chill: '#067799',
+        botticelli: '#cfe5eb',
+        alice: '#f3f8fa'
+      },
+      sienna: '#f06667',
       sunglow: '#ffcc33',
       daffodil: '#fff5d6',
       yellow: '#ffff00'
