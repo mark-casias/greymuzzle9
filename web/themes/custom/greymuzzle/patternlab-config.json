@@ -96,7 +96,7 @@
     "layout": "horizontal",
     "noViewAll": false
   },
-  "transformedAssetTypes": ["scss"],
+  "transformedAssetTypes": ["scss", "css"],
   "uikits": [
     {
       "name": "uikit-workshop",
@@ -132,17 +132,39 @@
           ]
         },
         {
+          "id": "paragraphs",
+          "recursive": true,
+          "paths": [
+            "source/_patterns/paragraphs"
+          ]
+        },
+
+        {
+          "id": "teasers",
+          "recursive": true,
+          "paths": [
+            "source/_patterns/teasers"
+          ]
+        },
+        {
+          "id": "page",
+          "recursive": true,
+          "paths": [
+            "source/_patterns/page"
+          ]
+        },
+        {
+          "id": "node",
+          "recursive": true,
+          "paths": [
+            "source/_patterns/node"
+          ]
+        },
+        {
           "id": "templates",
           "recursive": true,
           "paths": [
             "source/_patterns/templates"
-          ]
-        },
-        {
-          "id": "pages",
-          "recursive": true,
-          "paths": [
-            "source/_patterns/pages"
           ]
         },
         {
