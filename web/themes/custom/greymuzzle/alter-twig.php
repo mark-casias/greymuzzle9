@@ -1,17 +1,8 @@
 <?php
 
 /**
- * @file
- * Twig alters for Patternlab.
- */
-
-/**
- * Custom extension example.
- *
- * @param Twig_Environment $env
- *   The Twig Env:https://twig.symfony.com/api/1.x/Twig_Environment.html.
- * @param mixed $config
- *   Config of `@basalt/twig-renderer`.
+ * @param Twig_Environment $env - The Twig Environment - https://twig.symfony.com/api/1.x/Twig_Environment.html
+ * @param $config - Config of `@basalt/twig-renderer`
  */
 function addCustomExtension(\Twig_Environment &$env, $config) {
 
