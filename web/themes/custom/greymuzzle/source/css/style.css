@@ -2,9 +2,9 @@
 @import "./fonts.css";
 
 @import "tailwindcss/components";
-@import "../_patterns/00-atoms/06-buttons/buttons.css";
+@import "../_patterns/atoms/06-buttons/buttons.css";
 
 
 @import "tailwindcss/utilities";
 
-@import '../_patterns/03-templates/always-in-my-heart/always-in-my-heart.css';
+@import 'always-in-my-heart.css';

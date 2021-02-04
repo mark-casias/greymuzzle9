@@ -1,0 +1,21 @@
+<article class="blog blog--teaser">
+    <h2 class="blog__title">
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  </header>
+  <div class="blog__content">
+    <div class="blog__field-image">
+      {{ field_image }}
+    </div>
+    <div class="blog__field_body">
+      {{ field_body }}
+    </div>
+  </div>
+  <ul class="blog__links">
+    <li>
+      <a href="{{ url }}" rel="tag" title="{{ label }}">
+        Read more<span class="element-invisible"> about {{ label }}</span>
+      </a>
+    </li>
+  </ul>
+</article>

@@ -1,4 +1,4 @@
-{% extends "@templates/layouts/01-page-2col.twig" %}
+{% extends "@templates/layouts/01-page-1col.twig" %}
 {% block main %}
     <article class="article">
         <header class="article-header">
@@ -9,9 +9,4 @@
     </article><!--end .article-->
     {% include "@molecules/06-components/00-social-share.twig" %}
     {% include "@organisms/02-comments/00-comment-thread.twig" %}
-{% endblock %}
-
-{% block sidebar %}
-    {% include "@organisms/03-sections/02-related-posts.twig" %}
-    {% include "@organisms/03-sections/01-recent-tweets.twig" %}
 {% endblock %}
