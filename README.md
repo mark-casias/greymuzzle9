@@ -2,7 +2,7 @@
 
 ## Composer-enabled Drupal template
 
-This is Pantheon's recommended starting point for forking new Drupal upstreams
+This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
 that work with the Platform's Integrated Composer build process. It is also the
 Platform's standard Drupal 9 upstream.
 
@@ -12,25 +12,13 @@ repository. Instead, they are referenced as dependencies that are installed by
 Composer.
 
 For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon [documentation](https://pantheon.io/docs/integrated-composer)
+Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
 
-## Reference Sites
+## Contributing
 
-- [Current Site](https://www.greymuzzle.org)
-- [D9 Build on Pantheon](https://dev-greymuzzle9.pantheonsite.io/)
-- [TailwindCSS](https://www.tailwindcss.com)
+Contributions are welcome in the form of GitHub pull requests. However, the
+`pantheon-upstreams/drupal-project` repository is a mirror that does not
+directly accept pull requests.
 
-## Theme
-
-This is a reproduction of the current theme available at [our current site](https://www.greymuzzle.org). It is in progress. Currently the theme is extending the Olivero theme, but I am quickly finding this does not work. I am looking to use:
-
-- TailwindCSS
-- Patternlab
-
-Of course, I may not get what I want. Feel free to fork and merge request any suggestions.
-
-## @todo
-
-- Finish Patternlab conversion
-- Refresh DB with lates import
-- [Donate to greymuzzle.org](https://greymuzzle.z2systems.com/np/clients/greymuzzle/donation.jsp?campaign=51&)
+Instead, to propose a change, please fork [pantheon-systems/drupal-project](https://github.com/pantheon-systems/drupal-project)
+and submit a PR to that repository.
