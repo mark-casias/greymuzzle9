@@ -1,0 +1,272 @@
+// Navigation
+//
+// Markup: components.header.hbs
+//
+// Style guide: components.header
+
+.accessible-megamenu {
+  position: relative;
+  display: block;
+  margin: 0;
+  z-index: 999;
+  margin-left: -42px;
+  margin-top: 25px;
+
+  @include breakpoint($bp-large) {
+    margin-left: -30px;
+  }
+
+  ul li ul {
+    margin-left: -20px;
+    list-style-type: disc;
+  }
+
+  .accessible-megamenu-top-nav-item {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    float: left;
+    color: color(blue-chill);
+    display: block;
+    line-height: 3em;
+    height: 3em;
+    padding: 0 1em 0 0;
+    text-decoration: none;
+    z-index: inherit;
+    background: transparent;
+    font-size: 0.8em;
+
+    @include breakpoint($bp-med-large) {
+      padding: 0 0.9em 0 0;
+      font-size: 0.9em;
+      margin-top: -3px;
+    }
+
+    @include breakpoint($bp-large) {
+      padding: 0 1em 0 0;
+      font-size: 1em;
+      margin-top: -7px;
+    }
+
+    a {
+      color: color(blue-chill);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        outline-offset: -1px;
+      }
+
+      &.open {
+        margin-left: 0;
+        z-index: 1002;
+      }
+    }
+  }
+
+  .last.accessible-megamenu-top-nav-item a {
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .accessible-megamenu-panel-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .accessible-megamenu-panel {
+    position: absolute;
+    display: block;
+    left: -1px;
+    margin: 0;
+    padding: 20px 20px 5px 20px;
+    line-height: normal;
+    cursor: default;
+    box-shadow: 0 2px 6px -2px rgba(0,0,0,0.5), inset 1px 1px 0 color(white);
+    visibility: hidden;
+    top: -9999em;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 250ms ease 250ms, max-height 500ms ease, visibility 0s linear 500ms, top 0s linear 500ms;
+    border: 1px solid;
+    border-color: color(gray-gallery);
+    background: color(white);
+    min-width: 200px;
+
+    &.open {
+      visibility: visible;
+      top: 3em;
+      max-height: 800px;
+      opacity: 1;
+      z-index: 1001;
+      transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 0.92em;
+      line-height: 1.2em;
+      text-decoration: none;
+      margin-bottom: 1em;
+      vertical-align: -webkit-baseline-middle;
+      vertical-align: -moz-middle-with-baseline;
+    }
+
+    &.cols-4 {
+      width: 878px;
+
+      > ol > li {
+        width: 22%;
+      }
+    }
+
+    .cols-4b {
+      width: 878px;
+      left: -6.462em;
+
+      > ol > li {
+        width: 22%;
+      }
+    }
+
+    &.cols-3 {
+      width: 724px;
+
+      > ol > li {
+        width: 30%;
+      }
+    }
+
+    &.cols-1 {
+      width: 615px;
+
+      > ol > li {
+        width: auto;
+      }
+    }
+
+    ol {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ol > li {
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    > ol > li {
+      float: left;
+      display: block;
+      margin-right: 1em;
+      margin-bottom: 1em;
+      padding-left: 1em;
+      box-shadow: inset 1px 0 0 color(white);
+
+      &:first-of-type {
+        padding-left: 0;
+        border-left: none;
+        box-shadow: none;
+      }
+    }
+
+    > p {
+      color: color(gray-tundora);
+      font-size: 1.2em;
+      line-height: 1.1em;
+    }
+
+    > ol > li > h3 > a {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 6px;
+      padding-top: .4em;
+      padding-bottom: 0;
+      line-height: 1.1em;
+    }
+
+    ol ol > li > a {
+      width: auto;
+      text-indent: -2.333em;
+      padding-left: 2.333em;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    > ol > li > h3 > a:hover,
+    > ol > li > h3 > a:focus {
+      text-decoration: underline;
+    }
+
+    hr {
+      border-width: 1px 0px;
+      border-style: solid;
+      border-bottom-color: color(white);
+    }
+  }
+}
+
+// Hide hover theme on contact us
+li.last.leaf.accessible-megamenu-top-nav-item,
+li.last.leaf.accessible-megamenu-top-nav-item a {
+  background: transparent;
+  border: none;
+}
+
+// Mobile nav overrides
+.responsive-menus {
+  clear: both;
+  margin: 20px auto 0;
+  padding-right: 18%;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  background: color(blue-chill);
+  box-shadow: none;
+  min-width: 300px;
+}
+
+.responsive-menus.responsified span.toggler {
+  text-align: left;
+  color: color(blue-chill);
+  background: transparent;
+  box-shadow: none;
+  font-size: 26px;
+
+  @include breakpoint($bp-small) {
+    margin-left: 0;
+  }
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 101vw;
+  z-index: 6;
+  top: 44px;
+  padding-top: 35px;
+
+  li {
+    background-color: color(blue-chill);
+  }
+
+  #rm-removed > li > a {
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

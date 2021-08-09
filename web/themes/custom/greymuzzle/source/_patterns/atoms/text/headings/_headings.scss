@@ -1,0 +1,30 @@
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, .alpha   {
+	@apply text-4xl;
+}
+
+h2, .beta    {
+	@apply text-3xl;
+}
+
+h3, .gamma   {
+	@apply text-2xl;
+}
+
+h4, .delta   {
+	@apply text-xl;
+}
+
+h5, .epsilon {
+	@apply text-lg;
+}
+
+h6, .zeta    {
+
+}
+
+/* Subheadings */
+.subheading {
+	font-weight: normal;
+}

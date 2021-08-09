@@ -1,0 +1,25 @@
+/**
+ * right sidebar landing pages.
+ */
+.panel-right-sidebar .l-main-content,
+.panel-right-sidebar .l-sidebar-second {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * float regions on large screens.
+ */
+@include breakpoint($bp-large) {
+  .panel-right-sidebar .l-main-content {
+    width: 65%;
+    float: left;
+    margin-right: 40px;
+  }
+
+  .panel-right-sidebar .l-sidebar-second {
+    width: 28%;
+    float: left;
+  }
+}

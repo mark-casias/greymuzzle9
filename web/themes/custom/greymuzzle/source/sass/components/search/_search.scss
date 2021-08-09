@@ -1,0 +1,54 @@
+// Search
+//
+// Style guide: components.search
+
+.search {
+  display: none;
+
+  @include breakpoint($bp-medium) {
+    display: block;
+    margin-right: 0;
+    position: absolute;
+    right: 15px;
+    top: 23px;
+    z-index: 999999;
+
+    .search-block-form {
+      height: 35px;
+
+      .form-actions {
+        float: right;
+        margin-right: -6px;
+        width: 34px;
+        margin-top: -35px;
+        position: relative;
+        border-bottom: none;
+      }
+    }
+
+    input[type="submit"] {
+      @include fa;
+      padding: 0.36rem 1rem;
+      background: transparent;
+      text-align: center;
+      cursor: pointer;
+      border: 0;
+      font-size: 1.3em;
+      vertical-align: top;
+      color: color(blue-chill);
+      display: block;
+      position: relative;
+      font-size: 18px;
+      text-indent: -15px;
+      margin-top: 3px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    input[type="text"] {
+      padding: 0.2rem;
+    }
+  }
+}

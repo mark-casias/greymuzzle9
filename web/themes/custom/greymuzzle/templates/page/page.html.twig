@@ -57,65 +57,32 @@
  */
 #}
 
-<div id="page-wrapper" class="page-wrapper">
+<div id="page-wrapper" class="page-wrapper l-page">
   <div id="page">
-
-    {% if page.header or page.primary_menu or page.secondary_menu %}
-      <header id="header" class="header site-header" role="banner">
-
-        {# Gets fixed by JS at wide widths. #}
-        <div class="site-header__fixable fixable">
-          <div class="header__left">
-            <button class="nav-primary__button" aria-controls="site-header__inner" aria-label="Toggle navigation" aria-expanded="false">
-              <span class="nav-primary__icon">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </button>
-          </div>
-
-          {# Needs to extend full width so box shadow will also extend. #}
-          <div id="site-header__inner" class="site-header__inner">
-            <div class="container site-header__inner__container">
-              <div class="accessibility-bar">
-                {{page.accessibility_bar}}
-              </div>
-              <div class="donate-block">{{page.donate}}</div>
-              {{ page.branding }}
-              {{ page.header }}
-
-              {% if page.primary_menu or page.secondary_menu %}
-                <div class="mobile-buttons">
-                  <button class="mobile-nav-button" aria-label="{{ 'Toggle Main Menu'|t }}" aria-controls="header-nav" aria-expanded="false">
-                    <span class="mobile-nav-button__label">{{ 'Menu'|t }}</span>
-                    <span class="mobile-nav-button__icon"></span>
-                  </button>
-                </div>
-
-                <div id="header-nav" class="header-nav" data-menu-open="false">
-
-                  {{ page.primary_menu }}
-
-                  {% if page.secondary_menu %}
-                    <div class="secondary-nav__wrapper">
-                      {{ page.secondary_menu }}
-                    </div>
-                  {% endif %}
-                </div>
-              {% endif %}
-            </div>
+    {% if page.header or page.primary_menu %}
+      <header id="header" class="header site-header l-header" role="banner">
+        <div class="accessibility-bar l-accessibility-bar">
+          {{page.accessibility_bar}}
+          <div class="donate-block header__donate">
+            {{page.donate}}
           </div>
         </div>
+        <div class="l-branding">
+          {{ page.branding }}
+          <div id="header-nav l-navigation" class="header-nav" data-menu-open="false">
+            {{ page.primary_menu }}
+          </div>
+        </div>
+        {{ page.header }}
       </header>
     {% endif %}
 
-    <div id="main-wrapper" class="layout-main-wrapper layout-container">
+    <div id="main-wrapper" class="layout-main-wrapper layout-container l-main">
       <div id="main" class="layout-main">
         <main id="content" class="main-content " role="main">
           <a id="main-content" tabindex="-1"></a>
           {{ page.hero }}
-          <div class="main-content__container container">
+          <div class="container main-content__container">
             {{ page.highlighted }}
             {{ page.breadcrumb }}
             {{ page.content_above }}
@@ -135,7 +102,7 @@
     </div>
 
     <footer class="site-footer">
-      <div class="site-footer__inner container">
+      <div class="container site-footer__inner">
         {{ page.footer_top }}
         {{ page.footer_bottom }}
       </div>

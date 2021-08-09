@@ -1,0 +1,164 @@
+// Always In My Heart Listing
+//
+// Markup: components.always-in-my-heart.hbs
+//
+// Style guide: components.always-in-my-heart
+
+
+// Homepage block
+.l-my-heart {
+  @include clearfix;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+
+  @include breakpoint($bp-small) {
+    max-width: 600px;
+  }
+
+  @include breakpoint($bp-large) {
+    max-width: 1100px;
+  }
+
+  .view-header {
+    max-width: 90%;
+    margin: 0 auto;
+
+    @include breakpoint($bp-medium) {
+      max-width: 50%;
+    }
+  }
+
+  .pane-title {
+    margin-bottom: -8px;
+  }
+
+  .list--row {
+    @include clearfix;
+    width: 220px;
+    margin: 0 auto;
+    max-width: 220px;
+    margin-bottom: 30px;
+
+    .dog-name {
+      @include font-size(18px);
+      font-weight: bold;
+      background: color(blue-botticelli);
+      color: color(gray-tundora);
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 82px;
+    }
+  }
+
+  .view-footer {
+    margin-top: -15px;
+  }
+
+  .always__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// Interior page
+.view-always-in-my-heart {
+  .list--row {
+    @include clearfix;
+    margin-bottom: 3rem;
+
+    .dog-name {
+      @include font-size(18px);
+      font-weight: bold;
+      background: color(blue-botticelli);
+      color: color(gray-tundora);
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+
+  .view__heading {
+    @include headings-border;
+  }
+
+  .media__image {
+    width: 220px;
+    margin: 2rem auto 0.5rem;
+    text-align: center;
+
+    img {
+      width: 220px;
+    }
+  }
+
+  .form-submit {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .views-submit-button {
+    padding-right: 0;
+  }
+
+  @include breakpoint($bp-small) {
+    .view-content {
+      margin-top: 2rem;
+    }
+
+    /**
+     * overrides max-width: 100% rule.
+     */
+    .media__image {
+      width: 100%;
+      margin: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .media-wrapper {
+      @include grid-span(4, 1);
+    }
+
+    .donor-wrapper {
+      @include grid-span(8, 5);
+    }
+  }
+
+  .donor__name {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .donor__text,
+  .donor__text p {
+    margin-top: 0;
+  }
+
+  .view-always-in-my-heart {
+    form {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.views-widget-filter-field_heart_dogs_name_value {
+  width: 40% !important;
+
+  @include breakpoint($bp-medium) {
+    width: 50% !important;
+  }
+}
+
+.views-widget-filter-field_heart_year_value select {
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+}

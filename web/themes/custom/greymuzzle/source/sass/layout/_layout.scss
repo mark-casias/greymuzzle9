@@ -1,0 +1,127 @@
+// Symmetric grid with fluid gutters, 1/2 gutter on each side of a column
+@include add-grid(12);
+@include add-gutter(40px);
+@include add-gutter-style('split');
+
+.l-page {
+  @include clearfix;
+  width: 100%;
+}
+
+.l-branding {
+  @include grid-span(1, 1);
+}
+
+.l-region--accessibility-bar {
+  @include clearfix;
+  float: left;
+  padding-left: 110px;
+  padding-right: 0;
+
+  @include breakpoint($bp-small) {
+    padding-left: 130px;
+  }
+
+  @include breakpoint($bp-medium) {
+    padding-left: 150px;
+  }
+}
+
+.l-navigation {
+  @include clearfix;
+  margin-top: -16px;
+  width: 100%;
+  float: left;
+  padding-left: 150px;
+  padding-right: 0;
+}
+
+.header__donate {
+  float: right;
+  position: relative;
+  width: 327px;
+  margin-top: 8px;
+  z-index: 100;
+}
+
+.l-main,
+.l-page {
+  @include clearfix;
+}
+
+.l-main {
+  @include breakpoint($bp-medium) {
+    @include grid-span(12, 1);
+    max-width: 1100px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .front & {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+// Grid configuration based on whether
+// sidebars are available or not.
+/**
+ * sidebar-first and sidebar-second available.
+ */
+.two_sidebars {
+  .l-content {
+    @include grid-span(6, 4);
+  }
+
+  .l-region--sidebar-first {
+    @include grid-span(3, 1);
+  }
+
+  .l-region--sidebar-second {
+    @include grid-span(3, 10);
+  }
+}
+
+/**
+ * only sidebar-first available
+ */
+.sidebar_first {
+  .l-main {
+    padding: 0;
+  }
+
+  .l-content {
+
+    @include breakpoint($bp-large) {
+      @include grid-span(9, 4);
+    }
+  }
+
+  .l-region--sidebar-first {
+
+    @include breakpoint($bp-large) {
+      @include grid-span(3, 1);
+    }
+  }
+}
+
+/**
+ * only sidebar-second available
+ */
+.sidebar_second {
+  .l-content {
+    @include grid-span(9, 1);
+  }
+
+  .l-region--sidebar-second {
+    @include grid-span(3, 10);
+  }
+}
+// end of grid configuration.
+// ==================================
+
+ul.sf-menu a, ul.sf-menu span.nolink {
+  color: blue;
+}

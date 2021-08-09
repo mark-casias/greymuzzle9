@@ -1,0 +1,30 @@
+.btn {
+  @apply bg-blue-chill text-white rounded p-2 text-center font-bold inline-block;
+
+	&:hover, &:focus {
+    @apply bg-gray-gallery text-blue-chill border-blue-chill;
+	}
+
+	&.disabled {
+    @apply bg-gray-gallery text-black border-black cursor-not-allowed;
+	}
+
+  &__secondary {
+    @apply bg-sunglow font-thin text-black border border-sunglow hover:bg-white hover:border-sunglow hover:text-black;
+  }
+}
+
+
+.btn__donate {
+  @apply bg-sunglow px-1 py-2 rounded text-blue-chill;
+
+  &:after {
+    content: ' >';
+    font-size: 1.1em;
+  }
+
+  &:focus,
+  &:hover {
+    @apply bg-blue-alice border;
+  }
+}

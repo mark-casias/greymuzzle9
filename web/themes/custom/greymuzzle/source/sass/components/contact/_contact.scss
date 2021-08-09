@@ -1,0 +1,138 @@
+// Contact Us
+//
+// Markup: components.contact.hbs
+//
+// Style guide: components.contact
+
+.page-contact-us {
+
+  .l-sidebar-second {
+    margin-top: 3rem;
+
+    @include breakpoint($bp-large) {
+      margin-top: 0;
+    }
+  }
+
+  .messages--error {
+    margin-bottom: 3rem;
+  }
+}
+
+.contact__webform {
+  .form-item {
+    @include clearfix;
+    margin-bottom: 2rem;
+  }
+
+  /**
+   * label alignment.
+   */
+  label {
+    @include breakpoint($bp-small) {
+      @include grid-span(3, 1);
+    }
+
+    @include breakpoint($bp-medium) {
+      label {
+        @include grid-span(2, 1);
+      }
+    }
+  }
+
+  /**
+   * form field floating.
+   */
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select,
+  .description,
+  .grippie {
+    @include breakpoint($bp-small) {
+      @include grid-span(9, 4);
+    }
+
+    @include breakpoint($bp-medium) {
+      @include grid-span(10, 3);
+    }
+  }
+
+  select {
+    @include breakpoint($bp-medium) {
+      @include grid-span(4, 3);
+      @include clearfix;
+    }
+  }
+
+  .description {
+    clear: both;
+  }
+
+  input[type="submit"] {
+    @include grid-span(12, 1);
+
+    @include breakpoint($bp-small) {
+      @include grid-span(5, 4)
+    }
+
+    @include breakpoint($bp-medium) {
+      @include grid-span(3, 3)
+    }
+  }
+}
+
+/**
+ * sidebar components.
+ */
+.pane-bundle-contact-us-sidebar-block {
+  padding: 1rem 0.5rem;
+
+  .pane-title {
+    margin-top: 0;
+  }
+
+  .field-label {
+    margin-bottom: 0;
+  }
+
+  .field {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed color(gray-gallery);
+
+    &.field--name-field-contact-address,
+    &.field--name-field-contact-link-to-map {
+      border: none;
+      margin-bottom: 0;
+    }
+  }
+
+  .field--name-field-contact-link-to-map a {
+    display: block;
+    width: 100%;
+    height: 300px;
+    text-indent: -999999px;
+    background: url(../assets/dist/images/map.png) 50% 50% no-repeat;
+    border: none;
+  }
+}
+
+.field--name-field-contact-address {
+  p {
+    margin-top: 0;
+  }
+
+  address {
+    font-style: normal;
+  }
+}
+
+.form-required {
+  color: color(gray-tundora);
+
+  &:after {
+    content: '*';
+    color: #FF0000;
+  }
+}

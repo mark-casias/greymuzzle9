@@ -1,0 +1,57 @@
+// Search results
+//
+// Markup: components.search-results.hbs
+//
+// Style guide: components.search-results
+
+/**
+ * add dashed border and padding to search form
+ */
+.page-search {
+
+  .fieldset-legend {
+    font-weight: bold;
+  }
+
+  .form-wrapper {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed color(gray-gallery);
+  }
+
+  .search-advanced {
+    margin: 20px 0;
+  }
+}
+
+/**
+ * applies fixed with to search box per wireframes.
+ */
+.search-form {
+  input[type="text"] {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+/**
+ * styles individual search result.
+ */
+.search-result {
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.search-result__snippet {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.search-result__info {
+  @include visuallyhiden;
+}
+/*
+ * ==============================*/

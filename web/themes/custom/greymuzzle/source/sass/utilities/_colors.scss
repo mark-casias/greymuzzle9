@@ -1,0 +1,25 @@
+// colors map
+$color: (
+  white: #fff,
+  black: #000,
+  gray-tundora: #444,
+  gray-gallery: #ccc,
+  gray-gallery-light: #eee,
+  blue-chill: #067799,
+  blue-botticelli: #cfe5eb,
+  aliceblue: #f3f8fa,
+  burnt-sienna: #f06667,
+  sunglow: #ffcc33,
+  daffodil: #fff5d6,
+  yellow: #ffff00
+);
+ 
+// color function
+@function color($key) {
+  @if map-has-key($color, $key) {
+    @return map-get($color, $key);
+  }
+
+  @warn "This `#{$key}` is not in the $color map.";
+  @return null;
+}
