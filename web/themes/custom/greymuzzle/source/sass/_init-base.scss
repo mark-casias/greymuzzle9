@@ -1,0 +1,25 @@
+//=======================================================
+// Utilities: Import Sass mixins, variables, modules etc.
+//=======================================================
+
+// Import breakpoint plugin
+// http://breakpoint-sass.com/
+@import 'vendor/breakpoint-sass/stylesheets/breakpoint';
+
+// Imports Singularity grid system.
+// https://github.com/at-import/Singularity
+@import 'vendor/singularitygs/stylesheets/singularitygs';
+
+// Imports Fontawesome icon library
+// to use do as follows:
+// .selector {
+//    @extend .fa;
+//    @extend .fa-calendar;
+// }
+@import 'vendor/fontawesome/font-awesome';
+
+// Imports all utilities partials
+@import 'utilities/colors';
+@import 'utilities/mixins';
+@import 'utilities/breakpoints';
+@import 'utilities/icons';

@@ -1,0 +1,27 @@
+/**
+ * grid styles for 3 column landing pages.
+ */
+.panel-three-columns .l-main-content,
+.panel-three-columns .l-sidebar-first,
+.panel-three-columns .l-sidebar-second {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * float regions on large screens.
+ */
+@include breakpoint($bp-large) {
+  .panel-three-columns .l-main-content {
+    @include grid-span(6, 4);
+  }
+
+  .panel-three-columns .l-sidebar-first {
+    @include grid-span(3, 1);
+  }
+
+  .panel-three-columns .l-sidebar-second {
+    @include grid-span(3, 10);
+  }
+}

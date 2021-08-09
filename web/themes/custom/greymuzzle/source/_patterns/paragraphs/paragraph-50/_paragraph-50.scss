@@ -1,0 +1,25 @@
+
+.paragraph-50 {
+  @apply container ;
+  &__title {
+    @apply text-center;
+  }
+
+  &__content {
+    @apply flex flex-col md:flex-row;
+    &.right {
+      @apply flex-col md:flex-row-reverse
+    }
+  }
+
+  &__image {
+    @apply w-full md:w-1/2 md:h-full;
+    img {
+      @apply w-full border-gray-tundora border;
+    }
+  }
+
+  &__text {
+    @apply mx-4 w-full md:w-1/2;
+  }
+}

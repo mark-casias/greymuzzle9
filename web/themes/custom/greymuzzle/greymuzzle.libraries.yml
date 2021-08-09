@@ -1,4 +1,5 @@
 global:
   css:
     base:
-      css/style.css: {}
+      public/css/style.css: {}
+      public/sass/greymuzzle.styles.css: {}

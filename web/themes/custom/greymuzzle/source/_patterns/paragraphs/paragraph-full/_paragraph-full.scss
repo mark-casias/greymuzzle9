@@ -1,0 +1,9 @@
+.paragraph-full {
+  text-shadow: 1px 1px #444;
+  @apply bg-blue-chill py-4 px-4 md:px-0 text-white;
+
+}
+
+.paragraph-full__container {
+  @apply container text-center;
+}

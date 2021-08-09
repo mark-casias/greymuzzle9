@@ -1,0 +1,53 @@
+// Your Gift
+//
+// Style guide: components.mailing-list
+
+.l-mailing-list {
+  @include clearfix;
+  background: color(aliceblue);
+  color: color(gray-tundora);
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  height: 100%;
+
+  @include breakpoint($bp-large) {
+    width: 49%;
+    max-width: 535px;
+    height: 516px;
+  }
+
+  .pane-title {
+    @include font-size(25px);
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 85px;
+    padding-top: 95px;
+    margin-bottom: -52px;
+  }
+
+  .wrapper p {
+    width: 82%;
+    margin: 0 auto 40px;
+
+    img {
+      height: 90px;
+      margin-top: -168px;
+      width: 90px;
+      left: 41%;
+
+      @include breakpoint($bp-small) {
+        left: 42%;
+      }
+
+      @include breakpoint($bp-medium) {
+        left: 44%;
+      }
+
+      @include breakpoint($bp-large) {
+        left: 46%;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "cacheBust": true,
-  "cleanPublic": false,
+  "cleanPublic": true,
   "defaultPattern": "all",
   "defaultShowPatternInfo": false,
   "ishControlsHide": {
@@ -96,7 +96,7 @@
     "layout": "horizontal",
     "noViewAll": false
   },
-  "transformedAssetTypes": ["scss", "css"],
+  "transformedAssetTypes": ["scss"],
   "uikits": [
     {
       "name": "uikit-workshop",
@@ -138,7 +138,6 @@
             "source/_patterns/paragraphs"
           ]
         },
-
         {
           "id": "teasers",
           "recursive": true,

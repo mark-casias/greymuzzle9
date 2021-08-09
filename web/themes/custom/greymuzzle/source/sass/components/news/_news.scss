@@ -1,0 +1,60 @@
+// News
+//
+// Markup: components.news.hbs
+//
+// Style guide: components.news
+
+.page-news {
+
+  .gm-icontact-join-form {
+    @include clearfix;
+
+    input#edit-email {
+      margin-top: 0;
+
+      @include breakpoint($bp-medium) {
+        width: 350px;
+        float: left;
+      }
+    }
+  }
+
+  .form-item-email label {
+    @include visuallyhiden;
+  }
+
+  .view-header {
+    margin-bottom: 2rem;
+  }
+
+  .media-wrapper {
+    text-align: center;
+
+    @include breakpoint($bp-medium) {
+      flex: 0 0 auto;
+      padding-top: 0.4rem;
+      margin-right: 1rem;
+      text-align: right;
+      max-width: 160px;
+    }
+  }
+}
+
+.news--item-wrapper {
+  margin-bottom: 4rem;
+
+  @include breakpoint($bp-medium) {
+    display: flex;
+  }
+}
+
+.news__title {
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+.news__teaser p,
+.news__date {
+  margin-top: 0.4rem;
+}

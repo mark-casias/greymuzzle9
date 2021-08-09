@@ -1,0 +1,142 @@
+// Who We Are
+//
+// Markup: components.who-we-are.hbs
+//
+// Style guide: components.who-we-are
+
+.whoweare__wrapper {
+  @include clearfix;
+}
+
+.view__heading,
+.l-main-content .pane-title {
+  @include headings-border;
+}
+
+.leadership,
+.board-of-directors {
+  .list__row {
+    margin-bottom: 3rem;
+  }
+}
+
+.advisory-board {
+  .list__item {
+    margin-bottom: 3rem;
+  }
+}
+
+.leadership,
+.board-of-directors,
+.advisory-board {
+  .media-wrapper {
+    text-align: center;
+  }
+}
+
+@include breakpoint($bp-medium) {
+  /**
+   * leadership view.
+   */
+  .leadership,
+  .board-of-directors {
+    .list__row {
+      @include clearfix;
+    }
+
+    .media-wrapper {
+      @include grid-span(4, 1);
+      text-align: left;
+    }
+
+    .bio-wrapper {
+      @include grid-span(8, 5);
+      padding-left: 0;
+    }
+
+    .bio--name,
+    .bio--title {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+
+    .bio--name {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  /**
+   * advisory board view.
+   */
+  .advisory-board {
+    .list__item {
+      width: 30%;
+      float: left;
+      margin: 0 3%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .media-wrapper {
+      text-align: left;
+    }
+  }
+
+  .field--name-body {
+    img[style*="left"] {
+      margin: 10px 20px 10px 0;
+    }
+  }
+
+  .field--name-body {
+    img[style*="right"] {
+      margin: 10px 0 10px 20px;
+    }
+  }
+}
+
+.field--name-field-staff-image img {
+  @include left;
+}
+
+.field--name-field-staff-position-type {
+  display: none;
+}
+
+.field--name-field-staff-title {
+  @include clearfix;
+  margin-bottom: 0.5rem;
+
+  .field__label,
+  .field__items {
+    display: block;
+    float: left;
+  }
+}
+
+.node-type-staff .field--name-body p:first-of-type {
+  margin-top: 0;
+}
+
+/**
+ * full node styles
+ */
+.field.field--name-field-staff-image {
+  @include breakpoint($bp-medium) {
+    max-width: 250px;
+  }
+}
+
+.field--name-field-staff-title {
+  display: block;
+  margin-bottom: 1rem;
+  clear: both;
+  font-style: italic;
+}
+
+.node-type-staff h1 {
+  margin-bottom: 0;
+}

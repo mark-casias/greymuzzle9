@@ -1,0 +1,146 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  @include font-size(16px);
+  line-height: 1.4;
+  font-family: $base-font;
+  color: color(gray-tundora);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: selection styles
+   ========================================================================== */
+::-moz-selection {
+  background: color(aliceblue);
+  text-shadow: none;
+}
+
+::selection {
+  background: color(aliceblue);
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px dashed color(gray-gallery);
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Removes margin added by normalize.css.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/**
+ * Default link styles.
+ */
+a,
+a:link {
+  color: color(blue-chill);
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+/**
+ * Media styles for auto-resizing.
+ */
+img,
+iframe,
+video,
+embed,
+object {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+/**
+ * Clearing floats.
+ */
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}

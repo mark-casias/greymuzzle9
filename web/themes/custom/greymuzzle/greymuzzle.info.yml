@@ -1,6 +1,6 @@
 name: Greymuzzle Theme
 type: theme
-base theme: olivero
+base theme: false
 description: 'Greymuzzle.org theme.'
 alt text: 'I should do somethign with this.'
 core_version_requirement: ^8 || ^9

@@ -1,0 +1,44 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+#sg-patterns {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  max-width: 100%;
+  padding: 0 0.5em;
+}
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sg-colors {
+  @apply flex flex-wrap justify-items-center p-0 m-0 list-none;
+}
+
+.sg-colors li {
+  margin: 0 0.5em 0.5em 0;
+  border: 1px solid #ddd;
+  @apply w-1/4 rounded m-4;
+}
+
+.sg-swatch {
+  display: block;
+  height: 4em;
+  margin-bottom: 0.3em;
+  border-radius: 5px;
+  @apply border-b border-gray-tundora;
+}
+
+.sg-label {
+  font-size: 90%;
+  line-height: 1;
+  @apply text-center w-full block pb-1;
+}
