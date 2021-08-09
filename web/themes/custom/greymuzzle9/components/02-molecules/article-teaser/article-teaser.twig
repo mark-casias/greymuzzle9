@@ -1,0 +1,29 @@
+<div class="article-teaser article-teaser__news">
+      <div class="article-teaser__media-wrapper">
+        {{ article_image }}
+      </div>
+
+      <div class="article_teaser__content">
+        <h2 class="article_teaser__content__title">
+          <a href={{ article_url }} class="link">
+            {{ article_title }}
+          </a>
+        </h2>
+        <div class="article_teaser__content__date">
+          {{ article_date }}
+        </div>
+
+        <div class="article_teaser__content__teaser">
+          {{ article_teaser }}
+        </div>
+        <div class="news__readmore">
+          <a href={{ article_url }} class="link">
+            Read more
+            <span class="element-invisible">about
+              {{ article_title }}
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
