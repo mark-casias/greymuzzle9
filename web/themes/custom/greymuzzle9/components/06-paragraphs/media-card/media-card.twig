@@ -1,0 +1,19 @@
+<div {{ bem('media-card', modifier) }}>
+  <div class="media-card__media">
+    {{ media }}
+  </div>
+  <div {{ bem('media-card__content', modifier) }}>
+    <h2 class="media-card__title">{{ title }}</h2>
+    <div class="media-card__text">{{ body }}</div>
+    {% if button %}
+    <div class="media-card__cta">
+      {% include "@atoms/buttons/button.twig" with {
+        button_content: button.button_content,
+        button_url: button.button_url,
+        button_modifiers: ['alt'],
+      } %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+

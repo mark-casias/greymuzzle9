@@ -1,0 +1,8 @@
+title: 'Media Card with image to the Left (default)'
+body: 'Senior dogs depend on us to care for them through all stages of their lives. Your tax deductible donation will provide them with the care they need to get adopted and live out their golden years, months, or weeks in a place of love, security and peace.'
+media: '<div class="media media-element-container media-default">
+      <figure id="file-5310" class="file file-image file-image-jpeg"><img alt="brown dog standing in a field" height="800" width="1200" class="media-element right file-default" data-delta="3" typeof="foaf:Image" src="http://www.greymuzzle.org/sites/default/files/henry_paws_atlanta.jpg"></figure>
+    </div>'
+button:
+  button_content: 'Donate Now'
+  button_url: '#'
