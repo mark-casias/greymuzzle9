@@ -1,5 +1,5 @@
 {
-  "name": "emulsify-drupal",
+  "name": "emulsify-greymuzzle",
   "version": "1.0.0",
   "description": "Storybook development + Webpack Build + Drupal 8 theme",
   "keywords": [
@@ -10,7 +10,7 @@
     "storybook",
     "styleguide"
   ],
-  "author": "Evan Willhite <evan@fourkitchens.com>",
+  "author": "Mark Casias <mark@greymuzzle.org>",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.12.3",

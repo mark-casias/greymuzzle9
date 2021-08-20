@@ -1,0 +1,29 @@
+.programs {
+  background-color: var(--c-secondary);
+  text-align: center;
+  padding: 2rem 0;
+
+  &__label {
+    margin-bottom: 0;
+  }
+
+  &__header {
+    font-size: 1.5em;
+  }
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__items {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    flex: 0 0 128px;
+  }
+}
