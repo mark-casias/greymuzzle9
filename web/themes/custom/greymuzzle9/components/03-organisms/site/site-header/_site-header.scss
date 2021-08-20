@@ -1,5 +1,6 @@
 .header {
   margin-bottom: 4em;
+  background: $white;
 
   &__inner {
     @include wrapper;
@@ -9,9 +10,10 @@
   }
 
   &__primary {
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: $space 0;
   }
 

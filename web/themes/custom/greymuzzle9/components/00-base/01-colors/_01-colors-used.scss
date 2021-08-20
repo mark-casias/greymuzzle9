@@ -14,7 +14,7 @@ $defaultColors: (
   muted: $near-white,
   warning: $yellow-light,
   error: $burnt-sienna,
-  message: $daffodil,
+  message: $green-light,
 );
 
 $darkColors: (
@@ -23,15 +23,15 @@ $darkColors: (
   background: $gray,
   background-inverse: $gray-light,
   background-section: $gray-dark,
-  primary: $blue,
-  secondary: $purple,
+  primary: $blue-botticelli,
+  secondary: $blue-chill,
   accent: $gray-lightest,
   accent-high: $white,
   highlight: $gray-dark,
   highlight-high: $gray-darker,
   muted: $gray-darker,
   warning: $yellow-light,
-  error: $red-light,
+  error: $burnt-sienna,
   message: $green-light,
 );
 

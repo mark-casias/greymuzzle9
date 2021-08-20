@@ -58,8 +58,8 @@
 
   /* See main-menu.js */
   &--open {
-    background-color: clr(accent-high);
-    color: clr(muted);
+    background-color: clr(text);
+    color: clr(primary);
 
     &::after {
       border-top-color: transparent;

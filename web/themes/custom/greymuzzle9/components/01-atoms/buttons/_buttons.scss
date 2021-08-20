@@ -115,6 +115,7 @@ $button-colors: (
   &--donate {
     @include button-color-donate;
     @include button-large;
+
     border-radius: 1rem;
 
     &:hover {
