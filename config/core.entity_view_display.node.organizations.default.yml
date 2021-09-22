@@ -1,4 +1,4 @@
-uuid: df3c0e93-c807-4d97-889f-77b35ff1c5a2
+uuid: f2be1e29-519d-4814-bf08-b462a0ed41e7
 langcode: en
 status: true
 dependencies:
@@ -29,16 +29,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_funded_year:
-    label: above
-    weight: 8
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
   field_org_dog_s_name:
-    label: above
+    label: hidden
     weight: 5
     type: string
     settings:
@@ -46,7 +38,7 @@ content:
     third_party_settings: {  }
     region: content
   field_org_funded:
-    label: above
+    label: hidden
     weight: 1
     type: string
     settings:
@@ -61,8 +53,8 @@ content:
     third_party_settings: {  }
     region: content
   field_org_image:
-    label: above
-    weight: 7
+    label: hidden
+    weight: 6
     type: entity_reference_entity_view
     settings:
       view_mode: default
@@ -70,7 +62,7 @@ content:
     third_party_settings: {  }
     region: content
   field_org_website:
-    label: above
+    label: inline
     weight: 3
     type: link
     settings:
@@ -81,16 +73,8 @@ content:
       target: ''
     third_party_settings: {  }
     region: content
-  field_related_meet_the_dog:
-    label: above
-    weight: 6
-    type: entity_reference_label
-    settings:
-      link: false
-    third_party_settings: {  }
-    region: content
   field_state:
-    label: above
+    label: inline
     weight: 4
     type: entity_reference_label
     settings:
@@ -104,3 +88,5 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_funded_year: true
+  field_related_meet_the_dog: true

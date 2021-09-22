@@ -1,4 +1,4 @@
-uuid: 1eb5598d-02e7-48cf-9232-03626928f4f0
+uuid: 7681d802-683b-4532-87a2-7bd7cdb1e50b
 langcode: en
 status: true
 dependencies:
@@ -41,7 +41,7 @@ content:
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 123
+    weight: 122
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -102,5 +102,10 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   field_image: true

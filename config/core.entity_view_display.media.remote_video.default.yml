@@ -1,4 +1,4 @@
-uuid: 497c63c8-f887-4e23-948a-ec811f48c01f
+uuid: f47c8c62-f546-4470-be69-ea3805ed524e
 langcode: en
 status: true
 dependencies:
@@ -24,7 +24,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  addtoany: true
   created: true
   name: true
   thumbnail: true

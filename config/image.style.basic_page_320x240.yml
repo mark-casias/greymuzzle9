@@ -1,12 +1,12 @@
-uuid: c62a2ab4-5582-4683-9009-1f06b94f0e75
+uuid: eeb0d5d9-1f12-4338-b6a1-5e7779a2b9d1
 langcode: en
 status: true
 dependencies: {  }
 name: basic_page_320x240
 label: 'Basic page - 320x240'
 effects:
-  afe2ee35-f39d-411d-a160-491598c51b44:
-    uuid: afe2ee35-f39d-411d-a160-491598c51b44
+  5cf4dede-7bb6-4f62-8343-f2e050447ada:
+    uuid: 5cf4dede-7bb6-4f62-8343-f2e050447ada
     id: image_scale
     weight: 1
     data:

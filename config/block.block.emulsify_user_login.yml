@@ -1,0 +1,20 @@
+uuid: 6871a36c-d248-4d55-8705-7673b92ae116
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - emulsify
+id: emulsify_user_login
+theme: emulsify
+region: header
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

@@ -1,10 +1,11 @@
-uuid: 0c8c09b7-5e7f-4a04-b38c-1deef9c46577
+uuid: e05e8f82-77ca-4c3d-a86a-cf026256f977
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_staff_image
     - media.type.image
+    - media.type.image_private
     - node.type.staff
 id: node.staff.field_staff_image
 field_name: field_staff_image
@@ -20,5 +21,6 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      image_private: image_private
   handler: 'default:media'
 field_type: entity_reference

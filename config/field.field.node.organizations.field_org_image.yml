@@ -1,10 +1,11 @@
-uuid: 2bd5af6e-2b9b-40be-af8d-aec5b2750d32
+uuid: 7ddeb643-4ebe-4bbf-9a74-f73790ef3268
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_org_image
     - media.type.image
+    - media.type.image_private
     - node.type.organizations
 id: node.organizations.field_org_image
 field_name: field_org_image
@@ -20,5 +21,6 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      image_private: image_private
   handler: 'default:media'
 field_type: entity_reference

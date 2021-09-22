@@ -1,10 +1,11 @@
-uuid: 529be857-58da-4736-92d0-49720106993d
+uuid: 42706aea-b0e3-4fde-bd1e-f036e92b8ce9
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_meet_additional_image
     - media.type.image
+    - media.type.image_private
     - node.type.meet_the_dogs
 id: node.meet_the_dogs.field_meet_additional_image
 field_name: field_meet_additional_image
@@ -20,5 +21,6 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      image_private: image_private
   handler: 'default:media'
 field_type: entity_reference

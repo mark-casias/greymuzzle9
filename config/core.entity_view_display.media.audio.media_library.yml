@@ -1,4 +1,4 @@
-uuid: 2fb5f219-64f7-45ee-9a30-7fd20e844684
+uuid: f3b327b8-1465-4469-8791-1d3f5b0d2727
 langcode: en
 status: true
 dependencies:
@@ -26,6 +26,7 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
   field_media_audio_file: true
   name: true

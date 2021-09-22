@@ -1,4 +1,4 @@
-uuid: f35fd471-27e1-4aeb-b6fb-ebbb68cfce62
+uuid: 63f69440-c79e-4541-9d3c-569adcaaaae6
 langcode: und
 status: true
 dependencies:
@@ -25,7 +25,7 @@ settings:
   target_type: file
   display_field: false
   display_default: false
-  uri_scheme: null
+  uri_scheme: public
 module: image
 locked: false
 cardinality: 1

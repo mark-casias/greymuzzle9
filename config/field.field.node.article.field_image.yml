@@ -1,4 +1,4 @@
-uuid: a8576708-d3da-41d2-ba40-60764faafbf1
+uuid: 620801de-70c6-41e4-b986-0efae5434264
 langcode: en
 status: true
 dependencies:
@@ -36,6 +36,7 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      image_private: image_private
   alt_field_required: true
   title_field_required: false
   handler: 'default:file'

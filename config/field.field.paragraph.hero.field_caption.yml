@@ -1,12 +1,10 @@
-uuid: 350d9013-966c-4e17-9c70-901c29f4d046
+uuid: 80ab58ce-cdf9-43c7-86a0-38863937b306
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_caption
     - paragraphs.paragraphs_type.hero
-  module:
-    - text
 id: paragraph.hero.field_caption
 field_name: field_caption
 entity_type: paragraph
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string

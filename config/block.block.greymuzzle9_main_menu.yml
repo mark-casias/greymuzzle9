@@ -1,0 +1,27 @@
+uuid: 6d3c2f38-e2f9-423a-ac2e-417cf1589a64
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - greymuzzle9
+_core:
+  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
+id: greymuzzle9_main_menu
+theme: greymuzzle9
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 6
+  expand_all_items: true
+visibility: {  }

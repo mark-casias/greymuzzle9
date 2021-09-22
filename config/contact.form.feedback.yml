@@ -1,4 +1,4 @@
-uuid: bca0e7b6-18ad-47d3-a989-a011af0af914
+uuid: fc56a8bf-5be7-41cd-a8b1-b806b8f0bc0c
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - mark@greymuzzle.org
+  - admin@example.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

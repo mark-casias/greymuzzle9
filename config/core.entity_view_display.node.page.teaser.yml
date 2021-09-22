@@ -1,16 +1,14 @@
-uuid: 10e6aa49-70fc-4fe6-99ef-75afb626d00a
+uuid: 0caca035-c0bc-4776-a549-a3ba8939deb9
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_hero
     - field.field.node.page.field_metatag
-    - field.field.node.page.field_sections
+    - field.field.node.page.field_paragraphs
     - node.type.page
   module:
-    - text
     - user
 _core:
   default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
@@ -24,18 +22,10 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  body:
-    label: hidden
-    weight: 0
-    type: text_summary_or_trimmed
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 101
     region: content
 hidden:
-  field_hero: true
+  body: true
   field_metatag: true
-  field_sections: true
+  field_paragraphs: true

@@ -1,0 +1,21 @@
+uuid: 9c54bdbe-5a3e-4b19-bb20-961c32baf35d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_senior_spotlights
+label: 'Content - Senior Spotlights'
+type: 'canonical_entities:node'
+pattern: 'senior-spotlight/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      senior_spotlights: senior_spotlights
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }
