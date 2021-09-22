@@ -29,7 +29,7 @@ regions:
   sidebar: 'Sidebar'
   footer: Footer
 
-logo: images/logo.png
+logo: images/logo-gm.png
 
 # Remove unwanted system stylesheets
 # stylesheets-remove:

@@ -8,7 +8,15 @@ import buttonDonateDate from './button-donate.yml';
 /**
  * Storybook Definition.
  */
-export default { title: 'Atoms/Button' };
+export default {
+  title: 'Atoms/Button',
+  argTypes: { click: { action: 'clicked' } },
+  parameters: {
+    actions: {
+      handles: ['mouseover', 'click .button'],
+    },
+  },
+};
 
 export const defaultButton = () => button(buttonData);
 

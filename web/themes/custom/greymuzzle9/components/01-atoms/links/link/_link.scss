@@ -7,6 +7,9 @@
     color: clr(accent);
     border-bottom: none;
   }
+  &:focus {
+    box-shadow: 0px 0px 4px 3px clr(primary);
+  }
 }
 
 .link {

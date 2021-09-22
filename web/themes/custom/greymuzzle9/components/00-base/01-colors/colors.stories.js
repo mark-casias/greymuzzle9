@@ -14,6 +14,12 @@ export default {
       page: colorsDocs,
     },
   },
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary'],
+      control: { type: 'radio' },
+    },
+  },
 };
 
 export const ColorPalettes = () => colors(colorsData);

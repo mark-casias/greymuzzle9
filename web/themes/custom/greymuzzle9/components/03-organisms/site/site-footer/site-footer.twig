@@ -2,14 +2,17 @@
 
 <footer {{ bem(footer__base_class) }}>
   <div {{ bem('inner', [], footer__base_class) }}>
-    <div {{ bem('social', [], footer__base_class) }}>
-      {% block footer__social %}
-        {% include "@molecules/menus/social/social-menu.twig" %}
-      {% endblock %}
-    </div>
     <div {{ bem('menu', [], footer__base_class) }}>
       {% block footer__menu %}
         {% include "@molecules/menus/inline/inline-menu.twig" %}
+      {% endblock %}
+    </div>
+    <div {{ bem('donate', [], footer__base_class)}}>
+      <a class="button button--donate" href="https://greymuzzle.z2systems.com/donation.jsp?campaign=66&amp;">Donate Now<span class="element-invisible">We regret that this link leads to an inaccessible third party page. Please contact us for assistance.</span></a>
+    </div>
+    <div {{ bem('social', [], footer__base_class) }}>
+      {% block footer__social %}
+        {% include "@molecules/menus/social/social-menu.twig" %}
       {% endblock %}
     </div>
   </div>

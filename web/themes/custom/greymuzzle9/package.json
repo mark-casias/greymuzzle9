@@ -16,6 +16,7 @@
     "@babel/core": "^7.12.3",
     "@babel/eslint-parser": "^7.12.17",
     "@babel/preset-env": "^7.12.1",
+    "@whitespace/storybook-addon-html": "^5.0.0",
     "add-attributes-twig-extension": "^0.1.0",
     "autoprefixer": "^10.0.2",
     "babel-loader": "^8.2.1",
