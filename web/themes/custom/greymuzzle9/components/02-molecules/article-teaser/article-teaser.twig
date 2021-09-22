@@ -1,8 +1,9 @@
 <div class="article-teaser article-teaser__news">
+  {% block field_image %}
       <div class="article-teaser__media-wrapper">
         {{ article_image }}
       </div>
-
+  {% endblock %}
       <div class="article_teaser__content">
         <h2 class="article_teaser__content__title">
           <a href={{ article_url }} class="link">

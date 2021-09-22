@@ -71,25 +71,16 @@
      */
     #}
 
-
-    {% embed "@molecules/card/card.twig" with {
-      card__extra_classes: ["grid__item"],
-      card__heading: label,
-      card__body: content.body,
-      card__link__url: url,
-      card__link__text: "hello newman",
+    {% embed "@molecules/article-teaser/article-teaser.twig" with {
+      article_title: label,
+      article_teaser: content.body,
+      article_url: url,
+      article__modifiers: [],
     } %}
-      {% block card__img %}
-        <div class={{ bem('media_item', [], 'article-teaser')}}
+      {% block field_image %}
+        <div class="article-teaser__media-wrapper">
           {{ content.field_image }}
         </div>
-      {% endblock %}
-
-      {% block card__info %}
-        {% trans %}Submitted by
-        {{ author_name }}
-        on
-        {{ date }}{% endtrans %}
       {% endblock %}
     {% endembed %}
 

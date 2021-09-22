@@ -14,6 +14,7 @@ items:
     attributes: ''
   next:
     href: '#'
+    text: 'Next'
     attributes: ''
   pages:
     - href: '#'
