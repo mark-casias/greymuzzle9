@@ -1,11 +1,11 @@
-uuid: 61de98c2-8f14-4038-b72d-a390a3a9596e
+uuid: fe612d40-5af2-4a4a-ac6a-341c67c5f5e9
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: nCa1oy25w2fh-nk_iQ7IJFQwQIcKxrV_5EQW2y8dzPc
+  default_config_hash: hdAKtAm0H-umA4Nzn0i1bquaj5iPn3daD_7u-nzFRhM
 id: who_s_new
 label: 'Who''s new'
 module: user
@@ -17,7 +17,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Default
     position: 0
     display_options:
       access:

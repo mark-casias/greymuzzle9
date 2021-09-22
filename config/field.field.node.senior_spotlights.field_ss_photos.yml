@@ -1,10 +1,11 @@
-uuid: a3dc71b1-99a5-4f51-93f5-febe5b35b93c
+uuid: a567fb9a-fbe7-449f-96f9-584a05b43751
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_ss_photos
     - media.type.image
+    - media.type.image_private
     - node.type.senior_spotlights
 id: node.senior_spotlights.field_ss_photos
 field_name: field_ss_photos
@@ -20,5 +21,6 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      image_private: image_private
   handler: 'default:media'
 field_type: entity_reference

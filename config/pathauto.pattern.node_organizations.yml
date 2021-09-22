@@ -1,0 +1,21 @@
+uuid: 19b7104c-208d-4e46-8c08-ee7c232a6fbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_organizations
+label: 'Content - Organizations'
+type: 'canonical_entities:node'
+pattern: 'about-us/who-we-help/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      organizations: organizations
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

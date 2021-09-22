@@ -1,4 +1,4 @@
-uuid: 8ed544e0-612b-4466-8e11-998116826fbb
+uuid: 0b350568-c3ef-4373-be06-a956f4386c30
 langcode: und
 status: true
 dependencies:
@@ -11,6 +11,9 @@ entity_type: node
 type: list_integer
 settings:
   allowed_values:
+    -
+      value: 2021
+      label: '2021'
     -
       value: 2020
       label: '2020'

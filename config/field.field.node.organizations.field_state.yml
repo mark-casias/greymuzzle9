@@ -1,4 +1,4 @@
-uuid: 584afea3-e823-4264-a79d-67c68979107e
+uuid: 6d882053-3c79-4747-8458-eeddde887c16
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ id: node.organizations.field_state
 field_name: field_state
 entity_type: node
 bundle: organizations
-label: State
+label: Location
 description: ''
 required: false
 translatable: false

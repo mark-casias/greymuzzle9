@@ -1,10 +1,10 @@
-uuid: 72351488-a7dc-47a5-a92e-11db25116328
+uuid: aa167649-2cf1-450a-b23e-5268006cfc30
 langcode: en
 status: true
 dependencies:
   module:
     - media
 id: media.blog_header_520x350_
-label: 'Blog Header (520x350)'
+label: blog_header_520x350_
 targetEntityType: media
 cache: true

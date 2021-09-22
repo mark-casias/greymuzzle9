@@ -1,10 +1,10 @@
-uuid: dd3407a7-db74-4e82-ba43-38b04770a4ee
+uuid: ed91d3ba-e088-46af-b80e-f2e6c5361fab
 langcode: en
 status: true
 dependencies:
   module:
     - media
 id: media.basic_page_220x220
-label: 'Basic Page 220x220'
+label: basic_page_220x220
 targetEntityType: media
 cache: true

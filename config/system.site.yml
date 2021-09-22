@@ -1,11 +1,11 @@
-uuid: f06ec93d-1df3-40e1-b936-759cb57e11c6
+uuid: 7e708ff1-2ac9-41ce-921a-46595f5214bf
 name: 'The Grey Muzzle Organization'
 mail: info@greymuzzle.org
 slogan: ''
 page:
-  403: /
-  404: /
-  front: /home
+  403: /node
+  404: /node
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

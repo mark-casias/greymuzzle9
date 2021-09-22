@@ -1,4 +1,4 @@
-uuid: c081d6f5-83fe-40e7-aafd-619801be979f
+uuid: 61247882-a843-4921-af43-68a0ae5aee3b
 langcode: und
 status: true
 dependencies:
@@ -15,7 +15,7 @@ field_name: field_media_document
 entity_type: media
 type: file
 settings:
-  uri_scheme: null
+  uri_scheme: public
   target_type: file
   display_field: false
   display_default: false

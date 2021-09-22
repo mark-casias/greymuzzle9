@@ -1,4 +1,4 @@
-uuid: 86bff85a-fd58-48ce-b6e5-cdcda8ed98ff
+uuid: ae956b79-2cb7-41a6-8477-84d0cb756591
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
     - field.field.media.image.field_photo_credit
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.image
   module:
     - image
@@ -24,10 +24,11 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
   field_caption: true
   field_media_image: true

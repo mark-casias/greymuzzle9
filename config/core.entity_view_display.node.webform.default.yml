@@ -1,0 +1,20 @@
+uuid: 930910af-3157-4540-adb4-f54dddd75d15
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.webform
+  module:
+    - user
+id: node.webform.default
+targetEntityType: node
+bundle: webform
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

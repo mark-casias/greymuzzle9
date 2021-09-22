@@ -1,8 +1,9 @@
-uuid: 6425d610-80c7-4ea8-a3de-ecf8832da398
+uuid: 812ea295-d78f-48fd-a156-4bda44ccda55
 langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_entity_browser
     - field.field.node.meet_the_dogs.body
     - field.field.node.meet_the_dogs.field_meet_additional_image
     - field.field.node.meet_the_dogs.field_meet_deceased
@@ -11,7 +12,7 @@ dependencies:
     - field.field.node.meet_the_dogs.field_meet_organization
     - node.type.meet_the_dogs
   module:
-    - file
+    - entity_browser
     - link
     - path
     - text
@@ -38,9 +39,17 @@ content:
     third_party_settings: {  }
   field_meet_additional_image:
     weight: 6
-    type: file_generic
+    type: entity_browser_entity_reference
     settings:
-      progress_indicator: throbber
+      entity_browser: media_entity_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: teaser
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
     third_party_settings: {  }
     region: content
   field_meet_deceased:
@@ -60,9 +69,17 @@ content:
     region: content
   field_meet_main_image:
     weight: 5
-    type: file_generic
+    type: entity_browser_entity_reference
     settings:
-      progress_indicator: throbber
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: teaser
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
     third_party_settings: {  }
     region: content
   field_meet_organization:
@@ -117,5 +134,10 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

@@ -1,4 +1,4 @@
-uuid: e42deace-4c7d-4ec2-bb88-5b44e626639b
+uuid: 9705ac8b-f069-4b10-be0d-9421eadf1b14
 langcode: en
 status: true
 dependencies:
@@ -27,5 +27,8 @@ settings:
       faq_questions:
         enabled: true
         weight: 1
+      from_library:
+        enabled: false
+        weight: 2
   handler: 'default:paragraph'
 field_type: entity_reference_revisions

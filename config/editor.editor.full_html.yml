@@ -1,4 +1,4 @@
-uuid: 066e1473-e78e-4752-b335-e6fe344bb07d
+uuid: 9ac7c3f3-ca30-4652-88ba-e93c7b00240e
 langcode: en
 status: true
 dependencies:
@@ -38,7 +38,7 @@ settings:
           name: Media
           items:
             - Blockquote
-            - media_entity_embed
+            - DrupalImage
             - Table
             - HorizontalRule
         -
@@ -53,13 +53,11 @@ settings:
   plugins:
     stylescombo:
       styles: ''
-    language:
-      language_list: un
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

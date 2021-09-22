@@ -1,4 +1,4 @@
-uuid: cdb68167-017a-4d3a-92a2-e353ba9e7296
+uuid: c6e953d5-9f5a-4cea-94b6-3574635434ff
 langcode: en
 status: true
 dependencies:
@@ -26,6 +26,7 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
   field_media_video_file: true
   name: true

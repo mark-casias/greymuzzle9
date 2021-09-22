@@ -1,10 +1,11 @@
-uuid: 00061d46-8852-4666-911b-07f4a9de28ce
+uuid: 9fb2a167-bbb7-402a-abec-e9e94edf01cf
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_volunteer_image
     - media.type.image
+    - media.type.image_private
     - node.type.our_volunteers
 id: node.our_volunteers.field_volunteer_image
 field_name: field_volunteer_image
@@ -20,5 +21,6 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      image_private: image_private
   handler: 'default:media'
 field_type: entity_reference

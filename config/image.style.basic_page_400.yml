@@ -1,12 +1,12 @@
-uuid: b6bba565-5d76-40cf-a5c4-7098f915557f
+uuid: bd6868b4-5cee-4c7c-b439-a42920a79614
 langcode: en
 status: true
 dependencies: {  }
 name: basic_page_400
 label: 'Basic page - 400'
 effects:
-  8a15aa9a-f602-4177-8d7a-0f810ab03da3:
-    uuid: 8a15aa9a-f602-4177-8d7a-0f810ab03da3
+  cb998048-e960-40c1-81a8-198d0d7d559c:
+    uuid: cb998048-e960-40c1-81a8-198d0d7d559c
     id: image_scale
     weight: 1
     data:

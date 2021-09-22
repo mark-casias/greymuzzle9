@@ -1,4 +1,4 @@
-uuid: 4f18a542-0bff-436c-a5bf-f85452be9b9f
+uuid: d8675af8-3d00-4d8a-97c2-bfc16d77abf7
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ bundle: basic
 mode: default
 content:
   body:
-    weight: 27
+    weight: 26
     settings:
       rows: 9
       summary_rows: 3

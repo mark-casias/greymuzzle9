@@ -1,12 +1,14 @@
-uuid: 3576a287-245e-4e04-9b57-53a27051c087
+uuid: b8fef3b3-2236-49c0-9384-1fe59b680402
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - entity_embed
 _core:
   default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
 name: 'Plain text'
 format: plain_text
-weight: -6
+weight: -8
 filters:
   filter_html_escape:
     id: filter_html_escape
@@ -26,4 +28,22 @@ filters:
     provider: filter
     status: true
     weight: 2
+    settings: {  }
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 4
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 2
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 3
     settings: {  }
