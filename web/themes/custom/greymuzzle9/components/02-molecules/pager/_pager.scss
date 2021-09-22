@@ -32,12 +32,6 @@
 
 }
 
-.pager__link:focus {
-  color: clr(text);
-  background-color: transparent;
-  box-shadow: 0px 0px 4px 3px clr(tertiary);
-}
-
 .pager__link--next,
 .pager__link--prev {
   display: block;
