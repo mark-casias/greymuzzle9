@@ -57,6 +57,8 @@ I am working on a solution where you can build both, but right now, that doesn't
 Feel free to create an issue in [GITHUB](https://github.com/mark-casias/greymuzzle9) and fork.
 
 - Finish Patternlab conversion
+- Homepage to Page content type with Paragraphs
 - Apply patterns to template files in Drupal
 - Refresh DB with lates import
 - [Donate to greymuzzle.org](https://greymuzzle.z2systems.com/np/clients/greymuzzle/donation.jsp?campaign=51&)
+- Create CI to attach this repo to Pantheon
