@@ -1,5 +1,5 @@
 # Ignore compiled files.
-dist
+# dist
 
 # Yarn/NPM
 node_modules/
