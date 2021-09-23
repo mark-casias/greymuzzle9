@@ -1,5 +1,9 @@
 # Ignore compiled files.
+<<<<<<< HEAD
 dist
+=======
+# dist
+>>>>>>> master
 
 # Yarn/NPM
 node_modules/
