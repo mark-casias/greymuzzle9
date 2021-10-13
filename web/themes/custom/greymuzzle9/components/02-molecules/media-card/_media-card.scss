@@ -4,6 +4,7 @@
   flex-direction: row;
   max-width: 53em;
   margin: 1rem auto;
+  margin-bottom: 2rem;
 
   &--right {
     flex-direction: row-reverse;
@@ -39,4 +40,11 @@
 
 .media-card__cta {
   margin-top: 1rem;
+
+  a {
+    @include button-base;
+    @include button-color-secondary;
+    @include button-large;
+    text-decoration: none;
+  }
 }

@@ -1,0 +1,22 @@
+{% embed "@molecules/media-card/media-card.twig" with {
+  title: content.field_title,
+  body: content.field_body,
+  button: {
+    button_content: content.field_link['#items'].0.title,
+    button_url: content.field_link['#items'].0.url,
+  },
+  modifier: [
+    content.field_modifier['#items'].0.value
+  ],
+} %}
+
+  {% block field_link %}
+    {{ content.field_link }}
+  {% endblock %}
+
+  {% block field_media %}
+    <div class="media-card__media">
+      {{ content.field_media }}
+    </div>
+  {% endblock %}
+{% endembed %}
