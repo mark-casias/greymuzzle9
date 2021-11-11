@@ -1,16 +1,26 @@
 // Buttons Stories
-import button from './button.twig';
-
-import buttonData from './button.yml';
-import buttonAltData from './button-alt.yml';
-import buttonDonateDate from './button-donate.yml';
+import buttonTwig from './button.twig';
 
 /**
  * Storybook Definition.
  */
 export default {
   title: 'Atoms/Button',
-  argTypes: { click: { action: 'clicked' } },
+  argTypes: {
+    buttonClass: {
+      control: {
+        type: 'select',
+        options: ['primary', 'alt', 'donate'],
+      },
+      defaultValue: '',
+    },
+    buttonText: {
+      control: {
+        type: 'text',
+      },
+      defaultValue: 'Button Text',
+    },
+  },
   parameters: {
     actions: {
       handles: ['mouseover', 'click .button'],
@@ -18,8 +28,12 @@ export default {
   },
 };
 
-export const defaultButton = () => button(buttonData);
-
-export const altButton = () => button(buttonAltData);
-
-export const donateButton = () => button(buttonDonateDate);
+export const button = ({ buttonClass, buttonText }) => `
+  <div class="button-story">
+    ${buttonTwig({
+      button_modifiers: [buttonClass],
+      button_content: buttonText,
+      button_url: '#',
+    })}
+  </div>
+`;

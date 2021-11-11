@@ -15,26 +15,26 @@ describe('video', () => {
 
     expect(container).toMatchInlineSnapshot(`
       <div>
-        
+
 
 
         <div
           class="video"
         >
-          
-            
+
+
           <iframe
             allowfullscreen="allowfullscreen"
             frameborder="0"
             height="480"
             src="https://www.youtube.com/embed/YRnVnlhjOBs?autoplay=0&start=0"
-            title="ggggemulsify Video"
+            title="gggreymuzzle9 Video"
             width="854"
           />
-          
-        
+
+
         </div>
-        
+
 
       </div>
     `);
@@ -48,26 +48,26 @@ describe('video', () => {
 
     expect(container).toMatchInlineSnapshot(`
       <div>
-        
+
 
 
         <div
           class="video video--full"
         >
-          
-            
+
+
           <iframe
             allowfullscreen="allowfullscreen"
             frameborder="0"
             height="480"
             src="https://www.youtube.com/embed/YRnVnlhjOBs?autoplay=0&start=0"
-            title="ggggemulsify Video"
+            title="gggreymuzzle9 Video"
             width="854"
           />
-          
-        
+
+
         </div>
-        
+
 
       </div>
     `);

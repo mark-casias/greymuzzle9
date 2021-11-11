@@ -1,4 +1,6 @@
-link_url: 'https://github.com/ggemulsify-ds/ggemulsify-design-system'
+link_url: '#'
 link_content: 'This is my link text'
 link_attributes:
   'target': '_blank'
+link_modifiers:
+  - 'button'

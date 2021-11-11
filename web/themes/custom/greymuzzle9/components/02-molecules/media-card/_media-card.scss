@@ -44,7 +44,7 @@
   a {
     @include button-base;
     @include button-color-secondary;
-    @include button-large;
+    @include button-medium;
     text-decoration: none;
   }
 }

@@ -1,6 +1,20 @@
 <div class="hero">
-  <h2 class="hero__intro-caption">{{ label }}</h2>
-  <div class="hero__image">
-    {{ field_image }}
+  <div class="hero__media">
+    {% block hero_media %}
+      <img src="http://www.greymuzzle.org/sites/default/files/styles/hero_large/public/hero/nov21_webbanner.png" alt="Hero Image">
+    {% endblock %}
   </div>
+
+  {% if hero__heading or hero__subheading %}
+  <div class="hero__caption">
+    {% block hero_heading %}
+      <h1 class="hero__heading">Main hero title here</h1>
+    {% endblock %}
+
+    {% block hero_subhead %}
+      <h2 class="hero__subheading">Hero sub title goes in this area</h2>
+    {% endblock %}
+
+  </div>
+  {% endif %}
 </div>

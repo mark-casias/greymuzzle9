@@ -25,4 +25,8 @@
   {% block link_content %}
     {{ link_content }}
   {% endblock %}
+
+  {% if link_hidden_message %}
+    <span class="element-invisible">{{ link_hidden_message }}</span>
+  {% endif %}
 </a>

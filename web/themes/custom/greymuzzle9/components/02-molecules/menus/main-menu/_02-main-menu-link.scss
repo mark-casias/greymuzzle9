@@ -30,13 +30,6 @@
       color: clr(highlight-high);
     }
 
-    &::after {
-      color: $white;
-      display: inline-block;
-      content: '>';
-      margin-left: 0.5rem;
-    }
-
     &--sub::after {
       display: none;
     }

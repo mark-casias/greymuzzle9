@@ -66,3 +66,17 @@ $outer-container-break: $small;
   margin: 0;
   padding: 0;
 }
+
+// visually hide something.
+// accessible alternative to display: none.
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin visuallyhiden {
+  position: absolute !important;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}

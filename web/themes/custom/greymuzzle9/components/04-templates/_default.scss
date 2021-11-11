@@ -18,6 +18,7 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 
   @include large {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 

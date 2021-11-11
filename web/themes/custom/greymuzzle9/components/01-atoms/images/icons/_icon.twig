@@ -16,9 +16,9 @@
 {% set icon_url = directory ? '/' ~ directory ~ '/dist/' %}
 
 {# IE 11 support for SVG use - remove if not needed.
-## See also ggemulsify.libraries.yml to remove library.
+## See also greymuzzle9.libraries.yml to remove library.
 #}
-{{ attach_library('ggemulsify/sprite') }}
+{{ attach_library('greymuzzle9/sprite') }}
 
 <svg {{ bem(icon_base_class, icon_modifiers, icon_blockname, icon_extra_class) }}
 

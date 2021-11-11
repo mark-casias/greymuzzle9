@@ -15,19 +15,19 @@ describe('link', () => {
 
     expect(container).toMatchInlineSnapshot(`
       <div>
-        
+
 
 
         <a
           class="link"
-          href="https://github.com/ggemulsify-ds/ggemulsify-design-system"
+          href="https://github.com/greymuzzle9-ds/greymuzzle9-design-system"
           target="_blank"
         >
-          
+
             This is my link text
-        
+
         </a>
-        
+
 
       </div>
     `);

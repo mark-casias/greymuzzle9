@@ -86,9 +86,6 @@ $button-colors: (
 
 @mixin button-color-donate {
   @include buttonColors(donate);
-  @media (prefers-color-scheme: dark) {
-    @include buttonColors(secondary-dark);
-  }
 }
 
 // Button size variations
@@ -109,12 +106,12 @@ $button-colors: (
 
   &--alt {
     @include button-color-secondary;
-    @include button-large;
+    @include button-medium;
   }
 
   &--donate {
     @include button-color-donate;
-    @include button-large;
+    @include button-medium;
 
     border-radius: 1rem;
 

@@ -1,10 +1,30 @@
-import status from './status.twig';
-
-import statusData from './status.yml';
+import statusTwig from './status.twig';
 
 /**
  * Storybook Definition.
  */
-export default { title: 'Molecules/Status' };
+export default {
+  title: 'Molecules/Status',
+  argTypes: {
+    message: {
+      control: { type: 'text' },
+      defaultValue: 'This is the message text',
+    },
+    type: {
+      control: {
+        type: 'select',
+        options: ['status', 'warning', 'error'],
+      },
+      defaultValue: 'status',
+    },
+  },
+};
 
-export const statusExamples = () => status(statusData);
+export const Status = ({ message, type }) => `
+<div class="story">
+  ${statusTwig({
+    message,
+    type,
+  })}
+</div>
+`;

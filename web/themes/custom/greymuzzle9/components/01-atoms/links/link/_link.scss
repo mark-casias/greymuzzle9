@@ -15,3 +15,34 @@
 .link {
   @include link;
 }
+
+.link--button {
+  border-bottom: none;
+  @include button-base;
+  @include button-color-primary;
+  @include button-medium;
+
+  &--alt {
+    border-bottom: none;
+    @include button-base;
+    @include button-color-secondary;
+    @include button-medium;
+  }
+
+  &--donate {
+    border-bottom: none;
+    @include button-base;
+    @include button-color-donate;
+    @include button-medium;
+
+    border-radius: 1rem;
+
+    &:hover {
+      border: 1px solid clr(primary);
+    }
+  }
+
+  &--large {
+    @include button-large;
+  }
+}
