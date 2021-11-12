@@ -1,7 +1,7 @@
 {% set layout_modifiers = [] %}
 
 {% set main_base_class = main_base_class|default('main') %}
-{% set main_modifiers = [] %}
+{% set main_modifiers = ['container'] %}
 
 {% set main_content_base_class = main_content_base_class|default('main-content') %}
 {% set main_content_modifiers = [] %}
@@ -12,6 +12,9 @@
 {% endif %}
 
 <div {{ bem('layout-container', layout_modifiers) }}>
+  {% block page_accessibility %}
+    {% include "@organisms/regions/accessibilty-bar/accessibility-bar.twig" %}
+  {% endblock %}
   {% block page_header %}
     {% include "@organisms/site/site-header/site-header.twig" %}
   {% endblock %}

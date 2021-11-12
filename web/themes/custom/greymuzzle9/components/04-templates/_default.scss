@@ -2,7 +2,7 @@
  * General Layout
 */
 
-$sidebar-width: 33%;
+$sidebar-width: 25%;
 $gutter: $space;
 $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 
@@ -34,10 +34,13 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 
 .main-content {
   width: 100%;
+  background: $white;
+  padding: 0 2rem;
+  padding-top: 2rem;
 
   @include large {
     &--with-sidebar {
-      margin-right: $gutter;
+      margin-left: $gutter;
       width: $main-width;
     }
   }

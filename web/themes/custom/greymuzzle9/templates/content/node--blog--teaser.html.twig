@@ -71,16 +71,18 @@
      */
     #}
 
-    {% embed "@molecules/article-teaser/article-teaser.twig" with {
-      article_title: label,
-      article_teaser: content.body,
-      article_url: url,
-      article__modifiers: [],
+    {% embed "@molecules/blog-teaser/blog-teaser.twig" with {
+      label: label,
+      url: url,
+      node: node,
+      title_attributes: title_attributes,
+      title_suffix: title_suffix,
     } %}
-      {% block field_image %}
-        <div class="media-card__media">
+      {% block blog_image %}
           {{ content.field_image }}
-        </div>
+      {% endblock %}
+      {% block blog_content %}
+        {{ content.body }}
       {% endblock %}
     {% endembed %}
 

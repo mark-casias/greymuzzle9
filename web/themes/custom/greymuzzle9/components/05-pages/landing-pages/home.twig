@@ -15,41 +15,40 @@
     </picture>'
 
     }%}
-    {% include "@atoms/text/text/01-paragraph.twig" with {
-      paragraph_content: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+    {% include "@molecules/media-card/media-card.twig" with {
+      title: 'Media Card with Video',
+      body: 'Senior dogs depend on us to care for them through all stages of their lives. Your tax deductible donation will provide them with the care they need to get adopted and live out their golden years, months, or weeks in a place of love, security and peace.',
+      media: '<div class="media-youtube-video media-youtube-1"><iframe class="media-youtube-player" width="640" height="390" title="Grey Muzzle Supporter Thank You" src="https://www.youtube.com/embed/I1AMWnVXHn4?wmode=opaque&amp;controls=&amp;rel=0" frameborder="0" allowfullscreen="">Video of Grey Muzzle Supporter Thank You</iframe></div>',
+      button: {
+        button_content: 'Donate Now',
+        button_url: '#',
+      },
     } %}
-    {% include "@organisms/grid/grid.twig" with {
-      grid_label: 'Here\'s an awesome grid',
-      grid_type: 'card',
-      item_type: 'card',
-      items: {
-        1: {
-          card__image__src: "https://placeimg.com/480/300/people",
-          card__image__alt: "People",
-          card__image__output_image_tag: true,
-          card__heading: "Super Awesome Card",
-          card__link__url: card_link_url,
-          card__link__text: card__link__text,
-          card__subheading: "Person of Interest",
-          card__body: "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat."
+    {% include "@paragraphs/text-card/text-card.twig" with {
+      label: 'Help Homeless Shelter Dogs',
+      body: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+    } %}
+    {% include "@paragraphs/programs/programs.twig" with {
+      label: 'Programs We Support',
+      heading: '<p><a class="link" href="/about-us/who-we-help">Grey Muzzle funding supports senior dog programs nationwide.</a></p>',
+      items: [
+        {
+          label: 'Adoptable Dogs Medical Care Programs',
+          field_image: '<img alt="" data-fid="35" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-medical.png" style="width: 128px; height: 128px;" typeof="foaf:Image">',
         },
-        2: {
-          card__image__src: "https://placeimg.com/480/300/nature",
-          card__image__alt: "Nature",
-          card__image__output_image_tag: true,
-          card__heading: "Card Number Two",
-          card__subheading: "Some pretty sweet nature",
-          card__body: "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo."
+        {
+          label: 'Seniors for Seniors Adoption Programs',
+          field_image: '<img alt="" data-fid="38" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-adoption.png" style="width: 128px; height: 128px;" typeof="foaf:Image">',
         },
-        3: {
-          card__image__src: "https://placeimg.com/480/300/animals",
-          card__image__alt: "Animals",
-          card__image__output_image_tag: true,
-          card__heading: "The Last Card Heading",
-          card__subheading: "Awesome animals",
-          card__body: "Tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.. Nulla quis lorem ut libero malesuada feugiat."
-        }
-      }
+        {
+          label: 'Keeping Dogs with Their Owners Program',
+          field_image: '<img alt="" data-fid="39" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-owners.png" style="width: 128px; height: 128px;" typeof="foaf:Image">',
+        },
+        {
+          label: 'Hospice and&nbsp;Long-Term Foster Care Programs',
+          field_image: '<img alt="" data-fid="40" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-hospice_0.png" style="width: 128px; height: 128px;" typeof="foaf:Image">',
+        },
+      ],
     } %}
     {% include "@molecules/cta/cta.twig" with {
       cta__heading: 'Here\'s a cool thing!',
