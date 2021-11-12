@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "179c8c527ea1ad4b20833dcd28f20151",
+    "content-hash": "94cacc7bf19a8d2f3dc251cffcbf6c83",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2883,6 +2883,70 @@
             }
         },
         {
+            "name": "drupal/menu_block",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_block.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "6d021a24a6a8691becbecf02ac236a7d8626d4d0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1619638238",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "kim.pepper",
+                    "homepage": "https://www.drupal.org/user/370574"
+                },
+                {
+                    "name": "rrrob",
+                    "homepage": "https://www.drupal.org/user/273533"
+                }
+            ],
+            "description": "Provides configurable blocks of menu links.",
+            "homepage": "https://www.drupal.org/project/menu_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_block"
+            }
+        },
+        {
             "name": "drupal/metatag",
             "version": "1.16.0",
             "source": {
@@ -5282,15 +5346,14 @@
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
-                "reference": "d83954e4c5bdc1d21a188bd71799ed2f8ebd089b"
+                "reference": "07d637fbfe37092f9e4b8bd965b546d2af61db58"
             },
             "require": {
                 "composer/installers": "^1.8",
                 "cweagans/composer-patches": "^1.0",
                 "drupal/core-composer-scaffold": "^9",
-                "drupal/core-recommended": "^9",
-                "drush/drush": "^10",
-                "pantheon-systems/drupal-integrations": "^9",
+                "drupal/core-recommended": "^8.8 || ^9",
+                "pantheon-systems/drupal-integrations": "^8 || ^9",
                 "php": ">=7.3",
                 "zaporylie/composer-drupal-optimizations": "^1.2"
             },

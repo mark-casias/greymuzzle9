@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text.field_body
+    - field.field.paragraph.text.field_title
     - paragraphs.paragraphs_type.text
   module:
     - text
@@ -19,6 +20,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

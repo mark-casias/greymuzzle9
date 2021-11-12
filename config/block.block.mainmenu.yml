@@ -1,0 +1,29 @@
+uuid: e60af83d-b670-4751-a4e4-0059e37e1121
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - greymuzzle9
+id: mainmenu
+theme: greymuzzle9
+region: sidebar
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: '[current-page:title]'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
