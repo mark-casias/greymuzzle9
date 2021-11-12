@@ -1,0 +1,7 @@
+.text-card {
+  @include wrapper;
+
+  h2 {
+    text-align: center;
+  }
+}
