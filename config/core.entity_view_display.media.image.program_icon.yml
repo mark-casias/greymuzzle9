@@ -1,25 +1,26 @@
-uuid: 5848b4cc-9046-47b4-9ec8-0e94083d8f4e
+uuid: 42e7a189-45cd-465a-a0df-4fd52a081e74
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.program_icon
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
     - field.field.media.image.field_photo_credit
-    - image.style.large
+    - image.style.program_icon
     - media.type.image
   module:
     - image
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
-id: media.image.default
+id: media.image.program_icon
 targetEntityType: media
 bundle: image
-mode: default
+mode: program_icon
 content:
   field_caption:
     label: hidden
-    weight: 2
+    weight: 1
     type: string
     settings:
       link_to_entity: false
@@ -28,23 +29,16 @@ content:
   field_media_image:
     type: image
     weight: 0
-    label: visually_hidden
+    label: hidden
     settings:
-      image_style: large
+      image_style: program_icon
       image_link: ''
-    third_party_settings: {  }
-    region: content
-  field_photo_credit:
-    label: inline
-    weight: 1
-    type: string
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
     region: content
 hidden:
   addtoany: true
   created: true
+  field_photo_credit: true
   name: true
   thumbnail: true
   uid: true

@@ -1,0 +1,15 @@
+uuid: 6e7b74f0-e280-4d3d-97ee-7afcea04c508
+langcode: en
+status: true
+dependencies: {  }
+name: hero_tiny
+label: 'Hero Tiny'
+effects:
+  d1f10f61-24ee-43eb-a06c-2b244f05e29c:
+    uuid: d1f10f61-24ee-43eb-a06c-2b244f05e29c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 571
+      height: 200
+      anchor: center-center

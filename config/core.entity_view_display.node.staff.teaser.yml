@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.staff.field_staff_website
     - node.type.staff
   module:
+    - link
     - text
     - user
 id: node.staff.teaser
@@ -21,21 +22,49 @@ mode: teaser
 content:
   body:
     label: hidden
-    weight: 0
+    weight: 2
     type: text_summary_or_trimmed
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_staff_email:
+    type: email_mailto
+    weight: 3
+    region: content
+    label: inline
     settings: {  }
     third_party_settings: {  }
+  field_staff_image:
+    type: entity_reference_entity_view
+    weight: 1
     region: content
+    label: hidden
+    settings:
+      view_mode: basic_page_220x220
+      link: false
+    third_party_settings: {  }
+  field_staff_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_staff_website:
+    type: link
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
 hidden:
   addtoany: true
-  field_staff_email: true
-  field_staff_image: true
   field_staff_position_type: true
-  field_staff_title: true
-  field_staff_website: true
+  links: true

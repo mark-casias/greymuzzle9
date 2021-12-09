@@ -1,10 +1,10 @@
-uuid: 1ed03d83-24b6-4294-bea5-0c99f110401e
+uuid: 74fce96b-d3a9-4cc6-965e-0c228b240995
 langcode: en
 status: true
 dependencies:
   module:
     - media
-id: media.100x100_scaled_cropped
-label: 100x100
+id: media.basic_400x400
+label: 'Basic 400x400'
 targetEntityType: media
 cache: true

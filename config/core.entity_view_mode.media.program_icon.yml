@@ -1,10 +1,10 @@
-uuid: 1ed03d83-24b6-4294-bea5-0c99f110401e
+uuid: 6b3e3523-1839-4779-b720-c644fa73064c
 langcode: en
 status: true
 dependencies:
   module:
     - media
-id: media.100x100_scaled_cropped
-label: 100x100
+id: media.program_icon
+label: 'Program Icon'
 targetEntityType: media
 cache: true

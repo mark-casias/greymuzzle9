@@ -1,8 +1,9 @@
-uuid: a44e1efa-6c58-4a08-bf72-9a8933775a0d
+uuid: 750b7f66-5caf-4833-9817-ae93b123acad
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - field.field.node.staff.body
     - field.field.node.staff.field_staff_email
     - field.field.node.staff.field_staff_image
@@ -14,20 +15,21 @@ dependencies:
     - link
     - text
     - user
-id: node.staff.default
+id: node.staff.card
 targetEntityType: node
 bundle: staff
-mode: default
+mode: card
 content:
   body:
     label: hidden
     weight: 2
-    type: text_default
-    settings: {  }
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
     third_party_settings: {  }
     region: content
   field_staff_email:
-    label: above
+    label: inline
     weight: 3
     type: email_mailto
     settings: {  }
@@ -51,7 +53,7 @@ content:
     third_party_settings: {  }
     region: content
   field_staff_website:
-    label: above
+    label: inline
     weight: 4
     type: link
     settings:

@@ -1,10 +1,10 @@
-uuid: 1ed03d83-24b6-4294-bea5-0c99f110401e
+uuid: 6ab4dfa9-21ef-4d65-8f8f-dae5de68813b
 langcode: en
 status: true
 dependencies:
   module:
     - media
-id: media.100x100_scaled_cropped
-label: 100x100
+id: media.hero
+label: Hero
 targetEntityType: media
 cache: true

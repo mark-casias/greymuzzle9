@@ -1,0 +1,22 @@
+uuid: 70f44200-28e1-49c4-a27f-4df991af6c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.program_card.field_image
+    - paragraphs.paragraphs_type.program_card
+id: paragraph.program_card.default
+targetEntityType: paragraph
+bundle: program_card
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: program_icon
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

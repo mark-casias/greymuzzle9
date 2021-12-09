@@ -1,0 +1,15 @@
+uuid: 8b181d90-e406-448c-afac-1078145afd9c
+langcode: en
+status: true
+dependencies: {  }
+name: program_icon
+label: 'Program Icon'
+effects:
+  dca38ad1-3cc5-4714-b14a-2033a46b856d:
+    uuid: dca38ad1-3cc5-4714-b14a-2033a46b856d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 128
+      height: 128
+      anchor: center-center
