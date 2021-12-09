@@ -2,19 +2,15 @@
   <div class="programs__content">
     {% include "@atoms/text/headings/_heading.twig" with {
       heading_level: 2,
-      heading_base_class: "programs__label",
+      heading_base_class: "label",
+      heading_blockname: "programs",
       heading: label
     } %}
     <div class="programs__header">
       {{ heading }}
     </div>
     <div class="programs__items">
-      {% for item in items %}
-        {% include "@paragraphs/program-card/program-card.twig" with {
-          "label": item.label,
-          "field_image": item.field_image,
-        } %}
-      {% endfor %}
+      {{ items }}
     </div>
   </div>
 </div>

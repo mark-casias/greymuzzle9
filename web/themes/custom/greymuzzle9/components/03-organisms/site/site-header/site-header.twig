@@ -16,6 +16,11 @@
           {% include "@molecules/menus/main-menu/main-menu.twig" %}
         {% endblock %}
       </div>
+      <div {{ bem('site-search', [], header__base_class)}}>
+        {% block header__search %}
+          {% include "@molecules/site-search/site-search.twig" %}
+        {% endblock %}
+      </div>
     </div>
   </div>
 </header>

@@ -79,10 +79,10 @@
       title_suffix: title_suffix,
     } %}
       {% block blog_image %}
-          {{ content.field_image }}
+          {{ content.field_staff_image }}
       {% endblock %}
       {% block blog_content %}
-        {{ content|without('field_image') }}
+        {{ content|without('field_staff_image') }}
       {% endblock %}
     {% endembed %}
 

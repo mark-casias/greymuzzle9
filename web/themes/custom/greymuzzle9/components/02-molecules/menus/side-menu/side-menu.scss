@@ -1,0 +1,52 @@
+.side-menu {
+  padding: 0;
+
+  &__h2 {
+    color: clr(text);
+  }
+
+  .menu {
+    padding-left: 0;
+  }
+
+  ul li .menu,
+  ul li ul li .menu {
+    padding-left: 15px;
+  }
+
+  li {
+    list-style: none;
+    padding: 4px 0 1px;
+
+    a {
+      color: $blue-chill;
+      text-decoration: none;
+
+      &:active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.active-trail.active {
+      font-weight: bold;
+      list-style-position: none;
+      list-style-type: none;
+      color: $blue-chill;
+
+      @include breakpoint(large) {
+        list-style-position: outside;
+        list-style-type: disc;
+        padding-bottom: 0;
+      }
+
+      > ul > li.leaf > a {
+        font-weight: normal;
+      }
+    }
+  }
+}

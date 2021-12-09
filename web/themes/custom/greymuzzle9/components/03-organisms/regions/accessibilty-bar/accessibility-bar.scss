@@ -1,18 +1,13 @@
-// Accessibility Menu
-//
-// Markup: components.accessibility-menu.hbs
-//
-// Style guide: components.accessibility-menu
-
-
 
 .accessibility-bar {
   width: 100%;
   margin: 0 auto;
   display: flex;
+  padding-left: 110px;
 
   .a {
     @include clearfix;
+
     background: color(aliceblue);
     height: 50px;
   }
@@ -90,7 +85,7 @@ a#text_resize_reset {
 }
 
 // Safari and Chrome need a specific height set to keep the items inline
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   a#text_resize_reset {
     height: 26px;
   }

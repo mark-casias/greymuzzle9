@@ -1,0 +1,9 @@
+menu_title: 'Title'
+menu_items:
+  - title: 'Test'
+    url: '#'
+    modifier: 'active'
+  - title: 'Number 2'
+    url: '#'
+  - title: 'Item Number 3'
+    url: '#'

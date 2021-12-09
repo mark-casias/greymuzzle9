@@ -20,4 +20,10 @@
     background-color: clr(highlight-high);
     padding: $space-quadruple;
   }
+
+  &--220 {
+    max-width: 220px;
+    flex-basis: 25%;
+    margin-bottom: 2rem;
+  }
 }

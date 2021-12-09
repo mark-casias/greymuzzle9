@@ -55,4 +55,5 @@ components:
       - components/04-templates
     pages:
       - components/05-pages
-    paragraphs: components/06-paragraphs
+    paragraphs:
+      - components/06-paragraphs

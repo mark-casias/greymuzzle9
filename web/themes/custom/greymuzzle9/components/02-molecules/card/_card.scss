@@ -33,3 +33,8 @@
   background-color: clr(highlight-high);
   padding: 1em;
 }
+
+.staff-card__card {
+  max-width: 220px;
+  flex-basis: 25%;
+}

@@ -1,9 +1,8 @@
 .media-card {
+  @include wrapper;
   display: flex;
   align-items:flex-start;
   flex-direction: row;
-  max-width: 53em;
-  margin: 1rem auto;
   margin-bottom: 2rem;
 
   &--right {
@@ -12,7 +11,7 @@
 }
 
 .media-card__media {
-  min-width: 50%;
+  min-width: 440px;
 
   .media-youtube-video {
     iframe {
@@ -45,6 +44,7 @@
     @include button-base;
     @include button-color-secondary;
     @include button-medium;
+
     text-decoration: none;
   }
 }

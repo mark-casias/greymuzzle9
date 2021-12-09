@@ -1,16 +1,16 @@
 # Breakpoints - change based on site need
 greymuzzle9.small:
   label: small
-  mediaQuery: 'all and (min-width: 25em)'
+  mediaQuery: 'all and (min-width: 320px)'
 greymuzzle9.small-med:
   label: small-med
-  mediaQuery: 'all and (min-width: 26em)'
+  mediaQuery: 'all and (min-width: 480px)'
 greymuzzle9.small-large:
   label: small-large
-  mediaQuery: 'all and (min-width: 41em)'
+  mediaQuery: 'all and (min-width: 720px)'
 greymuzzle9.medium:
   label: medium
-  mediaQuery: 'all and (min-width: 48em)'
+  mediaQuery: 'all and (min-width: 920px)'
 greymuzzle9.large:
   label: large
-  mediaQuery: 'all and (min-width: 61.25em)'
+  mediaQuery: 'all and (min-width: 1224px)'

@@ -28,6 +28,7 @@
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/entity_embed": "^1.1",
         "drupal/entity_usage": "^2.0@beta",
+        "drupal/entityqueue": "^1.2",
         "drupal/media_entity_browser": "^2",
         "drupal/media_migration": "^1.0@alpha",
         "drupal/menu_block": "^1.7",

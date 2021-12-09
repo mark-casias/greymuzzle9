@@ -2,7 +2,7 @@
 
 {% embed "@templates/full-width.twig" %}
   {% block page_content %}
-    {% include "@paragraphs/hero/hero.twig" with {
+    {% include "@molecules/hero/hero.twig" with {
       label: 'Summer Smile - You Can Make a Senior Dog Smile',
       field_image: '<picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
@@ -24,11 +24,11 @@
         button_url: '#',
       },
     } %}
-    {% include "@paragraphs/text-card/text-card.twig" with {
+    {% include "@molecules/text-card/text-card.twig" with {
       label: 'Help Homeless Shelter Dogs',
       body: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
     } %}
-    {% include "@paragraphs/programs/programs.twig" with {
+    {% include "@molecules/programs/programs.twig" with {
       label: 'Programs We Support',
       heading: '<p><a class="link" href="/about-us/who-we-help">Grey Muzzle funding supports senior dog programs nationwide.</a></p>',
       items: [

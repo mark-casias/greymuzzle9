@@ -37,3 +37,12 @@
     @extend .hr;
   }
 }
+
+.inline-label {
+  display: flex;
+
+  .inline {
+    margin-right: .5rem;
+    font-weight: 700;
+  }
+}

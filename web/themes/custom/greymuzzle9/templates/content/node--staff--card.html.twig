@@ -71,18 +71,19 @@
      */
     #}
 
-    {% embed "@molecules/blog-teaser/blog-teaser.twig" with {
-      label: label,
-      url: url,
-      node: node,
-      title_attributes: title_attributes,
-      title_suffix: title_suffix,
+
+    {% embed "@molecules/card/card.twig" with {
+      card__extra_classes: ["grid__item", "grid__item--220"],
+      card__blockname: 'staff-card',
+      card__heading: label,
+      card__body: content.body,
+      card__link__url: url,
+      card__link__text: "Read more about " ~ node.getTitle(),
     } %}
-      {% block blog_image %}
-          {{ content.field_image }}
-      {% endblock %}
-      {% block blog_content %}
-        {{ content|without('field_image') }}
+      {% block card__img %}
+        <div class={{ bem('media_item', [], 'staff-card')}}
+          {{ content.field_staff_image }}
+        </div>
       {% endblock %}
     {% endembed %}
 

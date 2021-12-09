@@ -5,7 +5,6 @@ html {
 body {
   background-color: clr(background);
   color: clr(text);
-
   @include body-copy;
 }
 
@@ -16,9 +15,8 @@ body {
 }
 
 .main {
-  @include wrapper;
-
-  display: block; /* Fix for IE weirdness */
+  /* Fix for IE weirdness */
+  display: block;
 }
 
 .visually-hidden,

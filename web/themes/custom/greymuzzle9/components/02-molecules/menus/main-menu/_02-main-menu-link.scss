@@ -4,7 +4,7 @@
   display: block;
   font-size: 1.2rem;
   line-height: 1.5;
-  padding: $space $space-triple $space $space-double;
+  padding: 0 1rem;
   text-decoration: none;
 
   &:hover {
@@ -19,7 +19,6 @@
     border-bottom: none;
     display: inline-block;
     font-size: 1.1rem;
-    padding: $space;
     text-transform: none;
     position: relative;
     width: auto;
@@ -57,7 +56,8 @@
   @include medium {
     color: clr(primary);
     display: block;
-    padding: $space-one-third $space;
+    padding: $space-one-third;
+    padding-bottom: 0;
   }
 }
 

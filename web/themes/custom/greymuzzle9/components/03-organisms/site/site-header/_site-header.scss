@@ -1,9 +1,8 @@
 .header {
   background: $white;
+  border-bottom: 1px solid lighten($gray-tundora, 50%);
 
   &__inner {
-    @include wrapper;
-
     display: flex;
     flex-flow: column nowrap;
   }
@@ -13,11 +12,21 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    padding: $space 0;
+    padding: 0;
+  }
+
+  &__menu {
+    margin-left: 150px;
   }
 
   &__branding {
     margin-right: $space;
     max-width: 300px;
+    position: absolute;
+    z-index: 100;
+  }
+
+  &__site-search {
+    margin-left: auto;
   }
 }

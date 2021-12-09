@@ -12,22 +12,26 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 */
 
 .main {
-  @include wrapper;
-
   margin-bottom: 4em;
 
   @include large {
     display: flex;
     flex-direction: row-reverse;
   }
+
+  &--with-sidebar {
+    @include wrapper;
+  }
 }
 
 .main-sidebar {
   margin-bottom: $space-double;
+  background-color: $white;
 
   @include large {
     order: 2;
     width: $sidebar-width;
+    margin-top: 2rem;
     margin-bottom: 0;
   }
 }
@@ -35,11 +39,14 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 .main-content {
   width: 100%;
   background: $white;
-  padding: 0 2rem;
-  padding-top: 2rem;
+
+  &--with-sidebar {
+    padding: 0 2rem;
+  }
 
   @include large {
     &--with-sidebar {
+      padding-top: 2rem;
       margin-left: $gutter;
       width: $main-width;
     }
