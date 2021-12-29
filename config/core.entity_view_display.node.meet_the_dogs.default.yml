@@ -21,49 +21,48 @@ bundle: meet_the_dogs
 mode: default
 content:
   body:
-    label: hidden
-    weight: 4
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_meet_additional_image:
-    label: hidden
-    weight: 5
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 5
     region: content
   field_meet_deceased:
-    label: hidden
-    weight: 1
     type: list_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_meet_how_we_helped:
-    label: above
-    weight: 2
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
     region: content
   field_meet_main_image:
-    label: hidden
-    weight: 0
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_meet_organization:
-    label: above
-    weight: 3
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -71,11 +70,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 3
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true

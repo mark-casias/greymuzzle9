@@ -11,11 +11,11 @@ pattern: 'news/[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      news: news
     negate: false
     context_mapping:
       node: node
+    bundles:
+      news: news
 selection_logic: and
 weight: 0
 relationships: {  }

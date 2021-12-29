@@ -17,13 +17,13 @@ plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: '[current-page:title]'
-  provider: system
   label_display: visible
+  provider: system
   level: 2
-  depth: 0
+  depth: 3
   expand_all_items: true
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: true
+    pages: '<front>'

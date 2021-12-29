@@ -12,20 +12,20 @@ bundle: hero
 mode: default
 content:
   field_caption:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: hero
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }

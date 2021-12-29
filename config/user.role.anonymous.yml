@@ -1,7 +1,11 @@
 uuid: 1e9a9840-7842-4765-a216-dfa388db2575
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
+    - search
+    - system
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous
@@ -12,4 +16,4 @@ permissions:
   - 'access content'
   - 'search content'
   - 'use advanced search'
-  - 'view files'
+  - 'view media'

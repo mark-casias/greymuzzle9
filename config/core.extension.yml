@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   addtoany: 0
   admin_toolbar: 0
@@ -9,6 +11,7 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  ckeditor5: 0
   color: 0
   comment: 0
   components: 0
@@ -30,6 +33,7 @@ module:
   entity_reference_revisions: 0
   entity_usage: 0
   entityqueue: 0
+  entityqueue_smartqueue: 0
   field: 0
   field_ui: 0
   file: 0
@@ -49,11 +53,10 @@ module:
   metatag: 0
   migrate: 0
   migrate_drupal: 0
-  migrate_drupal_ui: 0
-  migrate_file: 0
+  migrate_example: 0
+  migrate_example_setup: 0
   migrate_plus: 0
   migrate_tools: 0
-  migrate_upgrade: 0
   node: 0
   options: 0
   page_cache: 0
@@ -68,6 +71,7 @@ module:
   search: 0
   shortcut: 0
   smart_sql_idmap: 0
+  smart_trim: 0
   stage_file_proxy: 0
   system: 0
   taxonomy: 0
@@ -93,5 +97,3 @@ theme:
   greymuzzle9: 0
   emulsify: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

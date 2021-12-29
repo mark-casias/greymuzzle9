@@ -18,9 +18,9 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:media'
   handler_settings:
     target_bundles:
       image: image
       image_private: image_private
-  handler: 'default:media'
 field_type: entity_reference

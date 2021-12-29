@@ -18,29 +18,29 @@ bundle: image
 mode: default
 content:
   field_caption:
-    label: hidden
-    weight: 2
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
     region: content
   field_media_image:
     type: image
-    weight: 0
     label: visually_hidden
     settings:
-      image_style: large
       image_link: ''
+      image_style: large
     third_party_settings: {  }
+    weight: 0
     region: content
   field_photo_credit:
-    label: inline
-    weight: 1
     type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   addtoany: true

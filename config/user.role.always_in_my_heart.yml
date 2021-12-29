@@ -1,40 +1,21 @@
 uuid: 7b0f959b-0919-4390-a1a9-ccb3fccdba7a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.always_in_my_heart
+  module:
+    - node
+    - system
 id: always_in_my_heart
 label: 'Always in My Heart'
 weight: 2
 is_admin: null
 permissions:
-  - 'access administration menu'
   - 'access administration pages'
   - 'access content overview'
-  - 'access media browser'
   - 'create always_in_my_heart content'
-  - 'create files'
   - 'delete any always_in_my_heart content'
   - 'delete own always_in_my_heart content'
-  - 'delete own audio files'
-  - 'delete own document files'
-  - 'delete own image files'
-  - 'delete own video files'
-  - 'download any audio files'
-  - 'download any image files'
-  - 'download any video files'
-  - 'download own audio files'
-  - 'download own document files'
-  - 'download own image files'
-  - 'download own video files'
   - 'edit any always_in_my_heart content'
-  - 'edit any image files'
   - 'edit own always_in_my_heart content'
-  - 'edit own audio files'
-  - 'edit own document files'
-  - 'edit own image files'
-  - 'edit own video files'
-  - 'use media wysiwyg'
-  - 'view files'
-  - 'view own files'
-  - 'view own private files'
-  - 'view private files'

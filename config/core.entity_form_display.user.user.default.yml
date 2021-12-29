@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_migrate_example_favbeers
+    - field.field.user.user.field_migrate_example_gender
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -35,11 +37,13 @@ content:
     weight: 6
     region: content
   user_picture:
+    type: image_image
+    weight: 31
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    type: image_image
-    weight: 31
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_migrate_example_favbeers: true
+  field_migrate_example_gender: true

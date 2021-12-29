@@ -11,11 +11,11 @@ pattern: 'senior-spotlight/[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      senior_spotlights: senior_spotlights
     negate: false
     context_mapping:
       node: node
+    bundles:
+      senior_spotlights: senior_spotlights
 selection_logic: and
 weight: 0
 relationships: {  }

@@ -18,40 +18,40 @@ bundle: always_in_my_heart
 mode: default
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_heart_dogs_name:
-    label: above
-    weight: 3
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
     region: content
   field_heart_image:
-    label: above
-    weight: 1
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_heart_year:
-    label: above
-    weight: 2
     type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true

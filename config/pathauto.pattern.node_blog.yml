@@ -11,11 +11,11 @@ pattern: 'grey-matters/[node:field_blog_categories]/[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      blog: blog
     negate: false
     context_mapping:
       node: node
+    bundles:
+      blog: blog
 selection_logic: and
 weight: 0
 relationships: {  }

@@ -1,6 +1,6 @@
 uuid: 28864f5d-af98-41f6-994f-c6b3b2c1c8dc
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -17,6 +17,6 @@ plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
   label: ''
-  provider: system
   label_display: '0'
+  provider: system
 visibility: {  }

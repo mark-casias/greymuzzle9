@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: '-oeXHVXl-m1HE6XR_-FXfNgJOgPuHcOCWSkymfOR7Sc'
 buttons_size: 32
 additional_html: |
   <a class="a2a_button_facebook"></a>
@@ -8,10 +10,8 @@ additional_js: ''
 universal_button: default
 custom_universal_button: ''
 universal_button_placement: before
-no_3p: false
 entities:
   media: 1
   node: 1
   comment: 1
-_core:
-  default_config_hash: '-oeXHVXl-m1HE6XR_-FXfNgJOgPuHcOCWSkymfOR7Sc'
+no_3p: false

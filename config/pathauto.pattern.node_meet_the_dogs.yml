@@ -11,11 +11,11 @@ pattern: 'about-us/meet-the-dogs/[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      meet_the_dogs: meet_the_dogs
     negate: false
     context_mapping:
       node: node
+    bundles:
+      meet_the_dogs: meet_the_dogs
 selection_logic: and
 weight: 0
 relationships: {  }

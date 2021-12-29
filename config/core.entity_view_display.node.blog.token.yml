@@ -20,23 +20,23 @@ bundle: blog
 mode: token
 content:
   body:
-    label: hidden
-    weight: 1
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_blog_categories:
-    label: hidden
-    weight: 2
     type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true

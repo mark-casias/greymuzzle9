@@ -13,7 +13,6 @@ dependencies:
     - node.type.blog
   module:
     - image
-    - options
     - text
     - user
 id: node.blog.teaser
@@ -21,36 +20,26 @@ targetEntityType: node
 bundle: blog
 mode: teaser
 content:
-  addtoany:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
-  field_blog_categories:
-    type: list_default
-    weight: 3
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  field_image:
-    type: image
     weight: 1
     region: content
+  field_image:
+    type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
+      image_style: medium
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
+  addtoany: true
+  field_blog_categories: true
   field_metatag: true
   field_tags: true
   links: true

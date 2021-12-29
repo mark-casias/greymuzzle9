@@ -11,11 +11,11 @@ pattern: 'about-us/who-we-help/[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      organizations: organizations
     negate: false
     context_mapping:
       node: node
+    bundles:
+      organizations: organizations
 selection_logic: and
 weight: 0
 relationships: {  }

@@ -11,11 +11,11 @@ pattern: 'about-us/who-we-are/[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      staff: staff
     negate: false
     context_mapping:
       node: node
+    bundles:
+      staff: staff
 selection_logic: and
 weight: 0
 relationships: {  }

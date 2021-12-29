@@ -20,12 +20,12 @@ mode: basic_400x400
 content:
   field_media_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: basic_page_400
       image_link: ''
+      image_style: basic_page_400
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   addtoany: true

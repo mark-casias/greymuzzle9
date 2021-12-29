@@ -21,34 +21,34 @@ bundle: article
 mode: teaser
 content:
   addtoany:
-    weight: 5
     settings: {  }
     third_party_settings: {  }
+    weight: 5
     region: content
   body:
-    label: hidden
-    weight: 0
     type: text_summary_or_trimmed
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 0
     region: content
   field_image:
     type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+    third_party_settings: {  }
     weight: -1
     region: content
-    settings:
-      image_style: medium
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
   field_tags:
-    label: above
-    weight: 10
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 10
     region: content
   links:
     weight: 100

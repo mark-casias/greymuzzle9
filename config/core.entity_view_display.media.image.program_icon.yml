@@ -19,21 +19,21 @@ bundle: image
 mode: program_icon
 content:
   field_caption:
-    label: hidden
-    weight: 1
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_media_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: program_icon
       image_link: ''
+      image_style: program_icon
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   addtoany: true

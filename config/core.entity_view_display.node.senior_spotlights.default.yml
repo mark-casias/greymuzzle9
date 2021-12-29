@@ -31,47 +31,46 @@ bundle: senior_spotlights
 mode: default
 content:
   body:
-    label: hidden
-    weight: 9
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 9
     region: content
   field_ss_dog_age:
-    label: inline
-    weight: 10
     type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 10
     region: content
   field_ss_dog_breed:
-    label: inline
-    weight: 11
     type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 11
     region: content
   field_ss_dog_fee:
-    label: inline
-    weight: 15
     type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 15
     region: content
   field_ss_dog_home_pref:
-    label: inline
-    weight: 14
     type: list_default
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 14
     region: content
   field_ss_dog_link:
-    label: hidden
-    weight: 2
     type: link
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -79,70 +78,70 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 2
     region: content
   field_ss_dog_out_of_area:
-    label: inline
-    weight: 16
     type: list_default
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 16
     region: content
   field_ss_dog_reason:
-    label: inline
-    weight: 7
     type: list_default
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 7
     region: content
   field_ss_dog_sex:
-    label: inline
-    weight: 13
     type: list_default
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 13
     region: content
   field_ss_dog_weight:
-    label: inline
-    weight: 12
     type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 12
     region: content
   field_ss_is_adopted:
-    label: above
-    weight: 17
     type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 17
     region: content
   field_ss_org_contact_name:
-    label: inline
-    weight: 3
     type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
     region: content
   field_ss_org_email:
-    label: inline
-    weight: 4
     type: email_mailto
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_ss_org_name:
-    label: inline
-    weight: 5
     type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 5
     region: content
   field_ss_org_website:
-    label: inline
-    weight: 6
     type: link
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -150,11 +149,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 6
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true

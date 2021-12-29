@@ -13,29 +13,29 @@ id: hero
 label: Hero
 image_style_mappings:
   -
-    breakpoint_id: greymuzzle9.large
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: hero_large
+    breakpoint_id: greymuzzle9.large
+    multiplier: 1x
   -
+    image_mapping_type: image_style
+    image_mapping: hero_medium
     breakpoint_id: greymuzzle9.medium
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: hero_medium
-  -
     breakpoint_id: greymuzzle9.small-large
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: hero_medium
   -
-    breakpoint_id: greymuzzle9.small-med
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: hero_small
-  -
-    breakpoint_id: greymuzzle9.small
+    breakpoint_id: greymuzzle9.small-med
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: hero_tiny
+    breakpoint_id: greymuzzle9.small
+    multiplier: 1x
 breakpoint_group: greymuzzle9
 fallback_image_style: hero_medium
