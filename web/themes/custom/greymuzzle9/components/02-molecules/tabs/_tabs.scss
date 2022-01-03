@@ -2,11 +2,16 @@
 .tabs__nav {
   @include list-reset;
 
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  width: auto;
+
   border-bottom: 1px solid $gray-lightest;
 
   @include large {
     border-left: 1px solid $gray-lightest;
-    display: flex;
   }
 }
 

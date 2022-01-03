@@ -14,3 +14,8 @@
   @include heading-medium;
 }
 
+.page-title-block,
+.breadcrumb-block {
+  @include wrapper;
+}
+

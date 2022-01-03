@@ -25,4 +25,8 @@ export const main = () => mainMenu(mainMenuData);
 
 export const social = () => socialMenu(socialMenuData);
 
-export const sideMenu = () => sideMenuTwig(sideMenuData);
+export const sideMenu = () => `
+  <div class="side-menu-story">
+    ${sideMenuTwig(sideMenuData)}
+  </div>
+`;

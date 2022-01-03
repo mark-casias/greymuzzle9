@@ -10,7 +10,14 @@
       {{ heading }}
     </div>
     <div class="programs__items">
-      {{ items }}
+    {% block field_images %}
+      {% for item in items %}
+        {% embed "@molecules/program-card/program-card.twig" with {
+          content: item.content,
+        } %}
+        {% endembed %}
+      {% endfor %}
+    {% endblock %}
     </div>
   </div>
 </div>

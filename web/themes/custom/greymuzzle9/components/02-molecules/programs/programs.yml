@@ -1,11 +1,15 @@
 label: 'Programs We Support'
 heading: '<p><a class="link" href="/about-us/who-we-help">Grey Muzzle funding supports senior dog programs nationwide.</a></p>'
 items:
-  - label: 'Adoptable Dogs Medical Care Programs'
-    field_image: '<img alt="" data-fid="35" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-medical.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'
-  - label: 'Seniors for Seniors Adoption Programs'
-    field_image: '<img alt="" data-fid="38" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-adoption.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'
-  - label: 'Keeping Dogs with Their Owners Program'
-    field_image: '<img alt="" data-fid="39" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-owners.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'
-  - label: 'Hospice and&nbsp;Long-Term Foster Care Programs'
-    field_image: '<img alt="" data-fid="40" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-hospice_0.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'
+  - content:
+      field_caption: 'Adoptable Dogs Medical Care Programs'
+      field_media_image: '<img alt="" data-fid="35" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-medical.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'
+  - content:
+      field_caption: 'Seniors for Seniors Adoption Programs'
+      field_media_image: '<img alt="" data-fid="38" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-adoption.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'
+  - content:
+      field_caption: 'Keeping Dogs with Their Owners Program'
+      field_media_image: '<img alt="" data-fid="39" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-owners.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'
+  - content:
+      field_caption: 'Hospice and&nbsp;Long-Term Foster Care Programs'
+      field_media_image: '<img alt="" data-fid="40" data-media-element="1" src="https://www.greymuzzle.org/sites/default/files/icon-hospice_0.png" style="width: 128px; height: 128px;" typeof="foaf:Image">'

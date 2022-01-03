@@ -42,6 +42,9 @@
 {% embed "@molecules/programs/programs.twig" with {
   label: content.field_title,
   heading: content.field_body,
-  items: content.field_image,
 } %}
+
+  {% block field_images %}
+    {{ content.field_image }}
+  {% endblock %}
 {% endembed %}

@@ -1,8 +1,8 @@
-<div class="program-card">
+<div {{ attributes|without('class')}} class="program-card">
   <div class="program-card__image">
-    {{ field_image }}
+    {{ content.field_media_image }}
   </div>
   <div class="program-card__label">
-    {{ label }}
+    {{ content.field_caption }}
   </div>
 </div>

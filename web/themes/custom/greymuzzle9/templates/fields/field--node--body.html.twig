@@ -36,18 +36,7 @@
  * @see template_preprocess_field()
  */
 
- @TODO: THIS CAN BE REMOVED IF BEM CLASSES CAN BE APPLIED IN WYSIWYG
+ @TODO: THIS CAN BE REMOVED IF WYWSIWYG BEM CLASSES CAN BE APPLIED
 #}
 
-  {% if multiple %}
-    <div{{ attributes.addClass('field--body text-long') }}>
-      {% for item in items %}
-        <div{{ item.attributes }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass('field--body text-long') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
-
+{% include directory ~ "/templates/fields/_field-wysiwyg.twig" %}

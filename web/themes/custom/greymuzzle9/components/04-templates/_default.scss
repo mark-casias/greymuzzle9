@@ -12,7 +12,6 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 */
 
 .main {
-  margin-bottom: 4em;
 
   @include large {
     display: flex;

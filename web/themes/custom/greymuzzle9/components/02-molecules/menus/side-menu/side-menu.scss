@@ -1,52 +1,49 @@
+.side-menu-story {
+  width: 250px;
+  margin: 0 auto;
+}
+
 .side-menu {
   padding: 0;
+  margin-top: 0;
 
-  &__h2 {
+  &__container {
+    background-color: white;
+    padding: 1rem 2rem;
+  }
+
+  &__heading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
     color: clr(text);
+    margin-top: 0;
   }
 
-  .menu {
-    padding-left: 0;
-  }
-
-  ul li .menu,
-  ul li ul li .menu {
-    padding-left: 15px;
-  }
-
-  li {
+  &__item {
     list-style: none;
-    padding: 4px 0 1px;
 
-    a {
-      color: $blue-chill;
-      text-decoration: none;
+    &--active {
+      color: clr(primary);
+      list-style-type: disc;
+    }
+  }
 
-      &:active {
-        font-weight: bold;
-        text-decoration: underline;
-      }
+  &__link {
+    padding-left: 0;
+    color: clr(primary);
+    text-decoration: none;
 
-      &:hover {
-        text-decoration: underline;
-      }
+    &--active {
+      font-weight: bold;
     }
 
-    &.active-trail.active {
+    &:active {
       font-weight: bold;
-      list-style-position: none;
-      list-style-type: none;
-      color: $blue-chill;
+      text-decoration: underline;
+    }
 
-      @include breakpoint(large) {
-        list-style-position: outside;
-        list-style-type: disc;
-        padding-bottom: 0;
-      }
-
-      > ul > li.leaf > a {
-        font-weight: normal;
-      }
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

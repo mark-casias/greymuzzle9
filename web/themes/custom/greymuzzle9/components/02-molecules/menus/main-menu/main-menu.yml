@@ -4,6 +4,7 @@ menu_items:
     below:
       - title: 'Menu Item 1 Sub 1'
         url: '#'
+        modifier: 'active'
       - title: 'Menu Item 1 Sub 2'
         url: '#'
         below:

@@ -4,6 +4,13 @@
   position: relative;
   text-shadow: 1px 1px $gray-tundora;
 
+  &__media {
+    img {
+      width: 100vw;
+      height: auto;
+    }
+  }
+
   .hero__caption {
     display: block;
     top: 23%;

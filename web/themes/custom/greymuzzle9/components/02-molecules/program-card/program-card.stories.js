@@ -3,7 +3,7 @@ import cardData from './program-card.yml';
 import programDocs from './program-card.mdx';
 
 export default {
-  title: 'Paragraphs/Program Card',
+  title: 'Media/Program Card',
   parameters: {
     docs: {
       page: programDocs,

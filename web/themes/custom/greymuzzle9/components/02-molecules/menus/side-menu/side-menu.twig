@@ -1,5 +1,7 @@
-{% include "@molecules/menus/_menu.twig" with {
-  menu_title: menu_title,
-  menu_class: 'side-menu',
-  items: menu_items,
-} %}
+<div class="side-menu__container">
+  <h2 class="side-menu__heading">{{ menu_title }}</h2>
+  {% include "@molecules/menus/_menu.twig" with {
+    menu_class: 'side-menu',
+    items: menu_items,
+  } %}
+</div>
