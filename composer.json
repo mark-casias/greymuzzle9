@@ -30,6 +30,7 @@
         "drupal/entity_embed": "^1.1",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/entityqueue": "^1.2",
+        "drupal/field_group": "^3.2",
         "drupal/media_entity_browser": "^2",
         "drupal/media_migration": "^1.0@alpha",
         "drupal/menu_block": "^1.7",
@@ -48,6 +49,7 @@
         "drupal/twig_tweak": "^3.0",
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.0",
+        "drupal/webform_migrate": "^1.2",
         "drupal/xmlsitemap": "^1.0",
         "emulsify-ds/emulsify-drupal": "^4.1",
         "pantheon-upstreams/upstream-configuration": "*"

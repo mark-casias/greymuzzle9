@@ -2,6 +2,8 @@ uuid: eb92aa77-076c-4e13-85de-9284dcb7b04a
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.basic_page_220x220
   module:
     - entity_embed
     - media
@@ -57,7 +59,9 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        default: default
+        basic_page_220x220: basic_page_220x220
       allowed_media_types:
         image: image
         remote_video: remote_video

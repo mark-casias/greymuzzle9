@@ -1,18 +1,18 @@
-uuid: 9705ac8b-f069-4b10-be0d-9421eadf1b14
+uuid: 6050ffba-2e4e-4d6a-a760-d3a8187773e5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_faq_questions
-    - node.type.faqs
+    - field.storage.paragraph.field_questions_answers
+    - paragraphs.paragraphs_type.faq_questions
     - paragraphs.paragraphs_type.faqs
   module:
     - entity_reference_revisions
-id: node.faqs.field_faq_questions
-field_name: field_faq_questions
-entity_type: node
+id: paragraph.faqs.field_questions_answers
+field_name: field_questions_answers
+entity_type: paragraph
 bundle: faqs
-label: Questions
+label: 'Questions / Answers'
 description: ''
 required: false
 translatable: false
@@ -22,15 +22,15 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      faqs: faqs
+      faq_questions: faq_questions
     negate: 0
     target_bundles_drag_drop:
       faq_questions:
-        weight: -16
-        enabled: false
-      faqs:
         weight: -17
         enabled: true
+      faqs:
+        weight: -16
+        enabled: false
       from_library:
         weight: -15
         enabled: false
