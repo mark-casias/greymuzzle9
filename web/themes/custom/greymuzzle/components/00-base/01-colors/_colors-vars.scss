@@ -1,0 +1,55 @@
+// Color variables - it is better to use the colors in
+// components/00-base/01-colors/_01-colors-used.scss rather than
+// these colors directly.
+
+// Grayscale
+$white: white;
+$near-white: #f2f2f2;
+$gray-lightest: #e5e5e5;
+$gray-lighter: #ccc;
+$gray-light: #888;
+$gray: #666;
+$gray-dark: #4c4c4c;
+$gray-darker: #333;
+$black: black;
+
+// Color variables - it is better to use the colors in
+// components/00-base/01-colors/_01-colors-used.scss rather than
+// these colors directly.
+
+// Grayscale
+$white: #fff;
+$near-white: #f2f2f2;
+$gray-tundora: #444;
+$gray-gallery: #ccc;
+$gray-lighter: #ccc;
+$gray-gallery-light: #eee;
+$gray-lightest: #e5e5e5;
+$gray-light: #888;
+$gray: #666;
+$gray-dark: #4c4c4c;
+$gray-darker: #333;
+$black: #000;
+
+// Status
+$yellow-light: #f9fb93;
+$red-light: #fbe3e4;
+$green-light: #cfefc2;
+
+// GreyMuzzle
+$blue-chill: #067799;
+$blue-botticelli: #cfe5eb;
+$blue-alice: #f3f8fa;
+$blue-maya: #78b6f7;
+$burnt-sienna: #f06667;
+$sunglow: #fc3;
+$daffodil: #fff5d6;
+$yellow: #ff0;
+$purple: #610c63;
+$blue: #005de0;
+
+$text: $gray-tundora;
+$background: $blue-alice;
+$primary: $blue-chill;
+$secondary: $blue-botticelli;
+$tertiary: $blue-maya;

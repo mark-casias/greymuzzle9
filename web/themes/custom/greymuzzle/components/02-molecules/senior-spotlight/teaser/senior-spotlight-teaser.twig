@@ -1,0 +1,25 @@
+{% set base_class = 'senior-spotlight-teaser' %}
+<div {{ bem(base_class)}}>
+  <div {{ bem('image', [], base_class)}}>
+  {% if content.field_is_adopted %}
+    <div class="ss--is-adopted">Adopted</div>
+  {% endif %}
+  {% block field_image %}
+    <img typeof="foaf:Image" src="https://www.greymuzzle.org/sites/default/files/styles/meet_the_dogs/public/senior_spotllight/potato3.jpg?itok=t9qgsfX1" width="250" height="220" alt="">
+  {% endblock %}
+  </div>
+<div {{ bem('bio', [], base_class)}}>
+    <h3 {{ bem('name', [], 'bio')}}>
+      <a href="/senior-spotlight/potato" class="link">Potato</a>
+    </h3>
+    <div {{ bem('text', [], 'bio')}}>
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden">
+        <div class="field__items">
+          <div class="field__item even" property="content:encoded">
+            <p>This adorable little sweet Potato is a docile, quiet, girl that adores being petted. Who can blame her! She gets along well with the dog in her foster home and ignores cats.&nbsp;Potato will happily greet you with excitement and tail wags when&nbsp;you come home. Yay, you're back to give belly rubs! She'd...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

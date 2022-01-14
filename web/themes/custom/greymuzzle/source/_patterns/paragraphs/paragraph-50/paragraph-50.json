@@ -1,9 +1,0 @@
-{
-  "field_image": "<img src=\"http://www.greymuzzle.org/sites/default/files/gm-bed-fund-new.png\" alt=\"Some Image\">",
-  "field_title": "Left image, title",
-  "field_body": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
-  "field_cta": {
-    "title": "Link me",
-    "uri": "#"
-  }
-}
