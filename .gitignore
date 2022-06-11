@@ -134,3 +134,4 @@ upstream/web/
 node_modules
 /web/themes/custom/greymuzzle/public
 .DS_Store
+/.idea
