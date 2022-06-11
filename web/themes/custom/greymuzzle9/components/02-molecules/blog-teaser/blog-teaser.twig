@@ -14,7 +14,8 @@
       </a>
     </h2>
   </header>
-  <div class="blog-teaser__content">
+  <div {{ bem('blog_teaser', ['image', 'barry'], 'content', ['mb-1'])}}>
+
     <div class="blog-teaser__content--image">
     {% block blog_image %}
       <div class="field__items">
