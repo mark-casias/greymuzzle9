@@ -1,5 +1,5 @@
 {
-  "name": "emulsify-drupal",
+  "name": "greymuzzle-theme",
   "version": "1.0.0",
   "description": "Storybook development + Webpack Build + Drupal 8 theme",
   "keywords": [
@@ -28,8 +28,8 @@
     "prepare": "husky install",
     "prettier": "prettier --ignore-unknown \"./components/**/*.{js,yml,scss,md}\"",
     "prettier-fix": "prettier --write --ignore-unknown \"./components**/*.{js,yml,scss,md}\"",
-    "storybook": "start-storybook --ci -s ./dist,./images -p 6006",
-    "storybook-build": "npm run build && storybook-build -s ./dist,./images -o .out",
+    "storybook": "start-storybook --ci -p 6006",
+    "storybook-build": "npm run build && storybook-build -o .out",
     "storybook-deploy": "storybook-to-ghpages -o .out",
     "test": "jest --coverage",
     "twatch": "jest --no-coverage --watch --verbose",
@@ -38,6 +38,7 @@
   "dependencies": {
     "add-attributes-twig-extension": "^0.1.0",
     "bem-twig-extension": "^0.1.1",
+    "bootstrap": "^5.1.3",
     "normalize.css": "^8.0.1",
     "twig-drupal-filters": "^3.1.0"
   },

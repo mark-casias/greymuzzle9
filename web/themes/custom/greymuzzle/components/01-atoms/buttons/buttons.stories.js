@@ -1,14 +1,28 @@
 // Buttons Stories
-import button from './button.twig';
-
-import buttonData from './button.yml';
-import buttonAltData from './button-alt.yml';
-
+import ButtonTwig from './button.twig';
 /**
  * Storybook Definition.
  */
-export default { title: 'Atoms/Button' };
+export default {
+  title: 'Atoms/Button',
+  argTypes: {
+    buttonClass: {
+      control: {
+        type: 'select',
+        options: ['primary', 'alt', 'donate'],
+      },
+      defaultValue: '',
+    },
+    buttonText: {
+      name: 'Text',
+      defaultValue: 'Button',
+      control: { type: 'text' },
+    },
+  },
+};
 
-export const twig = () => button(buttonData);
-
-export const twigAlt = () => button(buttonAltData);
+export const Button = ({ buttonText, buttonClass }) =>
+  ButtonTwig({
+    button_modifiers: [buttonClass],
+    button_content: buttonText,
+  });

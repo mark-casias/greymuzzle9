@@ -1,14 +1,7 @@
 import imageTwig from './default.twig';
-import defaultDoc from './default.mdx';
 
 export default {
   title: 'Media/Default',
-  parameters: {
-    docs: {
-      page: defaultDoc,
-    },
-    layout: 'centered',
-  },
   argTypes: {
     photoCredit: {
       name: 'Photo Credit',

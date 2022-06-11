@@ -1,4 +1,4 @@
-import colors from './colors.twig';
+import colorsTwig from './colors.twig';
 
 import colorsData from './colors.yml';
 
@@ -9,4 +9,4 @@ export default {
   title: 'Base/Colors',
 };
 
-export const Palettes = () => colors(colorsData);
+export const Colors = () => colorsTwig(colorsData);
