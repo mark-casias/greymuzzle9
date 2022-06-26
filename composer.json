@@ -12,15 +12,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8",
-            "exclude": [
-                "drupal/media_migration"
-            ]
-        },
-        {
-            "type": "git",
-            "url": "git@git.drupal.org:issue/media_migration-3269743.git",
-            "reference": "3269743-support-drupal-10"
+            "url": "https://packages.drupal.org/8"
         },
         {
             "type": "path",
@@ -43,7 +35,6 @@
         "drupal/entityqueue": "^1.2",
         "drupal/field_group": "^3.2",
         "drupal/media_entity_browser": "^2",
-        "drupal/media_migration": "dev-3269743-support-drupal-10",
         "drupal/menu_block": "^1.7",
         "drupal/metatag": "^1.15",
         "drupal/migrate_file": "^2.0",

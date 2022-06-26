@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ceeb7b42d539771bb26de5ffc759a606",
+    "content-hash": "e90f3f9a16469b0c042eb6ade3f824ac",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2908,48 +2908,6 @@
             }
         },
         {
-            "name": "drupal/media_migration",
-            "version": "dev-3269743-support-drupal-10",
-            "source": {
-                "type": "git",
-                "url": "git@git.drupal.org:issue/media_migration-3269743.git",
-                "reference": "014103e5487246da53826d29f65146cfd79f66a0"
-            },
-            "require": {
-                "drupal/migmag": "^1.5",
-                "drupal/migrate_plus": ">=4.2",
-                "drupal/smart_sql_idmap": "^1.0-beta1"
-            },
-            "require-dev": {
-                "drupal/entity_embed": "^1",
-                "drupal/linkit": "^5.0.0-beta11 || ^6.0.0-beta2",
-                "drupal/migrate_tools": "^4.1 || ^5",
-                "drupal/migrate_upgrade": "^3",
-                "drush/drush": "^9 || ^10"
-            },
-            "suggest": {
-                "drupal/entity_embed": "Allows entities to be embedded using a text editor.",
-                "drupal/file_entity": "Extends Drupal file entities to be fieldable and viewable.",
-                "drupal/linkit": "Provides an easy interface for internal and external linking with wysiwyg editors.",
-                "drupal/linkit_media_library": "Create links from media library.",
-                "drupal/media_migration_tools": "Media Migration supporting module for Migrate Tools"
-            },
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides a Drupal 7 to 8 media migration.",
-            "homepage": "https://www.drupal.org/project/media_migration",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "issues": "https://www.drupal.org/project/issues/media_migration",
-                "source": "https://git.drupalcode.org/project/media_migration"
-            },
-            "time": "2022-03-15T20:43:10+00:00"
-        },
-        {
             "name": "drupal/menu_block",
             "version": "1.8.0",
             "source": {
@@ -3077,66 +3035,6 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
-            }
-        },
-        {
-            "name": "drupal/migmag",
-            "version": "1.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migmag.git",
-                "reference": "1.7.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migmag-1.7.0.zip",
-                "reference": "1.7.0",
-                "shasum": "20fd683e35f95162a9e48623442aa76af367d2dc"
-            },
-            "require": {
-                "drupal/core": "^8.9 || ^9"
-            },
-            "replace": {
-                "drupal/migmag_callback_upgrade": "self.version",
-                "drupal/migmag_menu_link_migrate": "self.version",
-                "drupal/migmag_process": "self.version",
-                "drupal/migmag_process_lookup_replace": "self.version",
-                "drupal/migmag_rollbackable": "self.version",
-                "drupal/migmag_rollbackable_replace": "self.version"
-            },
-            "require-dev": {
-                "drupal/eme": "^1@alpha",
-                "drupal/migmag_process": "*",
-                "drupal/migmag_rollbackable": "*",
-                "drupal/smart_sql_idmap": "^1.1@beta",
-                "drush/drush": "^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.7.0",
-                    "datestamp": "1645025990",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "huzooka",
-                    "homepage": "https://www.drupal.org/user/281301"
-                }
-            ],
-            "description": "Toolset and utilities for Drupal migrations.",
-            "homepage": "https://www.drupal.org/project/migmag",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migmag",
-                "issues": "https://www.drupal.org/project/issues/migmag"
             }
         },
         {
@@ -3577,56 +3475,6 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
-            }
-        },
-        {
-            "name": "drupal/smart_sql_idmap",
-            "version": "1.1.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/smart_sql_idmap.git",
-                "reference": "1.1.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/smart_sql_idmap-1.1.0-beta2.zip",
-                "reference": "1.1.0-beta2",
-                "shasum": "6ad562380d65ee83cecca47d2bb20f4a4caec1aa"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9 || ^10",
-                "drupal/migrate": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.1.0-beta2",
-                    "datestamp": "1645022660",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "huzooka",
-                    "homepage": "https://www.drupal.org/user/281301"
-                }
-            ],
-            "description": "A SQL id map for migrations with long plugin IDs",
-            "homepage": "https://www.drupal.org/project/smart_sql_idmap",
-            "keywords": [
-                "Drupal",
-                "Migration"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/smart_sql_idmap",
-                "issues": "https://www.drupal.org/project/issues/smart_sql_idmap"
             }
         },
         {
@@ -13100,8 +12948,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/entity_usage": 10,
-        "drupal/media_migration": 20
+        "drupal/entity_usage": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
