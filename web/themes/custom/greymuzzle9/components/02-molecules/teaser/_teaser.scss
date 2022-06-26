@@ -1,0 +1,31 @@
+.teaser {
+
+  display: flex;
+
+  &--container {
+    margin-bottom: 2rem;
+  }
+
+  &__media {
+    margin-right: 2rem;
+  }
+
+  &__content {
+    width: 60%;
+    a {
+      @extend .link;
+    }
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    h4 {
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: .5rem
+    }
+  }
+
+
+ }

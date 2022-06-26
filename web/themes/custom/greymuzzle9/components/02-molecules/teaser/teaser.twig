@@ -1,0 +1,27 @@
+{% set base_class="teaser" %}
+<div class="teaser--container">
+  <div {{  bem('teaser', [teaser_type]) }}>
+    <div class="teaser__media">
+      {%  block teaser_media %}
+      <div class="media--image">
+        <img typeof="foaf:Image" src="https://www.greymuzzle.org/sites/default/files/styles/medium/public/staff/lisa_lunghofer.jpg?itok=RclAeGLE" width="220" height="220" alt="Lisa Lunghofer">
+      </div>
+      {%  endblock %}
+    </div>
+  <!-- /media-wrapper -->
+
+  <div class="teaser__content">
+    {%  block teaser_content %}
+    <h3 class="bio--name"><a href="/about-us/who-we-are/lisa-lunghofer">Lisa Lunghofer</a></h3>
+    <h4 class="bio--title">Executive Director</h4>
+    <div class="bio--text">
+      <p>Lisa Lunghofer, Ph.D., is Executive Director of Making Good Work and has 20 years of experience working with public sector and nonprofit clients, helping them to create strategic plans, develop logic models, write winning grant proposals, build successful programs, develop evaluation plans, and track outcomes.&nbsp;</p>
+      <a href="/node/130">Read more<span class="element-invisible"> about Grey Muzzle's Executive Director, Lisa Lunghofer</span></a>
+    </div>
+    <div class="bio--url">
+      <a href="http://www.makinggoodwork.org/">Lisa's Personal Website</a>
+    </div>
+    {%  endblock %}
+  </div>
+</div>
+</div>
