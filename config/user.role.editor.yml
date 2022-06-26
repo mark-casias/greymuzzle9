@@ -21,7 +21,6 @@ dependencies:
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.u_s_states
   module:
-    - entityqueue
     - filter
     - metatag
     - node
@@ -100,8 +99,6 @@ permissions:
   - 'edit own senior_spotlights content'
   - 'edit own staff content'
   - 'edit own why_i_give content'
-  - 'manipulate all entityqueues'
-  - 'manipulate entityqueues'
   - 'update staff_queues entityqueue'
   - 'use text format filtered_html'
   - 'use text format full_html'

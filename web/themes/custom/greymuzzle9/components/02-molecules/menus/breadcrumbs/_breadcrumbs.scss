@@ -6,7 +6,6 @@ $color-breadcrumb-active: clr(text);
   @include list-reset;
 }
 
-.breadcrumb__item,
 .breadcrumb__link,
 .breadcrumb__link:link,
 .breadcrumb__link:visited,
@@ -20,6 +19,7 @@ $color-breadcrumb-active: clr(text);
 }
 
 .breadcrumb__item {
+  color: $color-breadcrumb-active;
   display: inline-block;
   font-size: 0.75rem;
 
@@ -28,8 +28,6 @@ $color-breadcrumb-active: clr(text);
   }
 
   &:last-child {
-    color: $color-breadcrumb-active;
-
     &::after {
       content: '';
     }

@@ -1,12 +1,12 @@
-uuid: d005ea35-0281-4100-a7b9-bfc02c62e4c4
+uuid: 9a429332-38d0-43a3-b671-fed783157e46
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: staff_queues
-label: 'Staff Queues'
-handler: multiple
+id: board_of_directors
+label: 'Board of Directors'
+handler: simple
 handler_configuration: {  }
 entity_settings:
   target_type: node

@@ -101,7 +101,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
 /* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__);
-Drupal.behaviors.mainMenu={attach:function attach(a){var b=a.getElementById("toggle-expand"),c=a.getElementById("main-nav");if(c){var d=c.getElementsByClassName("expand-sub");b.addEventListener("click",function(a){b.classList.toggle("toggle-expand--open"),c.classList.toggle("main-nav--open"),a.preventDefault()}),Array.from(d).forEach(function(a){a.addEventListener("click",function(a){var b=a.currentTarget,c=b.nextElementSibling;b.classList.toggle("expand-sub--open"),c.classList.toggle("main-menu--sub-open")})})}}};
+Drupal.behaviors.mainMenu={attach:function attach(){var a=document.getElementById("toggle-expand"),b=document.getElementById("main-nav");if(b){var c=b.getElementsByClassName("expand-sub");a.addEventListener("click",function(c){a.classList.toggle("toggle-expand--open"),b.classList.toggle("main-nav--open"),c.preventDefault()}),Array.from(c).forEach(function(a){a.addEventListener("click",function(a){var b=a.currentTarget,c=b.nextElementSibling;b.classList.toggle("expand-sub--open"),c.classList.toggle("main-menu--sub-open")})})}}};
 
 /***/ }),
 

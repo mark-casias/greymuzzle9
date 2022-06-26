@@ -1,0 +1,22 @@
+uuid: 26511b8e-249f-4c89-863b-5304a01a8364
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.board_of_directors
+id: entity_subqueue.board_of_directors.default
+targetEntityType: entity_subqueue
+bundle: board_of_directors
+mode: default
+content:
+  items:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  title: true

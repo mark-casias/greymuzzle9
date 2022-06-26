@@ -33,6 +33,8 @@ content:
     settings:
       image_link: ''
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 5
     region: content
@@ -44,6 +46,7 @@ content:
     weight: 0
     region: content
 hidden:
+  addtoany: true
   field_caption: true
   field_media_image: true
   field_photo_credit: true

@@ -6,8 +6,8 @@ name: 'The Grey Muzzle Organization'
 mail: info@greymuzzle.org
 slogan: ''
 page:
-  403: /node/1710
-  404: /node/1710
+  403: ''
+  404: ''
   front: /node/1710
 admin_compact_mode: false
 weight_select_max: 100

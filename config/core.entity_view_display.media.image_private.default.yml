@@ -19,10 +19,13 @@ content:
     settings:
       image_link: ''
       image_style: large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  addtoany: true
   created: true
   name: true
   thumbnail: true
