@@ -1,6 +1,0 @@
-title: 'Media Card with Video'
-body: 'Senior dogs depend on us to care for them through all stages of their lives. Your tax deductible donation will provide them with the care they need to get adopted and live out their golden years, months, or weeks in a place of love, security and peace.'
-media: '<div class="media-youtube-video media-youtube-1"><iframe class="media-youtube-player" width="640" height="390" title="Grey Muzzle Supporter Thank You" src="https://www.youtube.com/embed/I1AMWnVXHn4?wmode=opaque&amp;controls=&amp;rel=0" frameborder="0" allowfullscreen="">Video of Grey Muzzle Supporter Thank You</iframe></div>'
-button:
-  button_content: 'Donate Now'
-  button_url: '#'
