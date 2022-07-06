@@ -11,6 +11,10 @@
     text-decoration: underline;
   }
 
+  &--active {
+    font-weight: bold;
+  }
+
   &--with-sub {
     width: 80%;
   }

@@ -8,6 +8,8 @@ import '../components/style.scss';
 
 // If in a Drupal project, it's recommended to import a symlinked version of drupal.js.
 import './_drupal.js';
+// Adding bootstrap into the mix.
+import '../dist/js/bootstrap.js';
 
 // addDecorator deprecated, but not sure how to use this otherwise.
 addDecorator((storyFn) => {

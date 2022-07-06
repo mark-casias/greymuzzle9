@@ -47,7 +47,6 @@ $main-menu-medium: $medium;
   width: 100%;
 
   @include medium {
-    background-color: $white;
     display: none;
     height: auto;
     left: 0;

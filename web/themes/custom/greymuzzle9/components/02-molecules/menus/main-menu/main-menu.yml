@@ -1,10 +1,11 @@
 menu_items:
   - title: 'Menu Item 1'
     url: '#'
+    in_active_trail: 1
     below:
       - title: 'Menu Item 1 Sub 1'
         url: '#'
-        modifier: 'active'
+        in_active_trail: 1
       - title: 'Menu Item 1 Sub 2'
         url: '#'
         below:

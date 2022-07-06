@@ -1,5 +1,7 @@
-<div class="side-menu__container">
+<div class="side-menu__container" {{  attributes|without('class') }}>
+  {{  title_prefix }}
   <h2 class="side-menu__heading">{{ menu_title }}</h2>
+  {{ title_suffix }}
   {% include "@molecules/menus/_menu.twig" with {
     menu_class: 'side-menu',
     items: menu_items,

@@ -1,23 +1,39 @@
 {{ attach_library('greymuzzle9/main-menu') }}
 
-<nav>
-  <a href="#" id="toggle-expand" class="toggle-expand">
-    <span class="toggle-expand__open">
-      {% include "@atoms/images/icons/_icon.twig" with {
-        icon_base_class: "icon",
-        icon_blockname: "toggle-expand",
-        icon_name: "menu",
-      } %}
-      <span class="toggle-expand__text">Main Menu</span>
-    </span>
-    <span class="toggle-expand__close">
-      <span class="toggle-expand__text">Close</span>
-    </span>
-  </a>
-  <div id="main-nav" class="main-nav">
-    {% include "@molecules/menus/_menu.twig" with {
-      menu_class: "main-menu",
-      items: menu_items,
-    } %}
-</div>
+<nav class="navbar navbar-expand-lg navbar-light main-menu">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        {%  for key, item in menu_items %}
+          {%  set navclass = 'nav-item' %}
+          {%  set navclassextra = [
+            item.below ? 'dropdown' : ''
+          ] %}
+          {%  set linkclassextra = [
+            item.below ? 'dropdown-toggle' : '',
+            item.in_active_trail ? 'active' : ''
+          ] %}
+          {%  if item.below %}
+            {%  set navclass = 'nav-item dropdown' %}
+            {%  set linkclass = 'nav-link dropdown-toggle' %}
+            {%  set linkextra = 'role=button data-bs-toggle=dropdown aria-expanded=false' %}
+          {%  endif  %}
+          <li  {{  bem('nav-item', [], '', navclassextra) }}{{  item.attributes }}>
+            <a {{  bem('nav-link', [], '', linkclassextra) }} {{  linkextra }} >{{  item.title }}</a>
+            {%  if item.below %}
+              <ul class="dropdown-menu" aria-labelledby="{{  dropKey }}">
+                {% for submenu in item.below %}
+                <li><a class="dropdown-item{%  if submenu.in_active_trail %} active{%  endif  %}" href="{{ submenu.url }}">{{  submenu.title }}</a></li>
+                {%  endfor %}
+              </ul>
+            {%  endif %}
+          </li>
+        {%  endfor %}
+      </ul>
+    </div>
+  </div>
 </nav>

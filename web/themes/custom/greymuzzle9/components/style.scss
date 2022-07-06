@@ -1,6 +1,7 @@
 // Libraries
 @import '~normalize.css/normalize';
 @import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~bootstrap/scss/bootstrap';
 
 // Components
 @import '00-base/**/*.scss';
@@ -8,7 +9,6 @@
 @import '02-molecules/**/*.scss';
 @import '03-organisms/**/*.scss';
 @import '04-templates/**/*.scss';
-@import '06-paragraphs/**/*.scss';
 
 .viewsreference--view-title {
   @include heading-medium;
