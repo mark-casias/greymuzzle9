@@ -1,4 +1,7 @@
 <div {{  attributes | without('class') }}class="meet-the-dogs-card">
+  {%  if content.field_meet_deceased %}
+    <span class="deceased">We Remember</span>
+  {%  endif %}
       <div class="meet-the-dogs-card__image">
         <div class="media--image">
           {{ content.field_meet_main_image }}
@@ -13,7 +16,7 @@
           {{ content.field_meet_how_we_helped }}
         </div>
         <div class="meet-the-dogs-card__content__text">
-          {{ content.field_body }}
+          {{ content.body }}
           <a href={{ url }} class="link">Read more<span class="element-invisible">
               about
               {{ label }}</span>

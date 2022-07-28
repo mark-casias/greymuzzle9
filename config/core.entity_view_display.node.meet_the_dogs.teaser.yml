@@ -27,15 +27,26 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
+  field_meet_how_we_helped:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 100
+    weight: 1
+    region: content
+  field_meet_main_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: basic_page_220x220
+      link: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   addtoany: true
   field_meet_additional_image: true
   field_meet_deceased: true
-  field_meet_how_we_helped: true
-  field_meet_main_image: true
   field_meet_organization: true
+  links: true

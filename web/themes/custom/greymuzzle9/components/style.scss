@@ -3,12 +3,18 @@
 @import '~breakpoint-sass/stylesheets/breakpoint';
 @import '~bootstrap/scss/bootstrap';
 
+$fa-font-path: "../webfonts";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
 // Components
 @import '00-base/**/*.scss';
 @import '01-atoms/**/*.scss';
 @import '02-molecules/**/*.scss';
 @import '03-organisms/**/*.scss';
 @import '04-templates/**/*.scss';
+
 
 .viewsreference--view-title {
   @include heading-medium;

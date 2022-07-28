@@ -17,5 +17,5 @@ selection_criteria:
     bundles:
       meet_the_dogs: meet_the_dogs
 selection_logic: and
-weight: 0
+weight: -8
 relationships: {  }

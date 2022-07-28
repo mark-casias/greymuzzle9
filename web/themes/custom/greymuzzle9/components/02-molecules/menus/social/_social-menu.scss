@@ -1,26 +1,34 @@
 .social-menu {
   @include list-reset;
 
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
   &__item {
     margin-bottom: $space-one-fourth;
-  }
-
-  &__link {
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
+    flex: 0 0 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    color: transparent;
     text-decoration: none;
-    color: clr(text);
+
+    &:before {
+      font-size: 1.25em;
+      color: #444;
+    }
   }
 
-  &__icon {
-    height: 2rem;
-    width: 2rem;
-    margin-right: $space-one-half;
-    fill: currentColor;
+  &__list {
+    width: 35px;
+    margin: 0 0.5rem;
   }
 
-  &__text {
-    font-weight: bold;
+  span {
+    @include visually-hidden;
   }
 }

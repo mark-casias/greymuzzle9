@@ -135,3 +135,5 @@ node_modules
 /web/themes/custom/greymuzzle/public
 .DS_Store
 /.idea
+/.docksal/docksal-local.env
+/.docksal/docksal-local.env~

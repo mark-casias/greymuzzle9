@@ -9,17 +9,11 @@
   {% endblock %}
   </div>
 <div {{ bem('bio', [], base_class)}}>
-    <h3 {{ bem('name', [], 'bio')}}>
-      <a href="/senior-spotlight/potato" class="link">Potato</a>
-    </h3>
+  <h3 {{ bem('name', [], 'bio')}}>
+    <a href="{{ url }}" class="link">{{ label }}</a>
+  </h3>
     <div {{ bem('text', [], 'bio')}}>
-      <div class="field field--name-body field--type-text-with-summary field--label-hidden">
-        <div class="field__items">
-          <div class="field__item even" property="content:encoded">
-            <p>This adorable little sweet Potato is a docile, quiet, girl that adores being petted. Who can blame her! She gets along well with the dog in her foster home and ignores cats.&nbsp;Potato will happily greet you with excitement and tail wags when&nbsp;you come home. Yay, you're back to give belly rubs! She'd...</p>
-          </div>
-        </div>
-      </div>
+      {{ content.body }}
     </div>
   </div>
 </div>

@@ -12,6 +12,18 @@
   }
 }
 
+a {
+  color: clr(primary);
+
+  &:hover {
+    color: clr(accent);
+    border-bottom: none;
+  }
+  &:focus {
+    box-shadow: 0 0 4px 3px clr(primary);
+  }
+}
+
 .link {
   @include link;
 }

@@ -1,0 +1,16 @@
+<div class="aimh-teaser">
+  <div class="media-wrapper">
+    <figure class="media__image">
+      {% block teaser_img %}
+      <img typeof="foaf:Image" src="https://www.greymuzzle.org/sites/default/files/styles/medium/public/always_in_my_heart/daisy_0.jpg?itok=xsAD3TYw" width="207" height="220" alt="">
+    {% endblock %}
+      <figcaption class="dog-name">{{ content.field_heart_dogs_name }}</figcaption>
+    </figure>
+  </div>
+  <div class="donor-wrapper">
+    <h3 class="donor__name">{{ label }}</h3>
+    <div class="donor__text">
+      {{ content.body }}
+    </div>
+  </div>
+</div>

@@ -12,8 +12,18 @@
  * @see template_preprocess_region()
  */
 #}
-{% extends "@organisms/site/site-footer/site-footer.twig" %}
+{% embed "@organisms/site/site-footer/site-footer.twig" with {
+  social_menu_items: [
+    { title: 'Twitter', url: 'https://www.twitter.com/greymuzzle', icon: 'twitter' },
+    { title: 'Facebook', url: 'https://www.facebook.com/GreyMuzzle', icon: 'facebook' },
+    { title: 'YouTube', url: 'https://www.youtube.com/user/GreyMuzzleOrg', icon: 'youtube' },
+    { title: 'Instagram', url: 'https://instagram.com/greymuzzleorg', icon: 'instagram' },
+    { title: 'LinkedIn', url: 'https://www.linkedin.com/company/the-grey-muzzle-organization', icon: 'linkedin' }
+  ]
+} %}
 
-{% block footer__menu %}
-  {{ content }}
-{% endblock %}
+  {% block footer__menu %}
+    {{ content }}
+  {% endblock %}
+
+{% endembed %}

@@ -1,3 +1,27 @@
 .meet-the-dogs-card {
   max-width: 225px;
+  margin: .5rem auto;
+  position: relative;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  .deceased {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../images/remember-icon.png') 0 0 no-repeat;
+    color: transparent;
+    top: 165px;
+    left: 6px;
+    z-index: 1;
+  }
 }

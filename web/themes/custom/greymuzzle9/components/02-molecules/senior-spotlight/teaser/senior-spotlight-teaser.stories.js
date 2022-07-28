@@ -1,4 +1,5 @@
 import teaserTwig from './senior-spotlight-teaser.twig';
+import teaserInfo from './senior-spotlight-teaser.yml';
 
 export default {
   title: 'Teasers/Senior Spotlight Teaser',
@@ -13,8 +14,10 @@ export default {
 
 export const SeniorSpotlightTeaser = ({ isAdopted }) =>
   teaserTwig({
+    ...teaserInfo,
     content: {
       field_is_adopted: isAdopted,
+      body: teaserInfo.body,
       teaser_extra_classes: ['wrapper'],
     },
   });

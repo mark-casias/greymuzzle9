@@ -8,6 +8,10 @@
 {% extends "@atoms/lists/ul.twig" %}
   {% block list_content %}
     {% for item in social_menu_items %}
-      {% include "@molecules/menus/social/_social-menu-item.twig" %}
+      {% set extras = [
+        'fa-brands',
+        'fa-' ~ item.icon
+      ] %}
+      <li class="social-menu__list"><a {{ bem('item', [], menu_class, extras) }} href={{ item.url }}><span>{{ item.title }}</span></a></li>
     {% endfor %}
   {% endblock %}

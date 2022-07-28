@@ -23,6 +23,10 @@ $color-breadcrumb-active: clr(text);
   display: inline-block;
   font-size: 0.75rem;
 
+  &:not(:first-child) {
+    padding-left: .25rem;
+  }
+
   &::after {
     content: '/';
   }

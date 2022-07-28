@@ -17,5 +17,5 @@ selection_criteria:
     bundles:
       blog: blog
 selection_logic: and
-weight: 0
+weight: -9
 relationships: {  }

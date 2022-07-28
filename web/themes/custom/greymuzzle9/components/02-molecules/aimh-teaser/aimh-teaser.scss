@@ -1,0 +1,18 @@
+.aimh-teaser {
+  display: flex;
+
+  .media-wrapper {
+    flex: 1;
+    min-width: 220px;
+    margin-right: 1rem;
+
+    .dog-name {
+      font-size: 1.125em;
+      font-weight: bold;
+      background: #cfe5eb;
+      color: #444;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}

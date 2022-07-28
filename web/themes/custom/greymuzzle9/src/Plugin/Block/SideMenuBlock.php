@@ -47,8 +47,8 @@ class SideMenuBlock extends MenuBlock {
     }
 
     $params = new MenuTreeParameters();
-
     $params->setRoot($parent);
+    $params->setMaxDepth(0);
     $params->setActiveTrail([$parent, reset($menu_links)->getPluginId()]);
     $tree = $this->menuTree->load($parent, $params);
 

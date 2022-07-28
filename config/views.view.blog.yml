@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.blog
+    - system.menu.main
   module:
     - node
     - options
@@ -265,11 +266,11 @@ display:
       display_extenders: {  }
       path: grey-matters
       menu:
-        type: none
+        type: normal
         title: 'Grey Matters'
         description: ''
         weight: -50
-        expanded: true
+        expanded: false
         menu_name: main
         parent: 'menu_link_content:760d4b87-cef9-4a11-8a3d-7443091d7f09'
         context: '0'
