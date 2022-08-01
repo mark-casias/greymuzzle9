@@ -28,6 +28,10 @@ a {
   @include link;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .link--button {
   border-bottom: none;
   @include button-base;

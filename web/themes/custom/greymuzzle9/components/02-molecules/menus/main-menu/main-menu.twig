@@ -1,6 +1,6 @@
 {{ attach_library('greymuzzle9/main-menu') }}
 
-<nav class="navbar navbar-expand-lg navbar-light main-menu">
+<nav class="navbar navbar-expand-lg main-menu">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       Menu
@@ -27,7 +27,16 @@
             {%  if item.below %}
               <ul class="dropdown-menu" aria-labelledby="{{  dropKey }}">
                 {% for submenu in item.below %}
-                <li><a class="dropdown-item{%  if submenu.in_active_trail %} active{%  endif  %}" href="{{ submenu.url }}">{{  submenu.title }}</a></li>
+                <li>
+                  <a class="{%  if submenu.in_active_trail %} active{%  endif  %}" href="{{ submenu.url }}">{{  submenu.title }}</a>
+                  {%  if submenu.below %}
+                  <ul class="main-menu--sub-2">
+                  {%  for subsub in submenu.below %}
+                    <li><a class="{%  if subsub.in_active_trail %} active{%  endif  %}" href="{{ subsub.url }}">{{  subsub.title }}</a></li>
+                  {%  endfor %}
+                  </ul>
+                  {%  endif %}
+                </li>
                 {%  endfor %}
               </ul>
             {%  endif %}

@@ -1,6 +1,24 @@
 /* Menu media */
 $main-menu-medium: $medium;
 
+.navbar-nav {
+
+  .nav-link {
+    color: clr(primary);
+  }
+
+  .dropdown-menu {
+    padding: .5rem 2rem;
+    min-width: 15rem;
+    li {
+      color: clr(primary);
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 /* Nav */
 .main-nav {
   display: none;
@@ -81,7 +99,5 @@ $main-menu-medium: $medium;
 }
 
 .main-menu--sub-2 {
-  @include medium {
-    display: none; /* Never shown on large screens */
-  }
+  display: block;
 }
