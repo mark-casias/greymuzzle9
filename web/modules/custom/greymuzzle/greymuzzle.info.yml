@@ -2,7 +2,6 @@ name: 'Greymuzzle'
 type: module
 description: 'Greymuzzle Custom module'
 core_version_requirement: ^8 || ^9
-package: Custom migration
 dependencies:
   - drupal:migrate_plus
   - drupal:migrate_tools
