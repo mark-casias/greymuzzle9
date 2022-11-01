@@ -1,0 +1,10 @@
+name: 'Custom Migration'
+type: module
+description: 'Greymuzzle File Migration'
+core_version_requirement: ^8 || ^9
+package: Custom migration
+dependencies:
+  - drupal:migrate_plus
+  - drupal:migrate_tools
+  - drupal:migrate
+  - drupal:migrate_drupal
