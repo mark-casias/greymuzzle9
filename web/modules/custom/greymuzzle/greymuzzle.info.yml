@@ -1,6 +1,6 @@
-name: 'Custom Migration'
+name: 'Greymuzzle'
 type: module
-description: 'Greymuzzle File Migration'
+description: 'Greymuzzle Custom module'
 core_version_requirement: ^8 || ^9
 package: Custom migration
 dependencies:
