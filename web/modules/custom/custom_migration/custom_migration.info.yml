@@ -8,3 +8,4 @@ dependencies:
   - drupal:migrate_tools
   - drupal:migrate
   - drupal:migrate_drupal
+  - drupal:migrate_drupal_ui
