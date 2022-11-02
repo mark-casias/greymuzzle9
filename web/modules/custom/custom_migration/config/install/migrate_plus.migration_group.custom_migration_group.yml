@@ -9,7 +9,7 @@ shared_configuration:
       driver: mysql
       username: drupal_developer
       password: innoppl09
-      host: 3.213.221.109
+      host: '3.213.221.109'
       port: ''
       database: dev_greymuzzle
       prefix: null
