@@ -1,13 +1,13 @@
-uuid: 22ed9afb-e18f-4fed-a343-9497caf09540
+uuid: 4106c0ba-42ba-4e1a-9142-7ccae7ffa317
 langcode: en
 status: true
 dependencies:
   config:
-    - entityqueue.entity_queue.staff
+    - entityqueue.entity_queue.board_of_directors
   module:
     - entityqueue
-id: who_we_are_staff
-label: 'Who We Are: Staff'
+id: board_of_directors
+label: 'Who We Are: Board of Directors'
 module: views
 description: ''
 tag: ''
@@ -20,7 +20,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Staff
+      title: 'Board of Directors'
       fields:
         title:
           id: title
@@ -90,7 +90,7 @@ display:
         type: none
         options:
           offset: 0
-          items_per_page: 0
+          items_per_page: null
       exposed_form:
         type: basic
         options:
@@ -128,44 +128,14 @@ display:
           id: queue
           table: entity_subqueue_field_data
           field: queue
-          relationship: none
-          group_type: group
-          admin_label: ''
           entity_type: entity_subqueue
           entity_field: queue
           plugin_id: bundle
-          operator: in
           value:
-            staff: staff
-          group: 1
-          exposed: false
+            board_of_directors: board_of_directors
           expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
       style:
         type: default
       row:
@@ -205,7 +175,7 @@ display:
     id: embed_1
     display_title: Embed
     display_plugin: embed
-    position: 2
+    position: 1
     display_options:
       display_extenders: {  }
     cache_metadata:

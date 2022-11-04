@@ -270,9 +270,9 @@ display:
         title: 'Grey Matters'
         description: ''
         weight: -50
-        expanded: false
+        expanded: true
         menu_name: main
-        parent: 'menu_link_content:760d4b87-cef9-4a11-8a3d-7443091d7f09'
+        parent: 'menu_link_content:ed233e1b-d09a-4f15-9631-8ae7f040abdc'
         context: '0'
     cache_metadata:
       max-age: -1
