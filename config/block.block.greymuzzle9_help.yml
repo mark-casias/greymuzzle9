@@ -6,6 +6,9 @@ dependencies:
     - help
   theme:
     - greymuzzle9
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: greymuzzle9_help
