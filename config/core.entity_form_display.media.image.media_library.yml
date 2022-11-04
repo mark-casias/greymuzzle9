@@ -7,9 +7,10 @@ dependencies:
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
     - field.field.media.image.field_photo_credit
+    - image.style.thumbnail
     - media.type.image
   module:
-    - entity_browser
+    - image
 _core:
   default_config_hash: BMLrK4zKp8-FFnMseBdT_6h6YipUsKRfbDf_3WUB5HA
 id: media.image.media_library
@@ -17,46 +18,19 @@ targetEntityType: media
 bundle: image
 mode: media_library
 content:
-  field_caption:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_media_image:
-    type: entity_browser_file
+    type: image_image
     weight: 1
     region: content
     settings:
-      entity_browser: null
-      field_widget_edit: true
-      field_widget_remove: true
-      field_widget_replace: false
-      open: false
-      selection_mode: selection_append
-      view_mode: default
+      progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_photo_credit:
-    type: string_textfield
-    weight: 3
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  name:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true
+  field_caption: true
+  field_photo_credit: true
+  name: true
   path: true
   status: true
   uid: true
