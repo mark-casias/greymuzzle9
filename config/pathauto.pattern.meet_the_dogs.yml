@@ -1,21 +1,22 @@
-uuid: 1c3a4620-2cb5-4d93-873e-d9f3e02d4c18
+uuid: e7cd5dc4-ef8c-4de8-b3e3-64aa5ce76079
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node_meet_the_dogs
-label: 'Content - Meet the Dogs'
+id: meet_the_dogs
+label: 'Meet the Dogs'
 type: 'canonical_entities:node'
 pattern: 'about-us/meet-the-dogs/[node:title]'
 selection_criteria:
-  -
-    id: node_type
+  78d7c78f-7691-4d93-bbb3-d09da62f1323:
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 78d7c78f-7691-4d93-bbb3-d09da62f1323
     context_mapping:
       node: node
     bundles:
       meet_the_dogs: meet_the_dogs
 selection_logic: and
-weight: -8
+weight: -5
 relationships: {  }
