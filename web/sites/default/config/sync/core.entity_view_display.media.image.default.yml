@@ -1,0 +1,32 @@
+uuid: 5848b4cc-9046-47b4-9ec8-0e94083d8f4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_photo_credit
+    - media.type.image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_photo_credit:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_caption: true
+  field_media_image: true
+  name: true
+  thumbnail: true
+  uid: true

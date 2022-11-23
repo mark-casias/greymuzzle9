@@ -6,9 +6,6 @@ dependencies:
     - search
   theme:
     - greymuzzle9
-third_party_settings:
-  block_class:
-    classes: null
 id: searchform
 theme: greymuzzle9
 region: header

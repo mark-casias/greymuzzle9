@@ -1,0 +1,29 @@
+uuid: 0decd932-4544-4b48-a350-fe395dfb8a6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - greymuzzle9
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: greymuzzle9_page_title
+theme: greymuzzle9
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

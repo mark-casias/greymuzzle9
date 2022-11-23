@@ -1,0 +1,33 @@
+uuid: 42e7a189-45cd-465a-a0df-4fd52a081e74
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.program_icon
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_photo_credit
+    - media.type.image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.program_icon
+targetEntityType: media
+bundle: image
+mode: program_icon
+content:
+  field_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_media_image: true
+  field_photo_credit: true
+  name: true
+  thumbnail: true
+  uid: true

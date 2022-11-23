@@ -1,0 +1,25 @@
+uuid: 785b29f6-6f90-4559-8297-2b53cc66a775
+langcode: en
+status: true
+dependencies:
+  theme:
+    - greymuzzle9
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: greymuzzle9_local_tasks
+theme: greymuzzle9
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

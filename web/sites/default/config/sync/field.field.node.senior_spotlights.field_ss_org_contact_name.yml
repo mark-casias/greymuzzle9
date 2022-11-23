@@ -1,0 +1,19 @@
+uuid: b0d8f044-6abc-420c-b830-be9bdb23e069
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_org_contact_name
+    - node.type.senior_spotlights
+id: node.senior_spotlights.field_ss_org_contact_name
+field_name: field_ss_org_contact_name
+entity_type: node
+bundle: senior_spotlights
+label: 'Contact Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

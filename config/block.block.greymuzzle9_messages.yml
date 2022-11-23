@@ -6,9 +6,6 @@ dependencies:
     - system
   theme:
     - greymuzzle9
-third_party_settings:
-  block_class:
-    classes: null
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: greymuzzle9_messages

@@ -1,0 +1,40 @@
+uuid: a7b7891e-ae96-4021-8836-70dfb6aa3d89
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.always_in_my_heart.body
+    - field.field.node.always_in_my_heart.field_heart_dogs_name
+    - field.field.node.always_in_my_heart.field_heart_image
+    - field.field.node.always_in_my_heart.field_heart_year
+    - node.type.always_in_my_heart
+  module:
+    - user
+id: node.always_in_my_heart.card
+targetEntityType: node
+bundle: always_in_my_heart
+mode: card
+content:
+  field_heart_dogs_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heart_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: basic_page_220x220
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_heart_year: true
+  links: true

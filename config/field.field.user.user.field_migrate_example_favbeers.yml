@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_migrate_example_favbeers
+    - node.type.migrate_example_beer
   module:
     - user
 _core:
@@ -21,7 +22,8 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      migrate_example_beer: migrate_example_beer
     sort:
       field: title
       direction: ASC

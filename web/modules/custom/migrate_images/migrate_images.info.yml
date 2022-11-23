@@ -1,0 +1,5 @@
+name: 'migrate_images'
+type: module
+description: 'My Awesome Module'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

@@ -1,0 +1,5 @@
+name: 'custom migration'
+type: module
+description: 'custom migration'
+core_version_requirement: ^8.8 || ^9
+package: 'Custom'

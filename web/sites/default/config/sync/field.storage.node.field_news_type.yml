@@ -1,0 +1,27 @@
+uuid: eb30045e-4538-4336-9b18-746488048d50
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_news_type
+field_name: field_news_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grey_muzzle_news
+      label: 'Grey Muzzle News'
+    -
+      value: press_release
+      label: 'Press Release'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

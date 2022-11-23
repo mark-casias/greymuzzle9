@@ -52,6 +52,7 @@ web/sites/*/services*.yml
 # Sites that do not have any Composer-managed custom modules may
 # delete all of the `modules/custom` lines below.
 # ------------------------------------------------------------------
+
 #!/web/modules/custom/module_in_repo
 
 
@@ -136,3 +137,23 @@ node_modules
 /.idea
 /.docksal/docksal-local.env
 /.docksal/docksal-local.env~
+# Ignore SimpleTest multi-site environment.
+web/sites/simpletest
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql

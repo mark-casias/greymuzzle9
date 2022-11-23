@@ -1,0 +1,23 @@
+uuid: 67d6c2f0-6e2a-442f-837a-1866c835aa3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.meet_the_dogs
+  module:
+    - text
+id: node.meet_the_dogs.body
+field_name: body
+entity_type: node
+bundle: meet_the_dogs
+label: About
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

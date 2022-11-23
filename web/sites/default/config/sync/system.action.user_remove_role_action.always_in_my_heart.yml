@@ -1,0 +1,14 @@
+uuid: 63d2008b-bd5d-4ab2-be76-251c78f9d6df
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.always_in_my_heart
+  module:
+    - user
+id: user_remove_role_action.always_in_my_heart
+label: 'Remove the Always in My Heart role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: always_in_my_heart

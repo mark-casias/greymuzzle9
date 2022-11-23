@@ -1,0 +1,65 @@
+<?php
+use Drupal\Core\Database\Database;
+
+
+function custom_migrate_update_9001() {
+    ## Fixes:
+  ## A non-existent config entity name returned by FieldStorageConfigInterface::getBundles(): entity type: paragraph, bundle: text, field name: field_image
+  $entity_type = 'paragraph';
+  $bundle = 'faq_questions';
+  $field_name = 'field_faq_question';
+
+  /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+  $key_value_factory = \Drupal::service('keyvalue');
+  $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+  $map = $field_map_kv_store->get($entity_type);
+  // Remove the field_dates field from the bundle field map for the page bundle.
+  unset($map[$field_name]['bundles'][$bundle]);
+  $field_map_kv_store->set($entity_type, $map);
+}
+
+function custom_migrate_update_9002() {
+    ## Fixes:
+  ## A non-existent config entity name returned by FieldStorageConfigInterface::getBundles(): entity type: paragraph, bundle: text, field name: field_image
+  $entity_type = 'paragraph';
+  $bundle = 'faq_questions';
+  $field_name = 'field_faq_answer';
+
+  /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+  $key_value_factory = \Drupal::service('keyvalue');
+  $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+  $map = $field_map_kv_store->get($entity_type);
+  // Remove the field_dates field from the bundle field map for the page bundle.
+  unset($map[$field_name]['bundles'][$bundle]);
+  $field_map_kv_store->set($entity_type, $map);
+}
+
+function custom_migrate_update_9003() {
+    /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+    $key_value_factory = \Drupal::service('keyvalue');
+    $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+    $comment_map = $field_map_kv_store->get('comment');
+    // Remove the field_dates field from the bundle field map for the page bundle.
+    unset($comment_map['comment_body']['bundles']['comment_node_organizations']);
+    $field_map_kv_store->set('comment', $comment_map);
+  }
+
+  function custom_migrate_update_9004() {
+    /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+    $key_value_factory = \Drupal::service('keyvalue');
+    $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+    $comment_map = $field_map_kv_store->get('comment');
+    // Remove the field_dates field from the bundle field map for the page bundle.
+    unset($comment_map['comment_body']['bundles']['comment_node_news']);
+    $field_map_kv_store->set('comment', $comment_map);
+  }
+
+  function custom_migrate_update_9005() {
+    /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+    $key_value_factory = \Drupal::service('keyvalue');
+    $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+    $comment_map = $field_map_kv_store->get('comment');
+    // Remove the field_dates field from the bundle field map for the page bundle.
+    unset($comment_map['comment_body']['bundles']['comment_node_always_in_my_hear']);
+    $field_map_kv_store->set('comment', $comment_map);
+  }

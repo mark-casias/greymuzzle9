@@ -1,0 +1,26 @@
+uuid: d4346a40-ed98-494e-acaa-1e93c421355e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heart_image
+    - media.type.image
+    - media.type.image_private
+    - node.type.always_in_my_heart
+id: node.always_in_my_heart.field_heart_image
+field_name: field_heart_image
+entity_type: node
+bundle: always_in_my_heart
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      image_private: image_private
+field_type: entity_reference

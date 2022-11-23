@@ -1,0 +1,25 @@
+uuid: 3069f946-834b-4bdb-901c-70bc680ad7b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - greymuzzle9
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: greymuzzle9_help
+theme: greymuzzle9
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

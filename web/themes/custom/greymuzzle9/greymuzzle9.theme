@@ -6,6 +6,6 @@
  */
 
 function greymuzzle9_preprocess_block(&$variables) {
-  // $a = $variables['node'];
+ // $a = $variables['node'];
   // block render array is here to be altered => $variables['content']
 }

@@ -1,0 +1,34 @@
+uuid: c68fdd6c-9e41-4ed8-a780-194a7ccdc9b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_caption
+    - field.field.paragraph.hero.field_image
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_caption:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

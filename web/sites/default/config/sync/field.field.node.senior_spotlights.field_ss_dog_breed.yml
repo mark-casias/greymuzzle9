@@ -1,0 +1,19 @@
+uuid: bdbf8e99-15e5-42ec-8023-6bb6f0694a20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_breed
+    - node.type.senior_spotlights
+id: node.senior_spotlights.field_ss_dog_breed
+field_name: field_ss_dog_breed
+entity_type: node
+bundle: senior_spotlights
+label: 'Breed (if known)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,26 @@
+uuid: 7ddeb643-4ebe-4bbf-9a74-f73790ef3268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_org_image
+    - media.type.image
+    - media.type.image_private
+    - node.type.organizations
+id: node.organizations.field_org_image
+field_name: field_org_image
+entity_type: node
+bundle: organizations
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      image_private: image_private
+field_type: entity_reference

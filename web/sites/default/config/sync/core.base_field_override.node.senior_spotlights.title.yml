@@ -1,0 +1,18 @@
+uuid: 6bb7d736-a519-4d33-8f7b-350f6b15a882
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.senior_spotlights
+id: node.senior_spotlights.title
+field_name: title
+entity_type: node
+bundle: senior_spotlights
+label: 'Name of Dog'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

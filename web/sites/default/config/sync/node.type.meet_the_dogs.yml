@@ -1,0 +1,18 @@
+uuid: d68ba484-e477-45eb-8a69-5023ea96af94
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:a5ab4422-744a-45ec-87f1-225afa0e13aa'
+name: 'Meet the Dogs'
+type: meet_the_dogs
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

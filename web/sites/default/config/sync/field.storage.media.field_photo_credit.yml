@@ -1,0 +1,21 @@
+uuid: 3e9ae4d1-19d0-49c2-9541-0f76a10a2d3f
+langcode: und
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_photo_credit
+field_name: field_photo_credit
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

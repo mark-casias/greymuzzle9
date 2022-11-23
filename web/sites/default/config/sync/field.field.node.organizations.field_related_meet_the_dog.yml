@@ -1,0 +1,30 @@
+uuid: ac305fed-83f4-4922-84c1-79d29cd2da5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_meet_the_dog
+    - node.type.meet_the_dogs
+    - node.type.organizations
+id: node.organizations.field_related_meet_the_dog
+field_name: field_related_meet_the_dog
+entity_type: node
+bundle: organizations
+label: 'Related Meet the Dog'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      meet_the_dogs: meet_the_dogs
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

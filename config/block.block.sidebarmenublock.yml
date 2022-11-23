@@ -1,16 +1,12 @@
-uuid: 68698640-34ef-4280-95e4-21faf3abeddf
+uuid: 51eb6cf7-4560-4ee5-8da8-8b294bba5bac
 langcode: en
 status: true
 dependencies:
   module:
-    - block_class
     - greymuzzle
     - system
   theme:
     - greymuzzle9
-third_party_settings:
-  block_class:
-    classes: null
 id: sidebarmenublock
 theme: greymuzzle9
 region: sidebar
@@ -20,7 +16,7 @@ plugin: sidebar_menu_block
 settings:
   id: sidebar_menu_block
   label: 'Sidebar Menu Block'
-  label_display: visible
+  label_display: '0'
   provider: greymuzzle
 visibility:
   request_path:

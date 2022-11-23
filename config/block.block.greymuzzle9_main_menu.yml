@@ -8,9 +8,6 @@ dependencies:
     - system
   theme:
     - greymuzzle9
-third_party_settings:
-  block_class:
-    classes: null
 _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: greymuzzle9_main_menu
@@ -25,6 +22,6 @@ settings:
   label_display: '0'
   provider: system
   level: 1
-  depth: 6
+  depth: 2
   expand_all_items: true
 visibility: {  }

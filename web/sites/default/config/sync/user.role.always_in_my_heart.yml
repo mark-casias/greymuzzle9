@@ -1,0 +1,21 @@
+uuid: 7b0f959b-0919-4390-a1a9-ccb3fccdba7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.always_in_my_heart
+  module:
+    - node
+    - system
+id: always_in_my_heart
+label: 'Always in My Heart'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'create always_in_my_heart content'
+  - 'delete any always_in_my_heart content'
+  - 'delete own always_in_my_heart content'
+  - 'edit any always_in_my_heart content'
+  - 'edit own always_in_my_heart content'

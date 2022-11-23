@@ -1,0 +1,10 @@
+uuid: 6b3e3523-1839-4779-b720-c644fa73064c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.program_icon
+label: 'Program Icon'
+targetEntityType: media
+cache: true

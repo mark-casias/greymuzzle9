@@ -1,0 +1,76 @@
+uuid: b7cfc76f-e589-4ae5-a2da-0af3c13de67b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organizations.body
+    - field.field.node.organizations.field_funded_year
+    - field.field.node.organizations.field_org_dog_s_name
+    - field.field.node.organizations.field_org_funded
+    - field.field.node.organizations.field_org_how_we_help
+    - field.field.node.organizations.field_org_image
+    - field.field.node.organizations.field_org_website
+    - field.field.node.organizations.field_related_meet_the_dog
+    - field.field.node.organizations.field_state
+    - node.type.organizations
+  module:
+    - link
+    - text
+    - user
+id: node.organizations.teaser
+targetEntityType: node
+bundle: organizations
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: inline
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_org_funded:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_org_how_we_help:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_org_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: basic_page_220x220
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_org_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  addtoany: true
+  field_funded_year: true
+  field_org_dog_s_name: true
+  field_related_meet_the_dog: true
+  field_state: true
+  links: true

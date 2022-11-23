@@ -1,0 +1,21 @@
+uuid: d3487917-ae9a-412f-8476-be864ed7ed68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_home_pref
+    - node.type.senior_spotlights
+  module:
+    - options
+id: node.senior_spotlights.field_ss_dog_home_pref
+field_name: field_ss_dog_home_pref
+entity_type: node
+bundle: senior_spotlights
+label: 'Home Preferences'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

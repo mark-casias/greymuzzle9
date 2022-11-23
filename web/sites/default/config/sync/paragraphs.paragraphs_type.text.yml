@@ -1,0 +1,15 @@
+uuid: 744bd101-49a5-44d5-90fc-79062c24e1da
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: text
+label: 'Text Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

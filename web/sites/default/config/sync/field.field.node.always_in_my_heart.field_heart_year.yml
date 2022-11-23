@@ -1,0 +1,21 @@
+uuid: 40b14b22-0016-4e25-a987-03179a0ee78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heart_year
+    - node.type.always_in_my_heart
+  module:
+    - options
+id: node.always_in_my_heart.field_heart_year
+field_name: field_heart_year
+entity_type: node
+bundle: always_in_my_heart
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,8 @@
+
+migrate_images.migrateimage_controller_migrateimage:
+  path: '/migrate_images/migrateimage'
+  defaults:
+    _controller: '\Drupal\migrate_images\Controller\MigrateimageController::migrateimage'
+    _title: 'Migrate'
+  requirements:
+    _permission: 'access content'

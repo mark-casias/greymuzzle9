@@ -1,0 +1,21 @@
+uuid: f092cccc-b47d-4f9d-bd1f-b6d24e8b407a
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_meet_how_we_helped
+field_name: field_meet_how_we_helped
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

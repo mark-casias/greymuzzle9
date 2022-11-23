@@ -1,0 +1,22 @@
+uuid: 20c34f17-cbf1-4cd3-94e6-f3edbe6bc401
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: why_i_give
+label: 'Content - Why I Give'
+type: 'canonical_entities:node'
+pattern: 'supporters/why-i-give/[node:title]'
+selection_criteria:
+  5c3f5cc4-081e-4680-8b09-082db28c5ce0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5c3f5cc4-081e-4680-8b09-082db28c5ce0
+    context_mapping:
+      node: node
+    bundles:
+      why_i_give: why_i_give
+selection_logic: and
+weight: -10
+relationships: {  }

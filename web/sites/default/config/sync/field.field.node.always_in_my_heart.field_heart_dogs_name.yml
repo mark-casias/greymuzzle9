@@ -1,0 +1,19 @@
+uuid: a148d3c2-759d-430d-a61e-7f969f5bb739
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heart_dogs_name
+    - node.type.always_in_my_heart
+id: node.always_in_my_heart.field_heart_dogs_name
+field_name: field_heart_dogs_name
+entity_type: node
+bundle: always_in_my_heart
+label: 'Dog''s Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: df5d4dc5-980d-4cca-b88b-cc8d6061f648
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meet_how_we_helped
+    - node.type.meet_the_dogs
+id: node.meet_the_dogs.field_meet_how_we_helped
+field_name: field_meet_how_we_helped
+entity_type: node
+bundle: meet_the_dogs
+label: 'How we helped'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

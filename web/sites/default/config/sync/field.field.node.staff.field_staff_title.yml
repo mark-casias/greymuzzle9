@@ -1,0 +1,19 @@
+uuid: 97980989-801d-4881-95f5-bb7b3064706f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_title
+    - node.type.staff
+id: node.staff.field_staff_title
+field_name: field_staff_title
+entity_type: node
+bundle: staff
+label: TItle
+description: 'Position in organization.  Ex. President'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

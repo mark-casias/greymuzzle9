@@ -1,0 +1,10 @@
+uuid: f1b0a649-4211-4be6-ad56-b5d93437bd2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.basic_page_320x240_left
+label: basic_page_320x240_left
+targetEntityType: media
+cache: true

@@ -1,0 +1,21 @@
+uuid: 5961d283-4311-4cac-bd19-0df0bfb9af59
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_blog
+label: 'Content - Blog'
+type: 'canonical_entities:node'
+pattern: 'grey-matters/[node:field_blog_categories]/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      blog: blog
+selection_logic: and
+weight: -9
+relationships: {  }

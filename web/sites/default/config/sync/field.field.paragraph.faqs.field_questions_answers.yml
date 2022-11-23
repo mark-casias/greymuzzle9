@@ -1,0 +1,52 @@
+uuid: 6050ffba-2e4e-4d6a-a760-d3a8187773e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_questions_answers
+    - paragraphs.paragraphs_type.faq_questions
+    - paragraphs.paragraphs_type.faqs
+  module:
+    - entity_reference_revisions
+id: paragraph.faqs.field_questions_answers
+field_name: field_questions_answers
+entity_type: paragraph
+bundle: faqs
+label: 'Questions / Answers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      faq_questions: faq_questions
+    negate: 0
+    target_bundles_drag_drop:
+      faq_questions:
+        weight: -17
+        enabled: true
+      faqs:
+        weight: -16
+        enabled: false
+      from_library:
+        weight: -15
+        enabled: false
+      hero:
+        weight: -14
+        enabled: false
+      media_card:
+        weight: -13
+        enabled: false
+      programs:
+        weight: -12
+        enabled: false
+      text:
+        weight: -11
+        enabled: false
+      views:
+        weight: -10
+        enabled: false
+field_type: entity_reference_revisions

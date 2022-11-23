@@ -1,0 +1,10 @@
+uuid: aa167649-2cf1-450a-b23e-5268006cfc30
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.blog_header_520x350_
+label: blog_header_520x350_
+targetEntityType: media
+cache: true

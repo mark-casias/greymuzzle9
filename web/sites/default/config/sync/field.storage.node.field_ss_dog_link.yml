@@ -1,0 +1,19 @@
+uuid: 036f3087-bce5-4410-a905-bda3f7e13584
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_ss_dog_link
+field_name: field_ss_dog_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
