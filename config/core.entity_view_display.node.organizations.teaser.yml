@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.organizations.field_state
     - node.type.organizations
   module:
-    - link
     - text
     - user
 id: node.organizations.teaser
@@ -29,48 +28,20 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_org_funded:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_org_how_we_help:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_org_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: basic_page_220x220
-      link: false
-    third_party_settings: {  }
     weight: 0
     region: content
-  field_org_website:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+  links:
+    settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 100
     region: content
 hidden:
   addtoany: true
   field_funded_year: true
   field_org_dog_s_name: true
+  field_org_funded: true
+  field_org_how_we_help: true
+  field_org_image: true
+  field_org_website: true
   field_related_meet_the_dog: true
   field_state: true
-  links: true

@@ -11,11 +11,38 @@ dependencies:
     - media.type.image
   module:
     - image
+    - user
 id: media.image.100x100_scaled_cropped
 targetEntityType: media
 bundle: image
 mode: 100x100_scaled_cropped
 content:
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_photo_credit:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   thumbnail:
     type: image
     label: hidden
@@ -25,13 +52,16 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
+    weight: 5
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   addtoany: true
-  created: true
-  field_caption: true
   field_media_image: true
-  field_photo_credit: true
   name: true
-  uid: true

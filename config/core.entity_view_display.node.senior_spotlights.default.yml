@@ -21,67 +21,10 @@ dependencies:
     - field.field.node.senior_spotlights.field_ss_photos
     - node.type.senior_spotlights
   module:
-    - field_group
     - link
     - options
     - text
     - user
-third_party_settings:
-  field_group:
-    group_title:
-      children:
-        - group_about
-        - group_organization
-      label: Title
-      parent_name: ''
-      region: content
-      weight: 2
-      format_type: tabs
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        direction: horizontal
-        width_breakpoint: 640
-    group_about:
-      children:
-        - body
-        - field_ss_dog_age
-        - field_ss_dog_breed
-        - field_ss_dog_weight
-        - field_ss_dog_sex
-        - field_ss_dog_home_pref
-        - field_ss_dog_fee
-        - field_ss_dog_out_of_area
-      label: About
-      parent_name: group_title
-      region: content
-      weight: 20
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: open
-        description: ''
-    group_organization:
-      children:
-        - field_ss_org_contact_name
-        - field_ss_org_email
-        - field_ss_org_name
-        - field_ss_org_website
-        - field_ss_dog_reason
-      label: Organization
-      parent_name: group_title
-      region: content
-      weight: 21
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        formatter: closed
-        description: ''
 id: node.senior_spotlights.default
 targetEntityType: node
 bundle: senior_spotlights
@@ -92,7 +35,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_ss_dog_age:
     type: string
@@ -100,7 +43,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   field_ss_dog_breed:
     type: string
@@ -108,7 +51,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_ss_dog_fee:
     type: string
@@ -116,14 +59,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_ss_dog_home_pref:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_ss_dog_link:
     type: link
@@ -135,17 +78,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_ss_dog_out_of_area:
-    type: boolean
+    type: list_default
     label: inline
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+    settings: {  }
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_ss_dog_reason:
     type: list_default
@@ -159,7 +99,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_ss_dog_weight:
     type: string
@@ -167,17 +107,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_ss_is_adopted:
-    type: boolean
+    type: list_default
     label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+    settings: {  }
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_ss_org_contact_name:
     type: string
@@ -214,19 +151,11 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
-  field_ss_photos:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: basic_400x400
-      link: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 17
+    weight: 100
     region: content
 hidden:
   addtoany: true
+  field_ss_photos: true

@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.body
     - field.field.node.blog.field_blog_categories
-    - field.field.node.blog.field_category
     - field.field.node.blog.field_image
     - field.field.node.blog.field_metatag
     - field.field.node.blog.field_tags
@@ -43,7 +42,6 @@ content:
 hidden:
   addtoany: true
   field_blog_categories: true
-  field_category: true
   field_metatag: true
   field_tags: true
   links: true

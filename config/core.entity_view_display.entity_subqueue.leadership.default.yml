@@ -1,19 +1,19 @@
-uuid: d231b93c-4198-4a4f-942b-2a3e8d83a235
+uuid: 15f9d67c-62e0-4404-ae34-51ab87991774
 langcode: en
 status: true
 dependencies:
   config:
-    - entityqueue.entity_queue.advisory_board
-id: entity_subqueue.advisory_board.default
+    - entityqueue.entity_queue.leadership
+id: entity_subqueue.leadership.default
 targetEntityType: entity_subqueue
-bundle: advisory_board
+bundle: leadership
 mode: default
 content:
   items:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: card
+      view_mode: teaser
       link: false
     third_party_settings: {  }
     weight: 0
