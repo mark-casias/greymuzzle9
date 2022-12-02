@@ -11,7 +11,6 @@ dependencies:
     - paragraphs.paragraphs_type.media_card
   module:
     - link
-    - media_library
     - text
 id: paragraph.media_card.default
 targetEntityType: paragraph
@@ -35,11 +34,14 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
   field_media:
-    type: media_library_widget
-    weight: 2
+    type: entity_reference_autocomplete
+    weight: 5
     region: content
     settings:
-      media_types: {  }
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_modifier:
     type: options_select

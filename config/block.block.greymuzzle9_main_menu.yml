@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - system
   theme:
     - greymuzzle9
@@ -25,6 +26,6 @@ settings:
   label_display: '0'
   provider: system
   level: 1
-  depth: 6
+  depth: 3
   expand_all_items: true
 visibility: {  }

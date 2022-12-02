@@ -7,8 +7,8 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - main-menu
-    parent: 'main-menu:1297:'
+      - main
+    parent: 'main:menu_link_content:a5ab4422-744a-45ec-87f1-225afa0e13aa'
 name: 'Meet the Dogs'
 type: meet_the_dogs
 description: ''

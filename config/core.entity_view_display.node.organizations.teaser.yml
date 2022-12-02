@@ -24,7 +24,7 @@ mode: teaser
 content:
   body:
     type: text_summary_or_trimmed
-    label: hidden
+    label: inline
     settings:
       trim_length: 600
     third_party_settings: {  }

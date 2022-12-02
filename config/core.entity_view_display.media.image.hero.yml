@@ -8,29 +8,18 @@ dependencies:
     - field.field.media.image.field_media_image
     - field.field.media.image.field_photo_credit
     - media.type.image
-    - responsive_image.styles.hero
-  module:
-    - responsive_image
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
 id: media.image.hero
 targetEntityType: media
 bundle: image
 mode: hero
-content:
-  field_media_image:
-    type: responsive_image
-    label: visually_hidden
-    settings:
-      responsive_image_style: hero
-      image_link: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
+content: {  }
 hidden:
   addtoany: true
   created: true
   field_caption: true
+  field_media_image: true
   field_photo_credit: true
   name: true
   thumbnail: true

@@ -11,7 +11,7 @@ id: node.about_our_volunteers.body
 field_name: body
 entity_type: node
 bundle: about_our_volunteers
-label: Body
+label: 'Dog Information'
 description: ''
 required: false
 translatable: false

@@ -257,23 +257,13 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
-    position: 1
+  embed_1:
+    id: embed_1
+    display_title: Embed
+    display_plugin: embed
+    position: 2
     display_options:
       display_extenders: {  }
-      path: grey-matters
-      menu:
-        type: normal
-        title: 'Grey Matters'
-        description: ''
-        weight: -50
-        expanded: true
-        menu_name: main
-        parent: 'menu_link_content:ed233e1b-d09a-4f15-9631-8ae7f040abdc'
-        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

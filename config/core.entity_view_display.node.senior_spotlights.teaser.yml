@@ -22,7 +22,7 @@ dependencies:
     - field.field.node.senior_spotlights.field_ss_photos
     - node.type.senior_spotlights
   module:
-    - text
+    - smart_trim
     - user
 id: node.senior_spotlights.teaser
 targetEntityType: node
@@ -30,10 +30,21 @@ bundle: senior_spotlights
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: smart_trim
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 300
+      trim_type: chars
+      trim_suffix: ...
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: ignore
+      trim_options:
+        text: false
+        trim_zero: false
     third_party_settings: {  }
     weight: 101
     region: content
@@ -41,7 +52,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: basic_page_220x220
       link: false
     third_party_settings: {  }
     weight: 0

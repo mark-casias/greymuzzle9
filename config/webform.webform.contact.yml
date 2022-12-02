@@ -17,17 +17,36 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: |
+elements: |-
   name:
-    '#title': 'Your Name'
     '#type': textfield
+    '#title': Name
     '#required': true
     '#default_value': '[current-user:display-name]'
   email:
-    '#title': 'Your Email'
     '#type': email
+    '#title': Email
     '#required': true
     '#default_value': '[current-user:mail]'
+  about:
+    '#type': select
+    '#title': About
+    '#options':
+      grants: Grants
+      senior-dog-info: 'Senior Dog Information'
+      donations: Donation
+      volunteer: Volunteering
+      tech: 'Website/technical issues'
+      other: Other
+  comment:
+    '#type': textarea
+    '#title': Comment
+  phone:
+    '#type': tel
+    '#title': Phone
+  subscribe_to_newsletter:
+    '#type': checkbox
+    '#title': 'Subscribe to Newsletter'
   subject:
     '#title': Subject
     '#type': textfield
