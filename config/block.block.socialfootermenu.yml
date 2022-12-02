@@ -1,0 +1,29 @@
+uuid: f48c7b4d-83d1-4be3-a1ab-fe5a401285c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9bb3d427-3de9-44c4-b099-7b68b6340396'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - greymuzzle9
+third_party_settings:
+  block_class:
+    classes: null
+id: socialfootermenu
+theme: greymuzzle9
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:9bb3d427-3de9-44c4-b099-7b68b6340396'
+settings:
+  id: 'block_content:9bb3d427-3de9-44c4-b099-7b68b6340396'
+  label: 'Social Footer Menu'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
