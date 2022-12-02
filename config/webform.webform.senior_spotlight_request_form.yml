@@ -1,35 +1,59 @@
-uuid: cdbcf096-67d1-4375-90b6-bc1e31741156
+uuid: e8ea87b1-f42e-4eba-912f-81205f70879b
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform_options_custom
-_core:
-  default_config_hash: u2nxAjRY4llyL_rbyHGMbAD4r-zggCEHniCtumx9D0c
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: null
+uid: 1175
 template: false
 archive: false
-id: example_options_custom
-title: 'Example: Custom Options'
-description: 'Example of a custom options element.'
-category: Example
-elements: |
-  states:
-    '#type': 'webform_options_custom:us_states'
-    '#title': 'U.S. States'
-    '#required': true
-  button:
-    '#type': 'webform_options_custom:buttons'
-    '#title': 'Buttons'
-    '#required': true
-    '#options':
-      one: One -- This is the number 1.
-      two: Two -- This is the number 2.
-      three:  Three -- This is the number 3.
+id: senior_spotlight_request_form
+title: 'Senior Spotlight Request Form'
+description: ''
+category: ''
+elements: |-
+  organization:
+    '#type': fieldset
+    '#title': 'About your Organization'
+    org_contact_name:
+      '#type': textfield
+      '#title': 'Contact Name'
+      '#required': true
+    contact_e_mail:
+      '#type': email
+      '#title': "Contact E-Mail\t"
+      '#required': true
+    organization_name:
+      '#type': textfield
+      '#title': 'Organization Name'
+      '#required': true
+    org_website:
+      '#type': textfield
+      '#title': Website
+  about_your_adoptable_dog:
+    '#type': fieldset
+    '#title': 'About your Adoptable Dog'
+    dog_name:
+      '#type': textfield
+      '#title': 'Dog Name'
+      '#required': true
+    approximate_age:
+      '#type': number
+      '#title': 'Approximate Age'
+      '#required': true
+    sex:
+      '#type': select
+      '#title': Sex
+      '#title_display': inline
+      '#options': sex
+    breed:
+      '#type': textfield
+      '#title': Breed
+      '#required': true
+  approximate_weight:
+    '#type': number
+    '#title': 'Approximate Weight'
 css: ''
 javascript: ''
 settings:
@@ -42,7 +66,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''
@@ -117,7 +141,7 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  preview: 1
+  preview: 0
   preview_label: ''
   preview_title: ''
   preview_message: ''
@@ -132,7 +156,7 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: message
+  confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''

@@ -1,35 +1,21 @@
-uuid: cdbcf096-67d1-4375-90b6-bc1e31741156
+uuid: 9f27745b-bcdb-40ad-9b3a-1dc377b6db01
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform_options_custom
-_core:
-  default_config_hash: u2nxAjRY4llyL_rbyHGMbAD4r-zggCEHniCtumx9D0c
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: null
+uid: 1175
 template: false
 archive: false
-id: example_options_custom
-title: 'Example: Custom Options'
-description: 'Example of a custom options element.'
-category: Example
-elements: |
-  states:
-    '#type': 'webform_options_custom:us_states'
-    '#title': 'U.S. States'
-    '#required': true
-  button:
-    '#type': 'webform_options_custom:buttons'
-    '#title': 'Buttons'
-    '#required': true
-    '#options':
-      one: One -- This is the number 1.
-      two: Two -- This is the number 2.
-      three:  Three -- This is the number 3.
+id: introducing_grey_muzzle_s_senior
+title: 'Introducing Grey Muzzle’s Senior Dog Prom Finalists'
+description: ''
+category: ''
+elements: |-
+  email:
+    '#type': email
+    '#title': Email
 css: ''
 javascript: ''
 settings:
@@ -42,7 +28,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''
@@ -117,7 +103,7 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  preview: 1
+  preview: 0
   preview_label: ''
   preview_title: ''
   preview_message: ''
@@ -132,7 +118,7 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: message
+  confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
