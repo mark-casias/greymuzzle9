@@ -50,6 +50,10 @@ fieldMappings:
   name:
     properties:
       - 'foaf:name'
+  comment_count:
+    properties:
+      - 'sioc:num_replies'
+    datatype: 'xsd:integer'
   last_activity:
     properties:
       - 'sioc:last_activity_date'

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_faq_questions
     - node.type.faqs
-    - paragraphs.paragraphs_type.faqs
+    - paragraphs.paragraphs_type.faq_questions
   module:
     - entity_reference_revisions
 id: node.faqs.field_faq_questions
@@ -22,31 +22,31 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      faqs: faqs
+      faq_questions: faq_questions
     negate: 0
     target_bundles_drag_drop:
       faq_questions:
-        weight: -16
-        enabled: false
-      faqs:
-        weight: -17
+        weight: 1
         enabled: true
+      faqs:
+        weight: 2
+        enabled: false
       from_library:
-        weight: -15
+        weight: 3
         enabled: false
       hero:
-        weight: -14
+        weight: 4
         enabled: false
       media_card:
-        weight: -13
+        weight: 5
         enabled: false
       programs:
-        weight: -12
+        weight: 6
         enabled: false
       text:
-        weight: -11
+        weight: 7
         enabled: false
       views:
-        weight: -10
+        weight: 8
         enabled: false
 field_type: entity_reference_revisions

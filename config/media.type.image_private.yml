@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: image_private
-label: 'Image private'
+label: 'Image (private)'
 description: null
 source: image
 queue_thumbnail_downloads: false

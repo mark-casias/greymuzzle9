@@ -22,7 +22,6 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      image_private: image_private
   file_directory: ''
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''

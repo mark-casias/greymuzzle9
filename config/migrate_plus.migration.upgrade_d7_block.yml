@@ -40,6 +40,8 @@ process:
       map:
         book:
           navigation: book_navigation
+        comment:
+          recent: 'views_block:comments_recent-block_1'
         forum:
           active: forum_active_block
           new: forum_new_block

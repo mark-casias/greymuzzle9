@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_org_image
     - media.type.image
-    - media.type.image_private
     - node.type.organizations
 id: node.organizations.field_org_image
 field_name: field_org_image
@@ -22,5 +21,4 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      image_private: image_private
 field_type: entity_reference

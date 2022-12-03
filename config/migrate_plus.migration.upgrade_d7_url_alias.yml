@@ -73,6 +73,10 @@ process:
       source:
         - '@_path'
         - '@node_translation'
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
 destination:
   plugin: 'entity:path_alias'
 migration_dependencies:

@@ -1,11 +1,11 @@
-uuid: 43ddb396-82ef-40dd-856a-af26f69030e3
+uuid: a0714bc0-a884-4bee-9ac2-f3b26257687b
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: leadership
-label: Leadership
+id: staff
+label: Staff
 handler: simple
 handler_configuration: {  }
 entity_settings:

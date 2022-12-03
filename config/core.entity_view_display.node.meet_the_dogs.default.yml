@@ -12,7 +12,6 @@ dependencies:
     - node.type.meet_the_dogs
   module:
     - link
-    - options
     - text
     - user
 id: node.meet_the_dogs.default
@@ -37,9 +36,12 @@ content:
     weight: 5
     region: content
   field_meet_deceased:
-    type: list_default
+    type: boolean
     label: hidden
-    settings: {  }
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
     weight: 1
     region: content
@@ -55,7 +57,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: basic_page_220x220_left
       link: false
     third_party_settings: {  }
     weight: 0

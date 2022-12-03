@@ -1,10 +1,10 @@
-uuid: 29ef0f6d-cfa1-4c17-b018-f127bf57802b
+uuid: cae0d636-2d56-42c2-961b-4eae5b69ef62
 langcode: en
 status: true
 dependencies:
   module:
     - media
-id: media.wysiwyg
-label: WYSIWYG
+id: media.thumbnail
+label: Thumbnail
 targetEntityType: media
 cache: true

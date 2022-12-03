@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_tags
     - node.type.blog
-    - taxonomy.vocabulary.tags
 id: node.blog.field_tags
 field_name: field_tags
 entity_type: node
@@ -19,8 +18,6 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      tags: tags
     sort:
       field: _none
 field_type: entity_reference

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_funded_year
     - node.type.organizations
-    - taxonomy.vocabulary.funded_year
 id: node.organizations.field_funded_year
 field_name: field_funded_year
 entity_type: node
@@ -48,8 +47,6 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      funded_year: funded_year
     sort:
       field: _none
 field_type: entity_reference

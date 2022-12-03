@@ -1,12 +1,12 @@
-uuid: 61d5c30b-dd65-4d9e-9686-62f09941b8f0
+uuid: 3cd8918c-759c-437c-a26d-2f55f4f8ea63
 langcode: en
 status: true
 dependencies: {  }
 name: blog_body
 label: 'Blog Body'
 effects:
-  702114c6-11f0-4e31-825e-47e206e2aa4d:
-    uuid: 702114c6-11f0-4e31-825e-47e206e2aa4d
+  2c45d76b-05aa-4ac1-bd0f-39aaaabbd041:
+    uuid: 2c45d76b-05aa-4ac1-bd0f-39aaaabbd041
     id: image_scale
     weight: 1
     data:

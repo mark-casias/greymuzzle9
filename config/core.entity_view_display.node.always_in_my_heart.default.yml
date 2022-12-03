@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.always_in_my_heart.field_heart_dogs_name
     - field.field.node.always_in_my_heart.field_heart_image
     - field.field.node.always_in_my_heart.field_heart_year
+    - image.style.large
     - node.type.always_in_my_heart
   module:
+    - media
     - options
     - text
     - user
@@ -33,11 +35,13 @@ content:
     weight: 3
     region: content
   field_heart_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content

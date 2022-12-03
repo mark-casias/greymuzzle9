@@ -7,26 +7,15 @@ dependencies:
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
     - field.field.media.image.field_photo_credit
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.image
   module:
     - image
-    - user
 id: media.image.basic_page_220x220_right
 targetEntityType: media
 bundle: image
 mode: basic_page_220x220_right
 content:
-  created:
-    type: timestamp
-    label: hidden
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_caption:
     type: string
     label: hidden
@@ -34,6 +23,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_photo_credit:
     type: string
@@ -43,25 +43,9 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  thumbnail:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: thumbnail
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  uid:
-    type: author
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   addtoany: true
-  field_media_image: true
+  created: true
   name: true
+  thumbnail: true
+  uid: true

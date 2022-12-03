@@ -1,12 +1,12 @@
-uuid: 5d0c30d3-08f2-4573-a81c-6357b6333751
+uuid: 97b4d077-61c9-48de-97e8-5d78a4f9ca06
 langcode: en
 status: true
 dependencies: {  }
 name: square_thumbnail
 label: square_thumbnail
 effects:
-  020a3e96-7cf1-4b0c-bbc6-954a8ab61ddf:
-    uuid: 020a3e96-7cf1-4b0c-bbc6-954a8ab61ddf
+  a92e7928-31aa-4c51-9362-652b138717ef:
+    uuid: a92e7928-31aa-4c51-9362-652b138717ef
     id: image_scale_and_crop
     weight: 0
     data:

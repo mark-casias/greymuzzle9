@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.always_in_my_heart.field_heart_year
     - node.type.always_in_my_heart
   module:
-    - file
+    - media_library
     - path
     - text
 id: node.always_in_my_heart.default
@@ -42,11 +42,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_heart_image:
-    type: file_generic
+    type: media_library_widget
     weight: 3
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   field_heart_year:
     type: options_select

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_ss_photos
     - media.type.image
-    - media.type.image_private
     - node.type.senior_spotlights
 id: node.senior_spotlights.field_ss_photos
 field_name: field_ss_photos
@@ -22,5 +21,4 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      image_private: image_private
 field_type: entity_reference

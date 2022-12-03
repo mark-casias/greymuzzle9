@@ -2,14 +2,9 @@ uuid: d835039a-bb39-4847-8050-01346f78671f
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.basic_html
-    - filter.format.filtered_html
   module:
-    - filter
-    - media
+    - comment
     - node
-    - paragraphs
     - search
     - system
 _core:
@@ -20,13 +15,11 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
-  - 'cancel account'
-  - 'change own username'
+  - 'create files'
   - 'search content'
-  - 'select account cancellation method'
+  - 'skip comment approval'
   - 'use advanced search'
-  - 'use text format basic_html'
-  - 'use text format filtered_html'
-  - 'view media'
+  - 'view files'
+  - 'view own files'
+  - 'view own private files'
   - 'view own unpublished content'
-  - 'view unpublished paragraphs'
