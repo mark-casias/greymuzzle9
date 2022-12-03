@@ -47,14 +47,6 @@ process:
     -
       plugin: get
       source: value/toggle_node_user_picture
-  toggle_comment_user_picture:
-    -
-      plugin: get
-      source: value/toggle_comment_user_picture
-  toggle_comment_user_verification:
-    -
-      plugin: get
-      source: value/toggle_comment_user_verification
   toggle_favicon:
     -
       plugin: get

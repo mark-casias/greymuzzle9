@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entityqueue.entity_queue.staff
+    - entityqueue.entity_queue.leadership
   module:
     - entityqueue
 id: who_we_are_staff

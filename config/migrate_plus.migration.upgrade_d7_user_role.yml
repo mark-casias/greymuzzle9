@@ -32,7 +32,6 @@ process:
       map:
         'use PHP for block visibility': 'use PHP for settings'
         'administer site-wide contact form': 'administer contact forms'
-        'post comments without approval': 'skip comment approval'
         'edit own blog entries': 'edit own blog content'
         'edit any blog entry': 'edit any blog content'
         'delete own blog entries': 'delete own blog content'

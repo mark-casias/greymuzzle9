@@ -33,14 +33,6 @@ process:
     -
       plugin: get
       source: theme_settings/toggle_node_user_picture
-  features/comment_user_picture:
-    -
-      plugin: get
-      source: theme_settings/toggle_comment_user_picture
-  features/comment_user_verification:
-    -
-      plugin: get
-      source: theme_settings/toggle_comment_user_verification
   features/favicon:
     -
       plugin: get

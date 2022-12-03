@@ -72,10 +72,6 @@ process:
     -
       plugin: get
       source: source_langcode
-  comment_node_webform/0/status:
-    -
-      plugin: get
-      source: comment
   field_metatag:
     -
       plugin: d7_metatag_entities
@@ -91,4 +87,3 @@ migration_dependencies:
     - upgrade_d7_file_entity_image_public
   optional:
     - upgrade_d7_field_instance
-    - upgrade_d7_comment_field_instance

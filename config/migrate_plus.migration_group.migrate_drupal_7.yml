@@ -9,12 +9,4 @@ source_type: 'Drupal 7'
 module: null
 shared_configuration:
   source:
-    key: drupal_7
-    database:
-      driver: mysql
-      username: root
-      password: root
-      host: localhost
-      port: ''
-      database: dev_greymuzzle7
-      prefix: null
+    key: migrate

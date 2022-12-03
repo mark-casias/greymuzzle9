@@ -20,6 +20,14 @@ source:
 process:
   entity_type:
     -
+      plugin: skip_on_value
+      equals: true
+      source: entity_type
+      method: row
+      value:
+        - fieldable_panels_pane
+        - comment
+    -
       plugin: get
       source: entity_type
     -
@@ -42,6 +50,13 @@ process:
       plugin: get
       source: constants/langcode
   field_name:
+    -
+      plugin: skip_on_value
+      equals: true
+      source: field_name
+      method: row
+      value:
+        - comment
     -
       plugin: get
       source: field_name

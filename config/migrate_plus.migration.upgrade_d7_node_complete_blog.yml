@@ -72,10 +72,6 @@ process:
     -
       plugin: get
       source: source_langcode
-  comment_node_blog/0/status:
-    -
-      plugin: get
-      source: comment
   body:
     -
       plugin: get
@@ -116,10 +112,8 @@ migration_dependencies:
     - upgrade_d7_node_type
     - upgrade_d7_file_entity_image_public
     - upgrade_d7_file_entity_image_private
-    - upgrade_d7_file_entity_image_public
   optional:
     - upgrade_d7_field_instance
-    - upgrade_d7_comment_field_instance
     - upgrade_d7_metatag_field_node
     - upgrade_d7_metatag_field_instance_node_blog
     - upgrade_d7_metatag_field_instance_widget_settings_node_blog
