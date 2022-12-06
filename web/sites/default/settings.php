@@ -28,6 +28,25 @@ include __DIR__ . "/settings.pantheon.php";
  */
 // $settings['skip_permissions_hardening'] = TRUE;
 
+// Set up Migration from Secrets file.
+$secretsFile = $_SERVER['HOME'] . '/files/private/secrets.json';
+if (file_exists($secretsFile)) {
+ $secrets = json_decode(file_get_contents($secretsFile), 1);
+}
+
+if (!empty($parsed_url['port']) && !empty($parsed_url['host']) && !empty($parsed_url['pass'])) {
+  $databases['migrate']['default'] = [
+    'database' => 'migrate',
+    'username' => 'pantheon',
+    'password' => $parsed_url['pass'],
+    'host' => $parsed_url['host'],
+    'port' => $parsed_url['port'],
+    'driver' => 'mysql',
+    'prefix' => '',
+    'collation' => 'utf8mb4_general_ci',
+  ];
+}
+
 /**
  * If there is a local settings file, then include it
  */
