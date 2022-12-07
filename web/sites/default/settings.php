@@ -33,6 +33,9 @@ $secretsFile = $_SERVER['HOME'] . '/files/private/secrets.json';
 if (file_exists($secretsFile)) {
  $secrets = json_decode(file_get_contents($secretsFile), 1);
 }
+else {
+  echo 'file not found: ' . $_SERVER['HOME'] . '/files/private/secrets.json';
+}
 
 if (!empty($parsed_url['port']) && !empty($parsed_url['host']) && !empty($parsed_url['pass'])) {
   $databases['migrate']['default'] = [
