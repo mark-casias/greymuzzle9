@@ -33,17 +33,14 @@ $secretsFile = $_SERVER['HOME'] . '/files/private/secrets.json';
 if (file_exists($secretsFile)) {
  $secrets = json_decode(file_get_contents($secretsFile), 1);
 }
-else {
-  echo 'file not found: ' . $_SERVER['HOME'] . '/files/private/secrets.json';
-}
 
-if (!empty($parsed_url['port']) && !empty($parsed_url['host']) && !empty($parsed_url['pass'])) {
+if (!empty($secrets['port']) && !empty($secrets['host']) && !empty($secrets['pass'])) {
   $databases['migrate']['default'] = [
     'database' => 'migrate',
     'username' => 'pantheon',
-    'password' => $parsed_url['pass'],
-    'host' => $parsed_url['host'],
-    'port' => $parsed_url['port'],
+    'password' => $secrets['pass'],
+    'host' => $secrets['host'],
+    'port' => $secrets['port'],
     'driver' => 'mysql',
     'prefix' => '',
     'collation' => 'utf8mb4_general_ci',
