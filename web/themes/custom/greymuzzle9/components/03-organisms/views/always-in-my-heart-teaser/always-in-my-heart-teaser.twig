@@ -12,7 +12,9 @@
     {% for item in items %}
       <li>
         {% include "@molecules/aimh-card/aimh-card.twig" with {
-          "field_image": item.field_image,
+          "content": {
+            "field_heart_image": item.field_image,
+            },
           "label": item.label,
         } %}
       </li>

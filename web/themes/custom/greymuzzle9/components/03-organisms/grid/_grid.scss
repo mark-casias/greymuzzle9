@@ -1,10 +1,12 @@
 @mixin grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .grid {
   @include grid;
+  @include wrapper;
 
   &--card {
     @include space-stack-page;

@@ -18,7 +18,7 @@ mode: card
 content:
   field_heart_dogs_name:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -26,7 +26,7 @@ content:
     region: content
   field_heart_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: basic_page_220x220
       link: false

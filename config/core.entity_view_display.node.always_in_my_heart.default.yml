@@ -28,7 +28,7 @@ content:
     region: content
   field_heart_dogs_name:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -36,7 +36,7 @@ content:
     region: content
   field_heart_image:
     type: media_thumbnail
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: large
@@ -47,7 +47,7 @@ content:
     region: content
   field_heart_year:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2

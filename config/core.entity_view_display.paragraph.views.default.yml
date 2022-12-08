@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.views.field_description
+    - field.field.paragraph.views.field_title
     - field.field.paragraph.views.field_view
     - paragraphs.paragraphs_type.views
   module:
@@ -12,6 +14,21 @@ targetEntityType: paragraph
 bundle: views
 mode: default
 content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_view:
     type: viewsreference_formatter
     label: hidden
@@ -19,6 +36,6 @@ content:
       plugin_types:
         - block
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
 hidden: {  }
