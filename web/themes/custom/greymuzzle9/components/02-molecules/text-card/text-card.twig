@@ -1,4 +1,5 @@
-<div class="text-card">
+<div class="text-card text-card__{{background}}">
+  <div class="text-card__wrapper">
   {% include "@atoms/text/headings/_heading.twig" with {
     heading_level: 2,
     heading_base_class: 'heading',
@@ -8,5 +9,5 @@
   <div class="text-card__text">
     {{ body }}
   </div>
-  {{ content.field_image }}
+  </div>
 </div>

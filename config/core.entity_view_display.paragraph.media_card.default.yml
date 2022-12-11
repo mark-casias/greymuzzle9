@@ -10,6 +10,7 @@ dependencies:
     - field.field.paragraph.media_card.field_title
     - paragraphs.paragraphs_type.media_card
   module:
+    - link
     - options
     - text
 id: paragraph.media_card.default
@@ -24,6 +25,18 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_media:
     type: entity_reference_entity_view
     label: hidden
@@ -34,7 +47,7 @@ content:
     weight: 2
     region: content
   field_modifier:
-    type: list_default
+    type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -48,5 +61,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  field_link: true
+hidden: {  }

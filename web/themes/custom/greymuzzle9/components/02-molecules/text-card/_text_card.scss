@@ -1,8 +1,19 @@
 .text-card {
-  @include wrapper;
-  margin-bottom: 2rem;
+  padding: 1rem 0;
+  &__wrapper {
+    @include wrapper;
+  }
 
   h2 {
     text-align: center;
   }
+
+  &__secondary {
+    background-color: clr(secondary);
+  }
+  &__tertiary {
+    background-color: clr(tertiary);
+  }
+
+
 }

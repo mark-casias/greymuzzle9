@@ -39,8 +39,9 @@
  */
 #}
 {% embed "@molecules/text-card/text-card.twig" with {
-  label: content.field_title,
+  label: content.field_title|field_value,
   body: content.field_body,
+  background: content.field_background|field_value
 } %}
 
 {% endembed %}

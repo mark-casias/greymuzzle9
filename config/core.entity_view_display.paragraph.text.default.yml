@@ -3,16 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text.field_background
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_title
     - paragraphs.paragraphs_type.text
   module:
+    - options
     - text
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text
 mode: default
 content:
+  field_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_body:
     type: text_default
     label: hidden

@@ -5,9 +5,7 @@
     button_content: content.field_link['#items'].0.title,
     button_url: content.field_link['#items'].0.url,
   },
-  modifier: [
-    content.field_modifier['#items'].0.value
-  ],
+  modifier: content.field_modifier|field_value,
 } %}
 
   {% block field_link %}

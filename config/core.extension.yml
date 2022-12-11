@@ -16,7 +16,6 @@ module:
   components: 0
   config: 0
   contact: 0
-  contextual: 0
   ctools: 0
   custom_migrate: 0
   datetime: 0
