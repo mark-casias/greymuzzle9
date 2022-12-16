@@ -1,0 +1,146 @@
+uuid: 167e4602-3a65-4c82-8236-d6c7c3947211
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_1603
+title: 'Volunteer Application'
+description: null
+category: null
+elements: |
+  first_name:
+    '#type': textfield
+    '#title': 'First Name' 
+    '#description': ""
+    '#required': true
+  last_name:
+    '#type': textfield
+    '#title': 'Last Name' 
+    '#description': ""
+    '#required': true
+  email:
+    '#type': email
+    '#size': 20
+    '#title': 'Email' 
+    '#description': ""
+    '#required': true
+  address:
+    '#type': webform_address
+    '#state_province__type': textfield
+    '#title_display': invisible
+    '#title': 'Address' 
+    '#description': ""
+    '#required': true
+  phone_number:
+    '#type': textfield
+    '#title': 'Phone Number' 
+    '#description': ""
+  website:
+    '#type': textfield
+    '#title': 'Do you have a website or blog? What is the URL? ' 
+    '#description': ""
+  upload_a_resume:
+    '#type': managed_file
+    '#max_filesize': '2'
+    '#file_extensions': 'pdf'
+    '#title': 'Upload a Resume' 
+    '#description': ""
+  areas_of_interest:
+    '#type': checkboxes
+    '#options':
+      administrative: 'Administrative'
+      blogging: 'Blogging'
+      data_analysis: 'Data Analysis'
+      editorial: 'Editorial'
+      education: 'Education/Outreach'
+      events: 'Events'
+      financial: 'Financial'
+      fundraising: 'Fundraising'
+      google_analytics: 'Google Analytics'
+      grants: 'Grants'
+      design: 'Graphic Design'
+      marketing: 'Marketing'
+      newsletter: 'Newsletter'
+      media: 'PR/Media'
+      presentations: 'Presentations'
+      project_management: 'Project Management'
+      thanking_donors: 'Thanking Donors'
+      social_media: 'Social Media'
+      website: 'Website'
+      writing: 'Writing/Editing'
+      other: 'Other'
+    '#multiple': true
+    '#title': 'Grey Muzzle has many volunteer opportunities available. What area(s) interest you?' 
+    '#description': ""
+  skills_or_interests:
+    '#type': textarea
+    '#title': 'What are your special skills or interests? ' 
+    '#description': ""
+  time_commitment:
+    '#type': textarea
+    '#title': 'How much time can you devote to volunteering for Grey Muzzle?' 
+    '#description': ""
+  how_learned_about:
+    '#type': textarea
+    '#title': 'How did you learn about The Grey Muzzle Organization? ' 
+    '#description': ""
+  other_organizations:
+    '#type': textarea
+    '#title': 'Are you involved with any other animal welfare organization(s)? If so, which organization(s) and how do you participate? ' 
+    '#description': ""
+  anything_else:
+    '#type': textarea
+    '#title': 'Anything else you"d like to share with us?' 
+    '#description': ""
+  committees:
+    '#type': radios
+    '#options':
+      yes: 'Yes'
+      no: 'no'
+    '#default_value': 'yes' 
+    '#title': 'Would you have an interest in managing one of our committees? ' 
+    '#description': ""
+  board_interest:
+    '#type': radios
+    '#options':
+      yes: 'Yes'
+      no: 'No'
+    '#default_value': 'yes' 
+    '#title': 'Would you have an interest in a future position on The Grey Muzzle Organization"s volunteer Board of Directors?' 
+    '#description': ""
+  future_communications:
+    '#type': radios
+    '#options':
+      yes: 'Yes'
+      no: 'No'
+    '#default_value': 'yes' 
+    '#title': 'Would you like to receive communications from The Grey Muzzle Organization? We respect your privacy and never sell, rent or share your information.' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

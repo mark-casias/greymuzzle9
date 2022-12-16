@@ -1,0 +1,185 @@
+uuid: 5bfd2408-e56b-4c18-bd12-28bbf8158fec
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_1572
+title: 'Bed Fund Application'
+description: null
+category: null
+elements: |
+  intro:
+    '#type': processed_text
+    '#format': full_html
+    '#text': "<p>The Grey Muzzle Organization Bed Fund donates Kuranda cots and orthopedic pads to shelters for senior dogs at the shelter. The goal is to help make old dogs more comfortable and more adoptable.<br><br>This form allows animal shelters to request orthopedic bed donations from The Grey Muzzle Organization's Bed Fund. The beds are for use by senior dogs at your shelter.<br><br>Use the form below to request beds. You must be an authorized representative of the shelter in order to request beds. We also request that you provide a photo of one of the senior dogs helped by this donation.<br><br>Please note that not all applications may be approved. If your application is approved, we will send two beds of the type you request to the shipping address on this form. Please allow several months for delivery - we are an all-volunteer organization.<br><br>See http://www.greymuzzle.org/how-to-help/donate/donate-a-bed for more information. You can contact us at beds@greymuzzle.org.</p>"
+    '#title': 'Intro' 
+    '#description': ""
+  non_profit_confirm:
+    '#type': radios
+    '#options':
+      yes: 'Agreed'
+    '#title': 'Please confirm you are a registered non-profit or government run animal shelter and donated beds will benefit dogs living in a kennel environment.' 
+    '#description': ""
+    '#required': true
+  shelter_name:
+    '#type': textfield
+    '#title': 'Shelter Name' 
+    '#description': ""
+    '#required': true
+  address:
+    '#type': webform_address
+    '#state_province__type': textfield
+    '#title_display': invisible
+    '#title': 'Address' 
+    '#description': ""
+    '#required': true
+  contact_name:
+    '#type': textfield
+    '#title': 'Contact Name' 
+    '#description': ""
+    '#required': true
+  contact_title:
+    '#type': textfield
+    '#title': 'Contact Title' 
+    '#description': ""
+    '#required': true
+  contact_email:
+    '#type': email
+    '#size': 20
+    '#title': 'Contact Email' 
+    '#description': ""
+    '#required': true
+  contact_phone:
+    '#type': textfield
+    '#title': 'Contact Phone' 
+    '#description': ""
+    '#required': true
+  shelter_website:
+    '#type': textfield
+    '#title': 'Shelter Website' 
+    '#description': ""
+    '#required': true
+  shelter_bio:
+    '#type': textarea
+    '#title': 'Tell us a bit about how you are trying to help senior dogs at your shelter' 
+    '#description': ""
+    '#required': true
+  apply_confirm:
+    '#type': radios
+    '#options':
+      yes: 'I agree they will be used in a shelter facility environment'
+    '#title': 'I am applying for two Kuranda Slimline cots' 
+    '#description': ""
+    '#required': true
+  social_confirm:
+    '#type': radios
+    '#options':
+      yes: 'Yes'
+      no: 'No'
+    '#title': 'If you receive beds from the Grey Muzzle Organization, would you be willing to share pictures of your senior dogs using the beds? The pictures will be used, with your permission, to illustrate how donations are used.' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: beds@greymuzzle.org
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:contact_email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:contact_name:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:contact_email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: beds@greymuzzle.org
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Thank you for your Application'
+      body: |2-
+         Thank you for submitting your bed application. Please note that not all applications may be approved. If your application is approved, we will notify you and send two beds of the type you requested to the shipping address on this form. We cannot ship to PO boxes.  Please allow several months for delivery - we are an all-volunteer organization and ship beds out once or twice per year.
+
+        See http://www.greymuzzle.org/how-to-help/donate/donate-a-bed for more information. You can contact us at beds@greymuzzle.org.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

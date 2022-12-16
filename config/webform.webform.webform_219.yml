@@ -1,0 +1,124 @@
+uuid: 431d84b4-57a1-484c-b2ab-2075d80c88fd
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_219
+title: 'Join our Newsletter'
+description: null
+category: null
+elements: |
+  email:
+    '#type': email
+    '#size': 20
+    '#title': 'Email' 
+    '#description': ""
+    '#required': true
+  first_name:
+    '#type': textfield
+    '#title': 'First Name' 
+    '#description': ""
+  last_name:
+    '#type': textfield
+    '#title': 'Last Name' 
+    '#description': ""
+  address_1:
+    '#type': textfield
+    '#title': 'Address 1' 
+    '#description': ""
+  address_2:
+    '#type': textfield
+    '#title': 'Address 2' 
+    '#description': ""
+  city:
+    '#type': textfield
+    '#title': 'City' 
+    '#description': ""
+  state:
+    '#type': textfield
+    '#title': 'State' 
+    '#description': ""
+  zip:
+    '#type': textfield
+    '#title': 'Zip' 
+    '#description': ""
+  how_did_you_hear_about_us:
+    '#type': textfield
+    '#title': 'How did you hear about us?' 
+    '#description': ""
+  data:
+    '#type': checkboxes
+    '#options':
+      animalwelfare: 'I am involved in rescue or shelter work'
+      grants: 'I am interested in Grants'
+      storeservice: 'I manage a pet-loving retail store or service'
+      noenews: 'Please do NOT send me the monthly e-newsletter'
+    '#multiple': true
+    '#title_display': invisible
+    '#title': '<none>' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>Thank you for your interest.</p><p><!-- Google Code for Newsletter sign-up Conversion Page -->   <noscript>\r\n<div style=\"display:inline;\">\r\n<img height=\"1\" width=\"1\" style=\"border-style:none;\" alt=\"\"\r\nsrc=\"//www.googleadservices.com/pagead/conversion/874040278/?label=CjvVCJzg-G0Q1pfjoAM&amp;amp;guid=ON&amp;amp;script=0\"/>\r\n</div>\r\n</noscript></p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: info@greymuzzle.org
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: info@greymuzzle.com
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

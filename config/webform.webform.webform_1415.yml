@@ -1,0 +1,51 @@
+uuid: 5cbe7dca-22a4-4a97-b3cf-ffb8ce0f886a
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_1415
+title: 'Legacy Giving'
+description: null
+category: null
+elements: |
+  name:
+    '#type': textfield
+    '#title': 'Name' 
+    '#description': ""
+  email:
+    '#type': email
+    '#size': 20
+    '#title': 'Email' 
+    '#description': ""
+  more_information:
+    '#type': textarea
+    '#title': 'More Information' 
+    '#description': "Please add the grantors name and confirmation The Grey Muzzle Organization is in their will."
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,0 +1,71 @@
+uuid: cd0163a2-db1a-476d-8f85-d8fc382e9a58
+langcode: en
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_870
+title: "Introducing Grey Muzzle’s Senior Dog Prom Finalists\t"
+description: null
+category: null
+elements: |
+  intro:
+    '#type': processed_text
+    '#format': full_html
+    '#text': "<p>Pretty in pink and pearls, handsome in bow ties and tails, these adorable dogs are ready to dance the night away at The Grey Muzzle Organization’s first-ever Senior Dog Prom. Chosen from among dozens of darling dressed-for-prom dogs, our finalists are hoping to win the coveted titles of Senior Dog Prom King, Prom Queen and Cutest Couple. So, pick your favorite pups in each of the three categories below, <strong>click on their photos</strong>, then enter your email address to cast your vote. You can vote once a day between now and May 31, when the contest ends.&nbsp;Winners will be announced in early June.</p><p>Many of our finalists have loving families, but some—like thousands of old dogs at shelters and rescue groups nationwide—are just waiting to be asked, “Could I have this dance for the rest of my life?” To learn more about all the wonderful pets who participated in our Senior Dog Prom, please visit our <a href='https://www.facebook.com/GreyMuzzle/' target='2017Prom'>Facebook page</a>.</p>"
+    '#title': 'Introducing Grey Muzzle’s Senior Dog Prom Finalists' 
+    '#description': ""
+  king:
+    '#title': 'Senior Dog Prom King Contenders' 
+    '#description': ""
+    '#required': true
+  queen:
+    '#title': 'Contenders for Senior Dog Prom Queen' 
+    '#description': ""
+    '#required': true
+  couple:
+    '#title': 'Contenders for Cutest Couple ' 
+    '#description': ""
+    '#required': true
+  email:
+    '#type': email
+    '#size': 20
+    '#title': 'Email' 
+    '#description': ""
+    '#required': true
+  sign_up_for_our_newsletter:
+    '#description': " Yes Please"
+    '#type': checkbox
+    '#options':
+      1: ' Yes Please'
+    '#multiple': true
+    '#title_display': inline
+    '#title': 'Sign Up for our Newsletter?' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: 'http://greymuzzle.org/2017-senior-dog-prom-thanks'
+  confirmation_message: ''
+  limit_total: null
+  limit_user: 1
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

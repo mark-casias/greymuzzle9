@@ -1,0 +1,353 @@
+uuid: 33bf229e-709a-43e8-b54c-1e98726b50a0
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_1097
+title: 'Grantee Stories'
+description: null
+category: null
+elements: |
+  name:
+    '#type': textfield
+    '#title': 'Name' 
+    '#description': ""
+    '#required': true
+  email:
+    '#type': email
+    '#size': 20
+    '#title': 'Email' 
+    '#description': ""
+    '#required': true
+  organization_name:
+    '#type': textfield
+    '#title': 'Organization Name' 
+    '#description': ""
+    '#required': true
+  grant_type:
+    '#type': select
+    '#options':
+      seniors4seniors: 'Seniors for seniors'
+      medical: 'Medical'
+      dental: 'Dental'
+      inhome: 'Keeping senior pets in homes'
+      adoption: 'Adoption promotion'
+      other: 'Other'
+    '#title': 'Grant Type' 
+    '#description': ""
+    '#required': true
+  fieldset_about_your_success_story:
+    '#type': fieldset
+    '#open': true
+    '#title': 'About your success story' 
+    '#description': ""
+    dogs_name_18:
+      '#type': textfield
+      '#title': 'Dog"s Name' 
+      '#description': ""
+      '#required': true
+    approximate_age_18:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': false
+      '#title': 'Approximate Age' 
+      '#description': ""
+      '#required': true
+    breed_18:
+      '#type': textfield
+      '#title': 'Breed (if known)' 
+      '#description': ""
+    reason_at_shelter_18:
+      '#type': select
+      '#options':
+        stray: 'Stray'
+        surrendered: 'Surrendered'
+        passed: 'Owner Passed Away'
+        owner-assistance: 'Owner Receiving Assistance'
+        rescue: 'Rescued'
+        cruelty: 'Cruelty / Neglect Case'
+      '#title': 'Reason at Shelter' 
+      '#description': ""
+    adoption_18:
+      '#type': radios
+      '#options':
+        yes: 'Yes'
+        no: 'No'
+      '#title': 'Currently available for adoption' 
+      '#description': ""
+      '#required': true
+    bio_18:
+      '#type': textarea
+      '#title': 'Please tell us how the dog was helped by your Grey Muzzle grant' 
+      '#description': ""
+      '#required': true
+    adoption_story_18:
+      '#type': textarea
+      '#title': 'If the dog has been adopted, please provide any details about their adoption or quotes from the adopter' 
+      '#description': ""
+    stay_in_home_story_18:
+      '#type': textarea
+      '#title': 'If the dog recieved care in order to stay in their home, please provide any details or quotes from the owner' 
+      '#description': ""
+  fieldset_media_information:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Media Information' 
+    '#description': ""
+    before_photo_17:
+      '#type': managed_file
+      '#max_filesize': '4'
+      '#file_extensions': 'gif jpg jpeg png'
+      '#title': 'Before (or Intake) Photo' 
+      '#description': "Please submit a high resolution image."
+      '#required': true
+    after_photo_17:
+      '#type': managed_file
+      '#max_filesize': '4'
+      '#file_extensions': 'gif jpg jpeg png'
+      '#title': 'After Photo' 
+      '#description': "Please submit a high resolution image."
+      '#required': true
+    adoption_owner_photo_17:
+      '#type': managed_file
+      '#max_filesize': '4'
+      '#file_extensions': 'gif jpg jpeg png'
+      '#title': 'Adoption or Owner Photo (whichever is applicable)' 
+      '#description': "*Please submit a high-resolution image."
+    additional_photos_17:
+      '#type': managed_file
+      '#max_filesize': '4'
+      '#file_extensions': 'gif jpg jpeg png'
+      '#title': 'Additional Photos' 
+      '#description': "Please submit a high resolution image."
+    youtube_17:
+      '#type': textfield
+      '#title': 'YouTube' 
+      '#description': ""
+    profile_link_17:
+      '#title': 'Profile Link' 
+      '#description': ""
+    social_post_link_17:
+      '#title': 'Social Post Link' 
+      '#description': ""
+    media_story_link_17:
+      '#title': 'Media Story Link' 
+      '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: 5
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: amanda@greymuzzle.org
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Submitted on [webform_submission:date:long]
+
+        <strong>Name</strong>: [webform_submission:values:name]
+        <strong>Email</strong>: [webform_submission:values:email]
+        <strong>Organization Name</strong>: [webform_submission:values:organization_name]
+        <strong>Grant Type</strong>: [webform_submission:values:grant_type]
+
+        *About your success story*
+        <strong>Dog's Name</strong>: [webform_submission:values:about_your_success_story:dogs_name]
+        <strong>Approximate Age</strong>: [webform_submission:values:about_your_success_story:approximate_age]
+        <strong>Breed (if known)</strong>: [webform_submission:values:about_your_success_story:breed]
+        <strong>Reason at Shelter</strong>: [webform_submission:values:about_your_success_story:reason_at_shelter]
+        <strong>Currently available for adoption</strong>: [webform_submission:values:about_your_success_story:adoption]
+
+        *Please tell us how the dog was helped by your Grey Muzzle*
+        [webform_submission:values:about_your_success_story:bio]
+
+        *Adoption Story*
+        [webform_submission:values:about_your_success_story:adoption_story]
+
+        *Stay in Home Story*
+        [webform_submission:values:about_your_success_story:stay_in_home_story]
+
+        Media Information
+        <strong>Before (or Intake) Photo</strong>: [webform_submission:values:media_information:before_photo]
+        <strong>After Photo</strong>: [webform_submission:values:media_information:after_photo]
+        <strong>Adoption or Owner Photo:</strong>: [webform_submission:values:media_information:adoption_owner_photo]
+        <strong>Additional Photos</strong>: [webform_submission:values:media_information:additional_photos]
+        <strong>YouTube</strong>: [webform_submission:values:media_information:youtube]
+        <strong>Profile Link</strong>: [webform_submission:values:media_information:profile_link]
+        <strong>Social Post Link</strong>: [webform_submission:values:media_information:social_post_link]
+        <strong>Media Story Link</strong>: [webform_submission:values:media_information:media_story_link]
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: greymuzzleorg@gmail.com
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Thank you for your submission!
+
+        Submitted on [webform_submission:date:long]
+        Submitted by user: [webform_submission:user]
+        Submitted values are:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: laura@greymuzzle.org
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Submitted on [webform_submission:date:long]
+
+        <strong>Name</strong>: [webform_submission:values:name]
+        <strong>Email</strong>: [webform_submission:values:email]
+        <strong>Organization Name</strong>: [webform_submission:values:organization_name]
+        <strong>Grant Type</strong>: [webform_submission:values:grant_type]
+
+        *About your success story*
+        <strong>Dog's Name</strong>: [webform_submission:values:about_your_success_story:dogs_name]
+        <strong>Approximate Age</strong>: [webform_submission:values:about_your_success_story:approximate_age]
+        <strong>Breed (if known)</strong>: [webform_submission:values:about_your_success_story:breed]
+        <strong>Reason at Shelter</strong>: [webform_submission:values:about_your_success_story:reason_at_shelter]
+        <strong>Currently available for adoption</strong>: [webform_submission:values:about_your_success_story:adoption]
+
+        *Please tell us how the dog was helped by your Grey Muzzle*
+        [webform_submission:values:about_your_success_story:bio]
+
+        *Adoption Story*
+        [webform_submission:values:about_your_success_story:adoption_story]
+
+        *Stay in Home Story*
+        [webform_submission:values:about_your_success_story:stay_in_home_story]
+
+        Media Information
+        <strong>Before (or Intake) Photo</strong>: [webform_submission:values:media_information:before_photo]
+        <strong>After Photo</strong>: [webform_submission:values:media_information:after_photo]
+        <strong>Adoption or Owner Photo:</strong>: [webform_submission:values:media_information:adoption_owner_photo]
+        <strong>Additional Photos</strong>: [webform_submission:values:media_information:additional_photos]
+        <strong>YouTube</strong>: [webform_submission:values:media_information:youtube]
+        <strong>Profile Link</strong>: [webform_submission:values:media_information:profile_link]
+        <strong>Social Post Link</strong>: [webform_submission:values:media_information:social_post_link]
+        <strong>Media Story Link</strong>: [webform_submission:values:media_information:media_story_link]
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
