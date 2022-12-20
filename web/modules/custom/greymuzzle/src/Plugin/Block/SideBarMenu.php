@@ -26,6 +26,13 @@ class SideBarMenu extends BlockBase {
   /**
    * {@inheritdoc}
    */
+  public function getCacheMaxAge() {
+    return 0;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     $node = \Drupal::routeMatch()->getParameter('node');
 
