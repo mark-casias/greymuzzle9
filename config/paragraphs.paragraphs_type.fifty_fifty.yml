@@ -1,0 +1,10 @@
+uuid: bd9af81e-6d15-497d-a99d-a5f0a1e08467
+langcode: en
+status: true
+dependencies: {  }
+id: fifty_fifty
+label: 'Fifty Fifty'
+icon_uuid: null
+icon_default: null
+description: 'Right now this is a hard coded paragraph for the front page.'
+behavior_plugins: {  }

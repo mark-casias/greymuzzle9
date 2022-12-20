@@ -1,0 +1,32 @@
+.fifty-fifty {
+  @include wrapper;
+  margin: 1rem auto;
+  min-height: 560px;
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  &__panel {
+    width: 49%;
+    max-width: 535px;
+    height: 516px;
+    text-align: center;
+    padding: 2rem;
+
+    &.mailing {
+      background: #f3f8fa;
+      color: #444;
+    }
+
+    &.spread {
+      border: 4px solid #f3f8fa;
+    }
+
+  }
+}

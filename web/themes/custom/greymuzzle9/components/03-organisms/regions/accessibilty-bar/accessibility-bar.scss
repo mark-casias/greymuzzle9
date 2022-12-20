@@ -4,6 +4,7 @@
   margin: 0 auto;
   display: flex;
   padding-left: 110px;
+  background-color: clr(background);
 
   .a {
     @include clearfix;
