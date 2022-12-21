@@ -26,7 +26,6 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
 
 .main-sidebar {
   margin-bottom: $space-double;
-  background-color: $white;
 
   @include large {
     order: 2;
