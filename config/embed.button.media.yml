@@ -2,6 +2,11 @@ uuid: 1c4ffe4d-814a-44d7-8940-06284825c222
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.basic_400x400
+    - core.entity_view_mode.media.basic_page_220x220
+    - core.entity_view_mode.media.basic_page_320x240
+    - media.type.image
   module:
     - entity_embed
     - media
@@ -10,9 +15,14 @@ id: media
 type_id: entity
 type_settings:
   entity_type: media
-  bundles: {  }
-  display_plugins: {  }
+  bundles:
+    - image
+  display_plugins:
+    - 'view_mode:media.basic_400x400'
+    - 'view_mode:media.basic_page_220x220'
+    - 'view_mode:media.basic_page_320x240'
   entity_browser: ''
-  entity_browser_settings: {  }
+  entity_browser_settings:
+    display_review: false
 icon: {  }
 icon_uuid: null
