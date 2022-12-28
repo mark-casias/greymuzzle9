@@ -4,4 +4,12 @@ status: true
 dependencies: {  }
 name: blog_header_main
 label: 'Blog Header Main'
-effects: {  }
+effects:
+  c6915e1d-260e-4fa4-9273-6d858a4f2676:
+    uuid: c6915e1d-260e-4fa4-9273-6d858a4f2676
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 520
+      height: 350
+      anchor: center-center

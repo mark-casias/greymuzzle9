@@ -11,22 +11,11 @@ dependencies:
     - media.type.image
   module:
     - image
-    - user
 id: media.image.teaser
 targetEntityType: media
 bundle: image
 mode: teaser
 content:
-  created:
-    type: timestamp
-    label: hidden
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
   thumbnail:
     type: image
     label: hidden
@@ -36,18 +25,13 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 5
-    region: content
-  uid:
-    type: author
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   addtoany: true
+  created: true
   field_caption: true
   field_media_image: true
   field_photo_credit: true
   name: true
+  uid: true

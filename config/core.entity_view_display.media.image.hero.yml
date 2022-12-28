@@ -7,10 +7,10 @@ dependencies:
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
     - field.field.media.image.field_photo_credit
-    - image.style.hero_large
     - media.type.image
+    - responsive_image.styles.hero
   module:
-    - image
+    - responsive_image
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
 id: media.image.hero
@@ -19,13 +19,11 @@ bundle: image
 mode: hero
 content:
   field_media_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: hero
       image_link: ''
-      image_style: hero_large
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
