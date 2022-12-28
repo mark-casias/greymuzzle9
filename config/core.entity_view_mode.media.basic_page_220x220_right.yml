@@ -1,0 +1,10 @@
+uuid: ffbeb253-03fe-4a5a-ad74-20e627131201
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.basic_page_220x220_right
+label: 'Basic 220x220 (right)'
+targetEntityType: media
+cache: true

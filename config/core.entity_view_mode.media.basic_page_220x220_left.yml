@@ -1,0 +1,10 @@
+uuid: 3372039d-ca41-4c58-89bb-479685ae4ece
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.basic_page_220x220_left
+label: 'Basic 220x220 (left)'
+targetEntityType: media
+cache: true

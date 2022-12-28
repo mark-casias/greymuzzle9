@@ -1,0 +1,10 @@
+uuid: c2e03eed-cd3d-48c8-9541-ab14ec4d092a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.basic_page_320x240_left
+label: 'Basic 320x240 (Left)'
+targetEntityType: media
+cache: true
