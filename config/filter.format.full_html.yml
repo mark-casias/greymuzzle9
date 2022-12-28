@@ -3,7 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.100x100_scaled_cropped
+    - core.entity_view_mode.media.basic_400x400
     - core.entity_view_mode.media.basic_page_220x220
+    - core.entity_view_mode.media.basic_page_320x240
   module:
     - entity_embed
     - media
@@ -61,7 +64,10 @@ filters:
       default_view_mode: default
       allowed_view_modes:
         default: default
+        100x100_scaled_cropped: 100x100_scaled_cropped
+        basic_400x400: basic_400x400
         basic_page_220x220: basic_page_220x220
+        basic_page_320x240: basic_page_320x240
       allowed_media_types:
         image: image
         remote_video: remote_video
