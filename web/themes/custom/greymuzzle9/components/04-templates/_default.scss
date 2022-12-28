@@ -50,6 +50,18 @@ $main-width: calc(100% - (#{$sidebar-width} + #{$gutter}));
       width: $main-width;
     }
   }
+
+  &--front {
+    .a2a_kit {
+      top: -2.5rem;
+    }
+  }
+}
+
+.a2a_kit {
+  position: absolute;
+  right: 0;
+  top: -3rem;
 }
 
 /*
