@@ -1,14 +1,14 @@
-uuid: 06d901e6-6c1b-4283-a1c4-be8f199b1ed3
+uuid: ad1ea971-c64a-436c-aa49-306ad6aeab6b
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: taxonomy_term
-label: 'Taxonomy term - default'
+id: taxonomy_term_default
+label: 'Default Term Path'
 type: 'canonical_entities:taxonomy_term'
 pattern: '[term:vocabulary]/[term:name]'
 selection_criteria: {  }
 selection_logic: and
-weight: -2
+weight: -1
 relationships: {  }

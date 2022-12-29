@@ -1,0 +1,13 @@
+uuid: 3d3800c7-a480-45f5-9e6a-a66d22c5af68
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.blog_categories
+id: taxonomy_term.blog_categories.default
+targetEntityType: taxonomy_term
+bundle: blog_categories
+mode: default
+content: {  }
+hidden:
+  description: true

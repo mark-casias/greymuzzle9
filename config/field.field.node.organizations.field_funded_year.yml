@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_funded_year
     - node.type.organizations
+    - taxonomy.vocabulary.funded_year
 id: node.organizations.field_funded_year
 field_name: field_funded_year
 entity_type: node
@@ -13,40 +14,16 @@ label: 'Funded Year'
 description: 'Please use full years (eg: 2020, 1999, etc)'
 required: true
 translatable: false
-default_value:
-  -
-    tid: '88'
-    vid: '3'
-    name: '2020'
-    description: ''
-    format: full_html
-    weight: '0'
-    uuid: 71e25cc4-24bb-4398-a376-02adcca308a8
-    vocabulary_machine_name: funded_year
-    rdf_mapping:
-      rdftype:
-        - 'skos:Concept'
-      name:
-        predicates:
-          - 'rdfs:label'
-          - 'skos:prefLabel'
-      description:
-        predicates:
-          - 'skos:definition'
-      vid:
-        predicates:
-          - 'skos:inScheme'
-        type: rel
-      parent:
-        predicates:
-          - 'skos:broader'
-        type: rel
-    path:
-      pathauto: '1'
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      funded_year: funded_year
     sort:
       field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference
