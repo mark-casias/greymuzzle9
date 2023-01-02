@@ -67,19 +67,24 @@ class SideBarMenu extends BlockBase {
       $entity_type = key($params);
       $node = \Drupal::entityTypeManager()->getStorage($entity_type)->load($params[$entity_type]);
 
-      $menu_links = $this->get_menu_link($node);
+      $menu_links = $menu_link_manager->loadLinksByRoute('entity.node.canonical', ['node' => $node->id()]);
     }
 
     $menu_link = NULL;
+    if (!$menu_links) {
+      return [];
+    }
     if (is_array($menu_links) && count($menu_links)) {
       $menu_link = reset($menu_links);
       if ($menu_link->getParent()) {
         $parents = $menu_link_manager->getParentIds($menu_link->getParent());
         $parent = end($parents);
-        $build['title'] = $menu_link_manager->createInstance($parent)->getTitle();
+      }
+      else {
+        $parent = $menu_link->pluginId;
       }
     }
-
+    $build['title'] = $menu_link_manager->createInstance($parent)->getTitle();
     $params = new MenuTreeParameters();
     $params->setRoot($parent);
     $params->setMaxDepth(2);

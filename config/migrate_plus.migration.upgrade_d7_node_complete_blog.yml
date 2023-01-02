@@ -84,6 +84,11 @@ process:
     -
       plugin: get
       source: field_blog_categories
+  field_category:
+    -
+      plugin: text_to_taxonomy
+      vocabulary: blog_categories
+      source: field_blog_categories
   field_image:
     -
       plugin: media_migration_delta_sort
