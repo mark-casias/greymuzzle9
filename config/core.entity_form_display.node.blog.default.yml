@@ -37,21 +37,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_blog_categories:
+  field_category:
     type: options_select
     weight: 3
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_category:
-    type: entity_reference_autocomplete
-    weight: 13
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_image:
     type: image_image
@@ -129,4 +119,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_blog_categories: true
