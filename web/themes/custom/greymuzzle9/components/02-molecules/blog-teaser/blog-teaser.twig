@@ -14,7 +14,7 @@
       </a>
     </h2>
   </header>
-  <div {{ bem('blog_teaser', ['image', 'barry'], 'content', ['mb-1'])}}>
+  <div class="blog-teaser__content">
 
     <div class="blog-teaser__content--image">
     {% block blog_image %}
@@ -33,13 +33,13 @@
         <div class="field__item even" property="content:encoded">
           Life with a senior dog is different than one with a puppy, but that doesn’t mean our hearts aren’t just as full. Older dogs are every bit as capable of bonding and providing unconditional love as younger pups. Read on for a few ways to bond with your dog that are suitable for senior dogs regardless of their energy level.
         </div>
+        <div class="blog-teaser__readmore">
+          <a href="{{ url }}" rel="tag" title="{{ node_title }}">
+              Read more<span class="element-invisible"> about {{ node_title }}</span>
+          </a>
+        </div>
       </div>
       {% endblock %}
     </div>
-  </div>
-  <div class="blog-teaser__readmore">
-    <a href="{{ url }}" rel="tag" title="{{ node_title }}">
-        Read more<span class="element-invisible"> about {{ node_title }}</span>
-    </a>
   </div>
 </article>
