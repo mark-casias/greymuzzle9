@@ -3,11 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - filter.format.filtered_html
     - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.image_private
+    - media.type.remote_video
+    - media.type.video
     - node.type.about_our_volunteers
     - node.type.always_in_my_heart
     - node.type.article
+    - node.type.blog
     - node.type.faqs
     - node.type.meet_the_dogs
     - node.type.news
@@ -16,14 +24,27 @@ dependencies:
     - node.type.page
     - node.type.senior_spotlights
     - node.type.staff
+    - node.type.webform
     - node.type.why_i_give
+    - taxonomy.vocabulary.blog_categories
+    - taxonomy.vocabulary.funded_year
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.u_s_states
   module:
     - comment
+    - entity_browser
+    - entityqueue
     - filter
+    - media
     - node
+    - paragraphs_library
     - path
+    - quickedit
+    - redirect
     - system
     - taxonomy
+    - toolbar
+    - webform_node
 id: editor
 label: Editor
 weight: 4
@@ -33,34 +54,73 @@ permissions:
   - 'access administration pages'
   - 'access all webform results'
   - 'access content overview'
+  - 'access in-place editing'
   - 'access media browser'
+  - 'access media overview'
+  - 'access media_entity_browser entity browser pages'
+  - 'access media_entity_browser_modal entity browser pages'
   - 'access own webform results'
   - 'access own webform submissions'
+  - 'access paragraphs_library_items entity browser pages'
   - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
   - 'access user profiles'
   - 'add media from remote sources'
   - 'administer comments'
+  - 'administer paragraphs library'
+  - 'administer redirect settings'
+  - 'administer redirects'
   - 'administer taxonomy'
   - 'change own username'
   - 'create about_our_volunteers content'
   - 'create always_in_my_heart content'
   - 'create article content'
+  - 'create audio media'
+  - 'create blog content'
+  - 'create document media'
   - 'create faqs content'
   - 'create fieldable fieldable_panels_pane'
   - 'create files'
+  - 'create image media'
+  - 'create image_private media'
+  - 'create media'
   - 'create meet_the_dogs content'
   - 'create news content'
   - 'create organizations content'
   - 'create our_volunteers content'
   - 'create page content'
+  - 'create paragraph library item'
+  - 'create remote_video media'
   - 'create senior_spotlights content'
   - 'create staff content'
+  - 'create terms in blog_categories'
+  - 'create terms in funded_year'
+  - 'create terms in tags'
+  - 'create terms in u_s_states'
   - 'create url aliases'
+  - 'create video media'
   - 'create why_i_give content'
+  - 'delete any about_our_volunteers content'
+  - 'delete any always_in_my_heart content'
+  - 'delete any article content'
+  - 'delete any blog content'
+  - 'delete any faqs content'
+  - 'delete any meet_the_dogs content'
+  - 'delete any news content'
+  - 'delete any organizations content'
+  - 'delete any our_volunteers content'
+  - 'delete any page content'
+  - 'delete any senior_spotlights content'
+  - 'delete any staff content'
+  - 'delete any webform content'
+  - 'delete any why_i_give content'
+  - 'delete media'
   - 'delete own about_our_volunteers content'
   - 'delete own always_in_my_heart content'
   - 'delete own article content'
   - 'delete own audio files'
+  - 'delete own blog content'
   - 'delete own document files'
   - 'delete own faqs content'
   - 'delete own image files'
@@ -75,6 +135,12 @@ permissions:
   - 'delete own webform submissions'
   - 'delete own why_i_give content'
   - 'delete terms in 2'
+  - 'delete terms in blog_categories'
+  - 'delete terms in funded_year'
+  - 'delete terms in tags'
+  - 'delete terms in u_s_states'
+  - 'delete webform submissions any node'
+  - 'delete webform submissions own node'
   - 'download any audio files'
   - 'download any document files'
   - 'download any image files'
@@ -88,17 +154,25 @@ permissions:
   - 'edit any always_in_my_heart content'
   - 'edit any article content'
   - 'edit any audio files'
+  - 'edit any audio media'
+  - 'edit any blog content'
   - 'edit any document files'
+  - 'edit any document media'
   - 'edit any faqs content'
   - 'edit any image files'
+  - 'edit any image media'
+  - 'edit any image_private media'
   - 'edit any meet_the_dogs content'
   - 'edit any news content'
   - 'edit any organizations content'
   - 'edit any our_volunteers content'
   - 'edit any page content'
+  - 'edit any remote_video media'
   - 'edit any senior_spotlights content'
   - 'edit any staff content'
   - 'edit any video files'
+  - 'edit any video media'
+  - 'edit any webform content'
   - 'edit any why_i_give content'
   - 'edit fieldable fieldable_panels_pane'
   - 'edit fieldable hero_image_for_home_page'
@@ -107,28 +181,56 @@ permissions:
   - 'edit own always_in_my_heart content'
   - 'edit own article content'
   - 'edit own audio files'
+  - 'edit own audio media'
+  - 'edit own blog content'
   - 'edit own document files'
+  - 'edit own document media'
   - 'edit own faqs content'
   - 'edit own image files'
+  - 'edit own image media'
+  - 'edit own image_private media'
   - 'edit own meet_the_dogs content'
   - 'edit own news content'
   - 'edit own organizations content'
   - 'edit own our_volunteers content'
   - 'edit own page content'
+  - 'edit own remote_video media'
   - 'edit own senior_spotlights content'
   - 'edit own staff content'
   - 'edit own video files'
+  - 'edit own video media'
+  - 'edit own webform content'
   - 'edit own webform submissions'
   - 'edit own why_i_give content'
+  - 'edit paragraph library item'
   - 'edit terms in 1'
   - 'edit terms in 2'
+  - 'edit terms in blog_categories'
+  - 'edit terms in funded_year'
+  - 'edit terms in tags'
+  - 'edit terms in u_s_states'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'manipulate all entityqueues'
   - 'manipulate all queues'
+  - 'manipulate entityqueues'
   - 'manipulate queues'
+  - 'update advisory_board entityqueue'
+  - 'update any media'
+  - 'update board_of_directors entityqueue'
+  - 'update media'
+  - 'update staff entityqueue'
   - 'use media wysiwyg'
   - 'use panels dashboard'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format full_html'
+  - 'view all media revisions'
   - 'view own files'
   - 'view own private files'
+  - 'view own unpublished media'
   - 'view pane admin links'
   - 'view the administration theme'
+  - 'view user email addresses'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'

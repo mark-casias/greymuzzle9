@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - comment
+    - media
     - node
-    - search
     - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
@@ -16,10 +16,9 @@ is_admin: false
 permissions:
   - 'access content'
   - 'create files'
-  - 'search content'
   - 'skip comment approval'
-  - 'use advanced search'
   - 'view files'
+  - 'view media'
   - 'view own files'
   - 'view own private files'
   - 'view own unpublished content'
