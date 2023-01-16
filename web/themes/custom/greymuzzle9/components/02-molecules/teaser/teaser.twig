@@ -1,15 +1,12 @@
 {% set base_class="teaser" %}
-<div class="teaser--container">
-  <div {{  bem('teaser', [teaser_type]) }}>
+<div {{ attributes.addClass(['teaser']) }}>
+  {% block teaser_media %}
     <div class="teaser__media">
-      {%  block teaser_media %}
       <div class="media--image">
         <img typeof="foaf:Image" src="https://www.greymuzzle.org/sites/default/files/styles/medium/public/staff/lisa_lunghofer.jpg?itok=RclAeGLE" width="220" height="220" alt="Lisa Lunghofer">
       </div>
-      {%  endblock %}
     </div>
-  <!-- /media-wrapper -->
-
+  {% endblock %}
   <div class="teaser__content">
     {%  block teaser_content %}
     <h3 class="bio--name"><a href="/about-us/who-we-are/lisa-lunghofer">Lisa Lunghofer</a></h3>
@@ -23,5 +20,4 @@
     </div>
     {%  endblock %}
   </div>
-</div>
 </div>

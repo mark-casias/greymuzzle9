@@ -29,3 +29,14 @@ $fa-font-path: "../webfonts";
   @include wrapper;
 }
 
+.views-exposed-form {
+  display: flex;
+  align-items: center;
+
+  .form-item {
+    flex: 1;
+    margin-right: .5rem;
+    max-width: 15rem;
+  }
+}
+

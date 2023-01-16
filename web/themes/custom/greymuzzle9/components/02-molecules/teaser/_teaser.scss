@@ -1,16 +1,15 @@
 .teaser {
   display: flex;
-
-  &--container {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid clr(muted);
 
   &__media {
     margin-right: 2rem;
   }
 
   &__content {
-    width: 60%;
+    flex: 1;
     a {
       @extend .link;
     }
