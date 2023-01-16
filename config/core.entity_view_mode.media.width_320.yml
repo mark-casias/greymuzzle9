@@ -1,0 +1,10 @@
+uuid: ef796f6b-f3c6-46d2-89cc-c983cf3a8290
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.width_320
+label: 'Width 320'
+targetEntityType: media
+cache: true

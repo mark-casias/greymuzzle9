@@ -1,0 +1,15 @@
+uuid: 0dba02cb-e3ce-402c-84e5-88d889a9f2fd
+langcode: en
+status: true
+dependencies: {  }
+name: width_200
+label: 'Width 200'
+effects:
+  20003ba8-7090-473e-a24e-2abbd7c7bd11:
+    uuid: 20003ba8-7090-473e-a24e-2abbd7c7bd11
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false
