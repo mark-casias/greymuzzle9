@@ -6,8 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.why_i_give.body
     - field.field.node.why_i_give.field_image
+    - image.style.medium
     - node.type.why_i_give
   module:
+    - image
     - text
     - user
 id: node.why_i_give.teaser
@@ -23,10 +25,17 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  links:
-    settings: {  }
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_image: true
+  addtoany: true
+  links: true
