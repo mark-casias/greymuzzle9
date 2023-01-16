@@ -6,6 +6,9 @@ dependencies:
     - core.entity_view_mode.media.basic_400x400
     - core.entity_view_mode.media.basic_page_220x220
     - core.entity_view_mode.media.basic_page_320x240
+    - core.entity_view_mode.media.width_200
+    - core.entity_view_mode.media.width_320
+    - entity_browser.browser.media_entity_browser
     - media.type.image
   module:
     - entity_embed
@@ -21,8 +24,10 @@ type_settings:
     - 'view_mode:media.basic_400x400'
     - 'view_mode:media.basic_page_220x220'
     - 'view_mode:media.basic_page_320x240'
-  entity_browser: ''
+    - 'view_mode:media.width_200'
+    - 'view_mode:media.width_320'
+  entity_browser: media_entity_browser
   entity_browser_settings:
-    display_review: false
+    display_review: true
 icon: {  }
 icon_uuid: null

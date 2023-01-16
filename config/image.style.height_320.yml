@@ -1,0 +1,15 @@
+uuid: 257271fb-3383-49ff-975e-343e07277c52
+langcode: en
+status: true
+dependencies: {  }
+name: height_320
+label: 'Height 320'
+effects:
+  afcf2e2b-554e-40f2-a230-a3fae96f2154:
+    uuid: afcf2e2b-554e-40f2-a230-a3fae96f2154
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 320
+      upscale: false

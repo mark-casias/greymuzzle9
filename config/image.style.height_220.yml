@@ -1,0 +1,15 @@
+uuid: 28d1ff34-c82f-4c6d-b748-90292e025ab1
+langcode: en
+status: true
+dependencies: {  }
+name: height_220
+label: 'Height 220'
+effects:
+  1d16a638-c5f4-4ed3-9e16-b4ec34f1c8a8:
+    uuid: 1d16a638-c5f4-4ed3-9e16-b4ec34f1c8a8
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 220
+      upscale: true

@@ -7,9 +7,12 @@ dependencies:
     - core.entity_view_mode.media.basic_400x400
     - core.entity_view_mode.media.basic_page_220x220
     - core.entity_view_mode.media.basic_page_320x240
+    - core.entity_view_mode.media.height_220
+    - core.entity_view_mode.media.height_320
     - core.entity_view_mode.media.width_200
     - core.entity_view_mode.media.width_320
   module:
+    - editor
     - entity_embed
     - media
 _core:
@@ -22,46 +25,46 @@ filters:
     id: filter_align
     provider: filter
     status: true
-    weight: 11
+    weight: -48
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: 12
+    weight: -47
     settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
     status: true
-    weight: 10
+    weight: -49
     settings: {  }
   entity_embed:
     id: entity_embed
     provider: entity_embed
     status: true
-    weight: 13
+    weight: -45
     settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: false
-    weight: 1
+    weight: -41
     settings: {  }
   filter_html:
     id: filter_html
     provider: filter
     status: false
-    weight: -10
+    weight: -44
     settings:
-      allowed_html: ''
+      allowed_html: '<drupal-entity data-embed-button data-entity-type data-entity-id data-entity-embed-display>'
       filter_html_help: true
       filter_html_nofollow: false
   media_embed:
     id: media_embed
     provider: media
     status: true
-    weight: 100
+    weight: -46
     settings:
       default_view_mode: default
       allowed_view_modes:
@@ -70,8 +73,35 @@ filters:
         basic_400x400: basic_400x400
         basic_page_220x220: basic_page_220x220
         basic_page_320x240: basic_page_320x240
+        height_220: height_220
+        height_320: height_320
         width_200: width_200
         width_320: width_320
       allowed_media_types:
         image: image
         remote_video: remote_video
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: -50
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -42
+    settings:
+      filter_url_length: 72
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -40
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -43
+    settings: {  }

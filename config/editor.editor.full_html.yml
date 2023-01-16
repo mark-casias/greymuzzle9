@@ -41,7 +41,8 @@ settings:
         - heading5
         - heading6
     ckeditor5_sourceEditing:
-      allowed_tags: {  }
+      allowed_tags:
+        - '<drupal-entity data-embed-button data-entity-type data-entity-id data-entity-embed-display>'
     ckeditor5_list:
       reversed: true
       startIndex: true
