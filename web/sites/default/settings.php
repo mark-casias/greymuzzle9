@@ -61,3 +61,7 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
 }
 
+$settings['media_migration_embed_token_transform_destination_filter_plugin'] =
+'media_embed';
+$settings['media_migration_embed_media_reference_method'] = 'uuid';
+
