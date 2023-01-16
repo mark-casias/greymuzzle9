@@ -91,7 +91,7 @@ $button-colors: (
 // Button size variations
 @mixin button-medium {
   line-height: 1.4;
-  padding: $space-one-half $space;
+  padding: .5rem 1rem;
 }
 
 @mixin button-large {
@@ -109,7 +109,8 @@ $button-colors: (
     @include button-medium;
   }
 
-  &--donate {
+  &--donate,
+  &__donate {
     @include button-color-donate;
     @include button-medium;
 
