@@ -29,10 +29,7 @@
  * @see template_preprocess_media()
  */
 #}
-{% embed "@atoms/images/image-default/image-default.twig" %}
-
-{% block field_image %}
-  {{ content.field_media_image }}
-{% endblock %}
-
-{% endembed %}
+<div{{ attributes.addClass('media') }}>
+  {{ title_suffix.contextual_links }}
+  {{ content }}
+</div>

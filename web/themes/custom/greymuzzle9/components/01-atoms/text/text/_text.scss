@@ -1,11 +1,11 @@
 /* Create a mixin for paragraph styles that can be implemented
  * in components with other classnames.
 */
-@mixin paragraph($margin: 0 0 1em) {
+@mixin paragraph($margin: 0 auto 1rem) {
   margin: $margin;
 }
 
-.paragraph {
+.long-paragraph {
   @include paragraph;
 }
 
@@ -30,7 +30,7 @@
 
 .text-long {
   p {
-    @extend .paragraph;
+    @extend .long-paragraph;
   }
 
   blockquote {

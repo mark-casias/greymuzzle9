@@ -122,7 +122,7 @@ a#text_resize_decrease {
   }
 
   .button--donate {
-    background-color: #FFCC33;
+    background-color: $sunglow;
     padding: 3px 5px;
     border-radius: 3px;
     color: color(blue-chill);
@@ -138,7 +138,7 @@ a#text_resize_decrease {
     right: 2px;
     top: 42px;
 
-    &:after {
+    &::after {
       content: ' >';
       font-size: 1.1em;
     }

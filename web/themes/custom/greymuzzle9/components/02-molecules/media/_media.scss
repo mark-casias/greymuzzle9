@@ -1,16 +1,15 @@
 .media {
   &__default {
-
     max-width: 320px;
     font-size: .75rem;
 
     &__caption {
-      div {
-        display: inline;
-      }
       padding: 0.3rem 0.5rem;
       background: #444;
       color: #fff;
+      div {
+        display: inline;
+      }
     }
 
     &.align-left {

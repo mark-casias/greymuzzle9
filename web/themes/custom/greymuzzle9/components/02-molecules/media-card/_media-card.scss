@@ -1,5 +1,6 @@
 .media-card {
   @include wrapper;
+
   display: flex;
   align-items:flex-start;
   flex-direction: row;

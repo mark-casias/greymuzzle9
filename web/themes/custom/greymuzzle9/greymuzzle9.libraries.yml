@@ -4,6 +4,7 @@ global:
       dist/style.css: {}
   js:
     dist/js/bootstrap.js: {}
+    dist/js/gm-accessibility.js: {}
 
 # IE 11 support for SVG use - disable if not needed.
 # See also components/01-atoms/images/icons/_icon.twig to remove attach_library.

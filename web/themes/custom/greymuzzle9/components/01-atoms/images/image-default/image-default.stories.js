@@ -6,7 +6,7 @@ export default {
     photoCredit: {
       name: 'Photo Credit',
       control: { type: 'text' },
-      defaultValue: null,
+      defaultValue: 'Hello',
     },
   },
 };
@@ -15,5 +15,6 @@ export const Default = ({ photoCredit }) =>
   imageTwig({
     content: {
       field_photo_credit: [photoCredit],
+      field_caption: 'I am a caption',
     },
   });

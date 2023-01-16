@@ -62,6 +62,9 @@ class SideBarMenu extends BlockBase {
       $alias = \Drupal::service('path_alias.manager')->getAliasByPath('/node/'. $node->id());
       $parts = explode('/', $alias);
       $newAlias = $parts[1];
+      if ($newAlias === 'supporters') {
+        $newAlias = 'supporters/why-i-give';
+      }
       $alias = \Drupal::service('path_alias.manager')->getPathByAlias('/' . $newAlias);
       $params = Url::fromUri("internal:" . $alias)->getRouteParameters();
       $entity_type = key($params);
