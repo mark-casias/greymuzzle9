@@ -62,3 +62,11 @@ $gutter: $space;
   right: 0;
   top: -3rem;
 }
+
+.field {
+
+  &--node--field_image {
+    @include wrapper;
+    text-align: center;
+  }
+}
