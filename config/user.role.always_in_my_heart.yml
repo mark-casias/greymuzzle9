@@ -5,7 +5,6 @@ dependencies:
   config:
     - node.type.always_in_my_heart
   module:
-    - comment
     - node
     - system
 id: always_in_my_heart
@@ -15,13 +14,10 @@ is_admin: null
 permissions:
   - 'access administration menu'
   - 'access administration pages'
-  - 'access comments'
   - 'access content overview'
   - 'access media browser'
-  - 'administer comments'
   - 'create always_in_my_heart content'
   - 'create files'
-  - 'delete any always_in_my_heart content'
   - 'delete own always_in_my_heart content'
   - 'delete own audio files'
   - 'delete own document files'
@@ -38,11 +34,9 @@ permissions:
   - 'edit any image files'
   - 'edit own always_in_my_heart content'
   - 'edit own audio files'
-  - 'edit own comments'
   - 'edit own document files'
   - 'edit own image files'
   - 'edit own video files'
-  - 'post comments'
   - 'use media wysiwyg'
   - 'view files'
   - 'view own files'

@@ -28,23 +28,21 @@ dependencies:
     - node.type.why_i_give
     - taxonomy.vocabulary.blog_categories
     - taxonomy.vocabulary.funded_year
+    - taxonomy.vocabulary.migrate_example_beer_styles
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.u_s_states
   module:
-    - comment
-    - entity_browser
     - entityqueue
     - filter
     - media
+    - metatag
     - node
-    - paragraphs_library
     - path
     - quickedit
-    - redirect
     - system
     - taxonomy
     - toolbar
-    - webform_node
+    - webform
 id: editor
 label: Editor
 weight: 4
@@ -57,20 +55,17 @@ permissions:
   - 'access in-place editing'
   - 'access media browser'
   - 'access media overview'
-  - 'access media_entity_browser entity browser pages'
-  - 'access media_entity_browser_modal entity browser pages'
   - 'access own webform results'
   - 'access own webform submissions'
-  - 'access paragraphs_library_items entity browser pages'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
+  - 'access webform overview'
+  - 'access webform submission user'
   - 'add media from remote sources'
-  - 'administer comments'
-  - 'administer paragraphs library'
-  - 'administer redirect settings'
-  - 'administer redirects'
+  - 'administer menu'
+  - 'administer meta tags'
   - 'administer taxonomy'
   - 'change own username'
   - 'create about_our_volunteers content'
@@ -90,7 +85,6 @@ permissions:
   - 'create organizations content'
   - 'create our_volunteers content'
   - 'create page content'
-  - 'create paragraph library item'
   - 'create remote_video media'
   - 'create senior_spotlights content'
   - 'create staff content'
@@ -104,15 +98,22 @@ permissions:
   - 'delete any about_our_volunteers content'
   - 'delete any always_in_my_heart content'
   - 'delete any article content'
+  - 'delete any audio media'
   - 'delete any blog content'
+  - 'delete any document media'
   - 'delete any faqs content'
+  - 'delete any image media'
+  - 'delete any image_private media'
+  - 'delete any media'
   - 'delete any meet_the_dogs content'
   - 'delete any news content'
   - 'delete any organizations content'
   - 'delete any our_volunteers content'
   - 'delete any page content'
+  - 'delete any remote_video media'
   - 'delete any senior_spotlights content'
   - 'delete any staff content'
+  - 'delete any video media'
   - 'delete any webform content'
   - 'delete any why_i_give content'
   - 'delete media'
@@ -120,27 +121,33 @@ permissions:
   - 'delete own always_in_my_heart content'
   - 'delete own article content'
   - 'delete own audio files'
+  - 'delete own audio media'
   - 'delete own blog content'
   - 'delete own document files'
+  - 'delete own document media'
   - 'delete own faqs content'
   - 'delete own image files'
+  - 'delete own image media'
+  - 'delete own image_private media'
   - 'delete own meet_the_dogs content'
   - 'delete own news content'
   - 'delete own organizations content'
   - 'delete own our_volunteers content'
   - 'delete own page content'
+  - 'delete own remote_video media'
   - 'delete own senior_spotlights content'
   - 'delete own staff content'
   - 'delete own video files'
+  - 'delete own video media'
+  - 'delete own webform content'
   - 'delete own webform submissions'
   - 'delete own why_i_give content'
   - 'delete terms in 2'
   - 'delete terms in blog_categories'
   - 'delete terms in funded_year'
+  - 'delete terms in migrate_example_beer_styles'
   - 'delete terms in tags'
   - 'delete terms in u_s_states'
-  - 'delete webform submissions any node'
-  - 'delete webform submissions own node'
   - 'download any audio files'
   - 'download any document files'
   - 'download any image files'
@@ -151,7 +158,6 @@ permissions:
   - 'download own video files'
   - 'edit all webform submissions'
   - 'edit any about_our_volunteers content'
-  - 'edit any always_in_my_heart content'
   - 'edit any article content'
   - 'edit any audio files'
   - 'edit any audio media'
@@ -202,15 +208,13 @@ permissions:
   - 'edit own webform content'
   - 'edit own webform submissions'
   - 'edit own why_i_give content'
-  - 'edit paragraph library item'
   - 'edit terms in 1'
   - 'edit terms in 2'
   - 'edit terms in blog_categories'
   - 'edit terms in funded_year'
+  - 'edit terms in migrate_example_beer_styles'
   - 'edit terms in tags'
   - 'edit terms in u_s_states'
-  - 'edit webform submissions any node'
-  - 'edit webform submissions own node'
   - 'manipulate all entityqueues'
   - 'manipulate all queues'
   - 'manipulate entityqueues'
@@ -222,7 +226,6 @@ permissions:
   - 'update staff entityqueue'
   - 'use media wysiwyg'
   - 'use panels dashboard'
-  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format full_html'
   - 'view all media revisions'
@@ -231,6 +234,3 @@ permissions:
   - 'view own unpublished media'
   - 'view pane admin links'
   - 'view the administration theme'
-  - 'view user email addresses'
-  - 'view webform submissions any node'
-  - 'view webform submissions own node'

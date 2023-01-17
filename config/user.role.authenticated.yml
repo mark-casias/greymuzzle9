@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - comment
     - media
     - node
     - system
@@ -16,7 +15,6 @@ is_admin: false
 permissions:
   - 'access content'
   - 'create files'
-  - 'skip comment approval'
   - 'view files'
   - 'view media'
   - 'view own files'
