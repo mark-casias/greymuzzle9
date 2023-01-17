@@ -15,11 +15,14 @@ settings:
       value: primary
       label: Default
     -
+      value: dark
+      label: 'Dark Blue (Primary)'
+    -
       value: secondary
       label: 'Light Blue (secondary)'
     -
       value: tertiary
-      label: 'Dark Blue (tertiary)'
+      label: 'Aqua Blue (tertiary)'
   allowed_values_function: ''
 module: options
 locked: false

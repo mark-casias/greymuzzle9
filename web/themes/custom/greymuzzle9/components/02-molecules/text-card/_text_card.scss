@@ -8,6 +8,11 @@
     text-align: center;
   }
 
+  &__dark {
+    background-color: clr(primary);
+    color: white;
+    text-shadow: 1px 1px clr(accent);
+  }
   &__secondary {
     background-color: clr(secondary);
   }
