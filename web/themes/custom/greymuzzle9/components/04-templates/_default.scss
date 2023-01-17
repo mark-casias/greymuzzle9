@@ -21,6 +21,14 @@ $gutter: $space;
   &--with-sidebar {
     @include wrapper;
   }
+
+  &--no-sidebar {
+    background-color: clr(background);
+  }
+
+  &--front {
+    background-color: $white;
+  }
 }
 
 .main-sidebar {
@@ -36,10 +44,15 @@ $gutter: $space;
 
 .main-content {
   width: 100%;
-  background: $white;
 
   &--with-sidebar {
+    background-color: white;
     padding: 0 2rem;
+  }
+
+  &--no-sidebar {
+    @include wrapper($max-width, $small, 0, 2rem);
+    background-color: white;
   }
 
   @include large {
@@ -55,6 +68,7 @@ $gutter: $space;
       top: -2.5rem;
     }
   }
+
 }
 
 .a2a_kit {

@@ -81,9 +81,7 @@
       card__link__text: "Read more about " ~ node.getTitle(),
     } %}
       {% block card__img %}
-        <div class={{ bem('media_item', [], 'staff-card')}}
-          {{ content.field_staff_image }}
-        </div>
+        {{ content.field_staff_image }}
       {% endblock %}
     {% endembed %}
 

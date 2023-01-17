@@ -1,15 +1,18 @@
 @mixin grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .grid {
   @include grid;
-  @include wrapper;
 
   &--card {
     @include space-stack-page;
+  }
+
+  &--who_we_are_advisory {
+    justify-content: space-between;
   }
 
 }

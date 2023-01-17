@@ -20,15 +20,6 @@ $fa-font-path: "../webfonts";
   @include heading-medium;
 }
 
-.page-title-block,
-.breadcrumb-block {
-  @include wrapper;
-}
-
-.paragraph {
-  @include wrapper;
-}
-
 .views-exposed-form {
   display: flex;
   align-items: center;

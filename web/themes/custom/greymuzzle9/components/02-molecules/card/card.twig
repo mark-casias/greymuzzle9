@@ -43,26 +43,24 @@
      #}
     {% set card__base_class = 'card' %}
 
-    <div
-      {{ bem(card__base_class, card__modifiers, card__blockname, ['container']) }}>
-      {# Image #}
-      {% block card__img %}
-        {% if card__image__src %}
-          {% include "@atoms/images/image/responsive-image.twig" with {
+<div
+  {{ bem(card__base_class, card__modifiers, card__blockname) }}>
+  {# Image #}
+  {% block card__img %}
+    {% if card__image__src %}
+      {% include "@atoms/images/image/responsive-image.twig" with {
         image_blockname: card__base_class,
         output_image_tag: card__image__output_image_tag,
         image_src: card__image__src,
         image_alt: card__image__alt,
       } %}
-        {% endif %}
-      {% endblock %}
-      {# Content #}
-      <div
-        {{ bem('content', card__content__modifiers, card__base_class) }}>
-        {# Heading #}
-        {% if card__heading %}
-          {{ title_prefix }}
-          {% include "@atoms/text/headings/_heading.twig" with {
+    {% endif %}
+  {% endblock %}
+  {# Content #}
+  <div {{ bem('content', card__content__modifiers, card__base_class) }}>
+    {# Heading #}
+    {{ title_prefix }}
+       {% include "@atoms/text/headings/_heading.twig" with {
         heading_base_class: card__heading__base_class|default('heading'),
         heading_modifiers: card__heading__modifiers,
         heading_blockname: card__base_class,
@@ -72,8 +70,7 @@
         heading_link_base_class: card__heading__link_base_class|default('heading-link'),
         heading_link_blockname: card__base_class,
       } %}
-          {{ title_suffix }}
-        {% endif %}
+    {{ title_suffix }}
         {# Subheading #}
         {% if card__subheading %}
           {% include "@atoms/text/headings/_heading.twig" with {
@@ -86,14 +83,7 @@
       } %}
         {% endif %}
         {# Body #}
-        {% if card__body %}
-          {% include "@atoms/text/text/01-paragraph.twig" with {
-        paragraph_base_class: card__body__base_class|default('body'),
-        paragraph_modifiers: card__body__modifiers,
-        paragraph_blockname: card__base_class,
-        paragraph_content: card__body,
-      } %}
-        {% endif %}
+        {{ content.body }}
         {# Link #}
         {% if card__link__url %}
           {% include "@atoms/links/link/link.twig" with {

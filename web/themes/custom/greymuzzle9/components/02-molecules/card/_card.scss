@@ -35,6 +35,14 @@
 }
 
 .staff-card__card {
-  max-width: 220px;
-  flex-basis: 25%;
+  width: 30%;
+
+  .card__heading {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  .field--body {
+    padding: 0;
+  }
 }
