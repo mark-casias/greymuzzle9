@@ -14,6 +14,12 @@
     background-color: clr(primary);
     color: white;
     text-shadow: 1px 1px clr(accent);
+
+    a {
+      color: white;
+      text-shadow: none;
+      text-decoration: underline;
+    }
   }
   &__secondary {
     background-color: clr(secondary);
