@@ -1,3 +1,13 @@
+.main--front .view--always_in_my_heart {
+  @include wrapper;
+  text-align: center;
+  margin-bottom: 2rem;
+  .field--paragraph--field_description {
+    max-width: 50%;
+    margin: 0 auto 1rem;
+  }
+}
+
 .view__aimh-teaser {
   max-width: 1000px;
   margin: 0 auto;

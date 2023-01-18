@@ -17,7 +17,7 @@
 #}
 
 {% embed "@organisms/grid/grid.twig" with {
-  grid_type: 'card',
+  grid_type: view.id,
   grid_label: title
 } %}
   {% block grid_content %}

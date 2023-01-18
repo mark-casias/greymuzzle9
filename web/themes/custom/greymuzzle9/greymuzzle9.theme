@@ -5,7 +5,10 @@
  * Functions to support theming.
  */
 
-function greymuzzle9_preprocess_block(&$variables) {
- // $a = $variables['node'];
-  // block render array is here to be altered => $variables['content']
+function greymuzzle9_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $bundle = $paragraph->bundle();
+  if ($bundle === 'views') {
+    $variables['view_name'] = $paragraph->get('field_view')->entity->id();
+  }
 }
