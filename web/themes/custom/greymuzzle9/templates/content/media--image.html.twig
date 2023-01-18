@@ -29,6 +29,11 @@
  * @see template_preprocess_media()
  */
 #}
+{% set classes = [
+  'image-default',
+  'image--' ~ view_mode
+]
+%}
 {% embed "@atoms/images/image-default/image-default.twig" %}
 
 {% block field_image %}
