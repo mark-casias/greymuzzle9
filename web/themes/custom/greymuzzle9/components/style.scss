@@ -31,3 +31,7 @@ $fa-font-path: "../webfonts";
   }
 }
 
+.field--paragraph--field_view {
+  @include wrapper;
+}
+

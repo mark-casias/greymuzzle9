@@ -9,6 +9,7 @@
 
   &--card {
     @include space-stack-page;
+    justify-content: space-between;
   }
 
   &--who_we_are_advisory {

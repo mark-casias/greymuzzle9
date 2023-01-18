@@ -88,6 +88,9 @@ class SideBarMenu extends BlockBase {
       }
     }
     $build['title'] = $menu_link_manager->createInstance($parent)->getTitle();
+    if ($build['title'] === 'Contact Us') {
+      $build['markup'] = true;
+    } else {
     $params = new MenuTreeParameters();
     $params->setRoot($parent);
     $params->setMaxDepth(2);
@@ -108,6 +111,7 @@ class SideBarMenu extends BlockBase {
 
     $element = $menu_tree->build($tree);
     $build['items'] = $element['#items'][$parent]['below'];
+    }
 
     if (empty($build['#cache']['contexts'])) {
       $build['#cache']['contexts'] = ['user.permissions'];

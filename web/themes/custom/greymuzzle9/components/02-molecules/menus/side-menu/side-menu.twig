@@ -6,4 +6,26 @@
     menu_class: 'side-menu',
     items: menu_items,
   } %}
+{% if markup %}
+      <div class="side-menu--contact">
+        <p>Thank you for your interest in The Grey Muzzle Organization.</p>
+
+        <h3>Email:</h3>
+        <p>
+          <a href="mailto:info@greymuzzle.org">info@greymuzzle.org</a>
+        </p>
+
+        <h3>Phone:</h3>
+        <p>(919) 529-0309</p>
+
+        <!--<p>
+                          <a href="https://www.google.com/maps/place/14460+Falls+of+Neuse+Rd,+Raleigh,+NC+27614/@35.9435908,-78.5460295,17z/data=!3m1!4b1!4m2!3m1!1s0x89ac513d8139bd73:0xe8201d752778e20f">Get directions to the Grey Muzzle Organization in Raleigh, North Carolina with Google Maps</a>
+                        </p>-->
+
+        <h3>Address:</h3>
+        <address class="field-item even">
+          <p>The Grey Muzzle Organization<br>14460 Falls of Neuse Road Suite 149-269<br>Raleigh, NC 27614</p>
+        </address>
+      </div>
+    {% endif %}
 </div>

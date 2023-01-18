@@ -26,4 +26,12 @@
   &__item {
     flex: 0 0 128px;
   }
+  .image-default {
+    max-width: 128px;
+  }
+  .image-default__caption {
+    background: none;
+    color: clr(text);
+    width: 100%;
+  }
 }

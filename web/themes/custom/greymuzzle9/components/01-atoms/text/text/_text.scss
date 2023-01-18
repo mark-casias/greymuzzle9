@@ -24,10 +24,6 @@
 
 /* TODO: BEM selectors should be applied to wysiwyg-created content */
 
-.field--body {
-  @include wrapper;
-}
-
 .text-long {
   p {
     @extend .long-paragraph;

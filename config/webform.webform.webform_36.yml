@@ -15,18 +15,18 @@ category: null
 elements: |
   name:
     '#type': textfield
-    '#title': 'Name' 
+    '#title': 'Name'
     '#description': ""
     '#required': true
   email:
     '#type': email
     '#size': 20
-    '#title': 'Email' 
+    '#title': 'Email'
     '#description': ""
     '#required': true
   phone:
     '#type': textfield
-    '#title': 'Phone' 
+    '#title': 'Phone'
     '#description': ""
   about:
     '#type': select
@@ -37,12 +37,12 @@ elements: |
       volunteer: 'Volunteering'
       tech: 'Website/technical issues'
       other: 'Other'
-    '#title': 'About' 
+    '#title': 'About'
     '#description': ""
     '#required': true
   comment:
     '#type': textarea
-    '#title': 'Comment' 
+    '#title': 'Comment'
     '#description': ""
     '#required': true
   subscribe_to_newsletter:
@@ -52,8 +52,7 @@ elements: |
       1: ' Subscribe to Newsletter'
     '#multiple': true
     '#title_display': inline
-    '#title': '<none>' 
-    '#description': ""
+    '#title': '<none>'
 css: ''
 javascript: ''
 settings:
