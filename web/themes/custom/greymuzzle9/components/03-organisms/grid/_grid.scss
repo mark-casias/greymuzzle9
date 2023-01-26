@@ -9,10 +9,12 @@
 
   &--card {
     @include space-stack-page;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  &--who_we_are_advisory {
+  &--who_we_are_advisory,
+  &--senior_spotlight,
+  &--meet_the_dogs {
     justify-content: space-between;
   }
 

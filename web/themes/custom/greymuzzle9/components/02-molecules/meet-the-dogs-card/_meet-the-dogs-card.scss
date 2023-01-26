@@ -1,16 +1,18 @@
 .meet-the-dogs-card {
-  max-width: 225px;
-  margin: .5rem auto;
+  max-width: 200px;
+  margin: 0 0 1rem;
   position: relative;
 
   h3 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
   h4 {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 1rem;
     font-weight: bold;
   }
   .deceased {
