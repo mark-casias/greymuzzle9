@@ -12,7 +12,9 @@
     justify-content: space-around;
   }
 
-  &--who_we_are_advisory,
+  &--who_we_are_advisory {
+    justify-content: flex-start;
+  }
   &--senior_spotlight,
   &--meet_the_dogs {
     justify-content: space-between;
