@@ -7,7 +7,7 @@ export default {
     isAdopted: {
       name: 'Is Adopted?',
       control: { type: 'boolean' },
-      defaultValue: false,
+      defaultValue: true,
     },
   },
 };
@@ -15,8 +15,8 @@ export default {
 export const SeniorSpotlightTeaser = ({ isAdopted }) =>
   teaserTwig({
     ...teaserInfo,
+    is_adopted: isAdopted,
     content: {
-      field_is_adopted: isAdopted,
       body: teaserInfo.body,
       teaser_extra_classes: ['wrapper'],
     },

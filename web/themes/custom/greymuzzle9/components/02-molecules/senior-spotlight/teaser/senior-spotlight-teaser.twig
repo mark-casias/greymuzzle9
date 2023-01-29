@@ -1,7 +1,7 @@
 {% set base_class = 'senior-spotlight-teaser' %}
 <div {{ bem(base_class, [], '', teaser_extra_classes)}}>
   <div {{ bem('image', [], base_class)}}>
-  {% if content.field_is_adopted %}
+  {% if is_adopted %}
     <div class="ss--is-adopted">Adopted</div>
   {% endif %}
   {% block field_image %}

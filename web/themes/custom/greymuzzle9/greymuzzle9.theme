@@ -5,6 +5,24 @@
  * Functions to support theming.
  */
 
+function greymuzzle9_preprocess_page(&$vars) {
+  $path = \Drupal::service('path.current')->getPath();
+  if (preg_match('/^\/taxonomy\/term/', $path)) {
+    $vars['is_term_page'] = TRUE;
+  }
+}
+
+function greymuzzle9_preprocess_node(&$vars) {
+  $node = $vars['node'];
+  if($node->hasField('field_ss_is_adopted')) {
+    $vars['is_adopted'] = FALSE;
+    $field = $node->get('field_ss_is_adopted')->getValue();
+    if ($field[0]['value'] === '1') {
+      $vars['is_adopted'] = TRUE;
+    }
+  }
+}
+
 function greymuzzle9_preprocess_paragraph(&$variables) {
   $paragraph = $variables['paragraph'];
   $bundle = $paragraph->bundle();

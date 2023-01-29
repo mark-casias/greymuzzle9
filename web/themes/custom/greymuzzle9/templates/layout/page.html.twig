@@ -47,6 +47,9 @@
 {% if page.sidebar|render %} {# this may or may not correctly filter sidebar #}
   {% set sidebar = TRUE %}
 {% endif %}
+{% if is_term_page %}
+  {% set sidebar = TRUE %}
+{% endif %}
 
 {% extends "@templates/_default.twig" %}
   {% block page_header %}
@@ -57,6 +60,9 @@
 
   {% block page_sidebar %}
     {{ page.sidebar }}
+    {% if is_term_page %}
+      {{ drupal_entity('block', 'sidebarmenublock', check_access=false) }}
+    {% endif %}
   {% endblock %}
 
   {% block page_content %}
