@@ -8,16 +8,6 @@ core_version_requirement: ^8 || ^9
 # Libraries (These are loaded on every page. Use https://www.drupal.org/developing/api/8/assets#twig whenever possible.)
 libraries:
   - 'greymuzzle9/global'
-  # - 'greymuzzle9/typekit'
-
-# Libraries override allows you to remove libraries added by other projects.
-# libraries-override:
-#   chosen/drupal.chosen:
-#     js:
-#       js/chosen.js: false
-#     css:
-#       component:
-#         css/chosen-drupal.css: false
 
 # CKEditor stylesheet loads in wysiwyg to give content editors a better experience
 ckeditor_stylesheets:

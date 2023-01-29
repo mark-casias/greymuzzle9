@@ -1,10 +1,15 @@
 .image-default {
   font-size: .75rem;
 
+  figure {
+    margin: 0;
+  }
+
   &__caption {
-    padding: 0.3rem 0.5rem;
+    padding: 0.25rem 0.5rem;
     background: #444;
     color: #fff;
+    max-width: 100%;
     div {
       display: inline;
     }
@@ -15,5 +20,20 @@
   }
   &.align-right {
     margin-left: 1rem;
+  }
+}
+
+.image {
+  &--basic_page_320x240,
+  &--width_320 {
+    width: 320px;
+  }
+
+  &--basic_page_220x220 {
+    width: 220px;
+  }
+
+  &--width_200 {
+    width: 200px;
   }
 }

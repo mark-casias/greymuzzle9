@@ -99,12 +99,8 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: |-
-        Submitted on [webform_submission:date:long]
-        Submitted by user: [webform_submission:user]
-        Submitted values are:
-        [webform_submission:values]
+      subject: 'Thank you for your interest in Grey Muzzle.'
+      body: "Submitted values are:\r\n[webform_submission:values]"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -133,19 +129,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: '[site:mail]'
       from_options: {  }
-      from_name: default
+      from_name: 'The Grey Muzzle Organization'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: |-
-        Submitted on [webform_submission:date:long]
-        Submitted by user: [webform_submission:user]
-        Submitted values are:
-        [webform_submission:values]
+      subject: _default
+      body: "Submitted on [webform_submission:created:html_datetime]\r\nSubmitted values are:\r\n[webform_submission:values]"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -176,13 +168,13 @@ handlers:
       cc_options: {  }
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
-      from_name: default
+      from_name: _default
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
