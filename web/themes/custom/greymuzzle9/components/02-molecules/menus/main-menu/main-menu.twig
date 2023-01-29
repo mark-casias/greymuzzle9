@@ -7,7 +7,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  mb-2 mb-lg-0">
+      <ul class="mb-2 navbar-nav mb-lg-0">
         {%  for key, item in menu_items %}
           {%  set navclass = 'nav-item' %}
           {%  set navclassextra = [
@@ -21,9 +21,13 @@
             {%  set navclass = 'nav-item dropdown' %}
             {%  set linkclass = 'nav-link dropdown-toggle' %}
             {%  set linkextra = 'role=button data-bs-toggle=dropdown aria-expanded=false' %}
+          {% else %}
+            {%  set navclass = 'nav-item' %}
+            {%  set linkclass = 'nav-link' %}
+            {%  set linkextra = '' %}
           {%  endif  %}
           <li  {{  bem('nav-item', [], '', navclassextra) }}{{  item.attributes }}>
-            <a {{  bem('nav-link', [], '', linkclassextra) }} {{  linkextra }} >{{  item.title }}</a>
+            <a {{  bem('nav-link', [], '', linkclassextra) }} {{  linkextra }} {% if not item.below %}href="{{item.url}}"{% endif %}>{{  item.title }}</a>
             {%  if item.below %}
               <ul class="dropdown-menu" aria-labelledby="{{  dropKey }}">
                 {% for submenu in item.below %}
