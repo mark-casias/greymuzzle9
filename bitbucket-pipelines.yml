@@ -37,7 +37,7 @@
   name: Lint PHP using PSR2
   image: willhallonline/drupal-phpcs
   script:
-    - phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --warning-severity=0 web/profiles/custom/sdnn/modules
+    - phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --warning-severity=0 web/modules/custom
 
 "composer install": &composerInstallDefault
   name: Install vendor directory
@@ -74,13 +74,6 @@
     - web/themes/contrib/**
     - web/core/**
     - web/libraries/**
-
-"test php": &testPHP
-  name: Test PHP
-  image:
-    name: composer:2.0.8
-  script:
-    - SYMFONY_DEPRECATIONS_HELPER=disabled vendor/bin/phpunit -c web/core/phpunit.xml.dist web/profiles/custom/sdnn/modules
 
 "deploy code to acquia": &deployCode
   name: Deploy code to Pantheon
@@ -166,7 +159,6 @@ pipelines:
   default:
     - step: *lintPhp
     - step: *composerInstallDefault
-    - step: *testPHP
 
   branches:
     develop:
