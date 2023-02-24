@@ -62,7 +62,8 @@
         "drupal/webform_migrate": "^1.2",
         "drupal/xmlsitemap": "^1.0",
         "emulsify-ds/emulsify-drupal": "^4.1",
-        "pantheon-systems/drupal-integrations": "^9.0"
+        "pantheon-systems/drupal-integrations": "^9.0",
+        "squizlabs/php_codesniffer": "^3.7"
     },
     "conflict": {
         "drupal/drupal": "*"

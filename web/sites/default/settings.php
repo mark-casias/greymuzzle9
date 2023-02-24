@@ -8,6 +8,9 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 // Hard coding config.
 $settings['config_sync_directory'] = '../config';
 
+// Hash Salt.
+$settings['hash_salt'] = 'B9q7Lt1tfDhE3VznZO5Ja2PbfEY0HWxKsIazkfN83T8xBLBBIHAwzDoYE8oeN4ZIM19yDO7q6w';
+
 /**
  * Include the Pantheon-specific settings file.
  *
@@ -64,4 +67,3 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
 $settings['media_migration_embed_token_transform_destination_filter_plugin'] =
 'media_embed';
 $settings['media_migration_embed_media_reference_method'] = 'uuid';
-
