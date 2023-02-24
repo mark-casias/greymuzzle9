@@ -1,0 +1,203 @@
+# Reusable references
+
+"check branch": &checkBranch
+  >
+  case "$BITBUCKET_BRANCH" in
+    "develop")
+      ALIAS="${PANTHEON_DEVELOP_DRUSH_NAME}"
+      URL="${PANTHEON_DEVELOP_URL}"
+      ACQUIA_SSH="${PANTHEON_DEVELOP_SSH}";;
+    "stage")
+      ALIAS="${PANTHEON_STAGE_DRUSH_NAME}"
+      URL="${PANTHEON_STAGE_URL}"
+      ACQUIA_SSH="${PANTHEON_STAGE_SSH}";;
+    "master")
+      ALIAS="${PANTHEON_PROD_DRUSH_NAME}"
+      URL="${PANTHEON_PROD_URL}"
+      ACQUIA_SSH="${PANTHEON_PROD_SSH}";;
+  esac
+
+"check tag": &checkTag
+  >
+  case "$BITBUCKET_TAG" in
+    "pantheon"*)
+      ALIAS="${PANTHEON_LIVE_DRUSH_NAME}"
+      URL="${PANTHEON_LIVE_URL}"
+      ACQUIA_SSH="${PANTHEON_PROD_SSH}"
+  esac
+
+"wait": &waitForTrigger
+  name: Start Import
+  image: atlassian/default-image:latest
+  trigger: manual
+  script:
+    - echo "Starting import"
+
+"lint php": &lintPhp
+  name: Lint PHP using PSR2
+  image: willhallonline/drupal-phpcs
+  script:
+    - phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --warning-severity=0 web/profiles/custom/sdnn/modules
+
+"composer install": &composerInstallDefault
+  name: Install vendor directory
+  image:
+    name: composer:2.0.8
+  caches:
+    - composer
+  script:
+    - apk add unzip zlib-dev libpng-dev libzip-dev
+    - docker-php-ext-install zip
+    - docker-php-ext-install gd
+    - composer install --ignore-platform-reqs
+  artifacts:
+    - vendor/**
+    - web/modules/contrib/**
+    - web/themes/contrib/**
+    - web/core/**
+    - web/libraries/**
+
+"composer install prod": &composerInstallProduction
+  name: Install vendor directory
+  image:
+    name: composer:2.0.8
+  caches:
+    - composer
+  script:
+    - apk add unzip zlib-dev libpng-dev libzip-dev
+    - docker-php-ext-install zip
+    - docker-php-ext-install gd
+    - composer install --ignore-platform-reqs --no-dev --optimize-autoloader
+  artifacts:
+    - vendor/**
+    - web/modules/contrib/**
+    - web/themes/contrib/**
+    - web/core/**
+    - web/libraries/**
+
+"test php": &testPHP
+  name: Test PHP
+  image:
+    name: composer:2.0.8
+  script:
+    - SYMFONY_DEPRECATIONS_HELPER=disabled vendor/bin/phpunit -c web/core/phpunit.xml.dist web/profiles/custom/sdnn/modules
+
+"deploy code to acquia": &deployCode
+  name: Deploy code to Pantheon
+  image:
+    name: atlassian/default-image:2
+  script:
+    - *checkBranch
+    - *checkTag
+
+    # Set variables to be used in the git commit
+    - git config --global user.email "$GIT_EMAIL";
+    - git config --global user.name "$GIT_USER";
+
+    # Clone the current acquia repo into a separate directory
+    - git clone $PANTHEON_REPO /pantheon
+    - cd /pantheon
+    - git fetch -a
+    - git checkout "$BITBUCKET_BRANCH"
+
+    # Copy the build version of the Bitbucket repo over the checked-out acquia version
+    - rsync -avh --progress --delete --include=".htaccess" --exclude=".*" --exclude=".*/" "$BITBUCKET_CLONE_DIR/" "/pantheon"
+
+    # Update the build file with the current commit hash
+    - echo "$BITBUCKET_COMMIT" > "/pantheon/web/BUILD.txt"
+
+    # Commit and push results of build to Acquia
+    - git status
+    - git add .
+    - git commit --allow-empty -m "Committing build artifacts from BitBucket commit $BITBUCKET_COMMIT"
+    - git push origin "$BITBUCKET_BRANCH"
+
+"deploy code to acquia prod": &deployCodeProd
+  name: Deploy code to Pantheon Prod
+  image:
+    name: atlassian/default-image:2
+  script:
+    - *checkBranch
+    - *checkTag
+
+    # Set variables to be used in the git commit
+    - echo "$BITBUCKET_TAG"
+    - git config --global user.email "$GIT_EMAIL";
+    - git config --global user.name "$GIT_USER";
+
+    # Clone the current acquia repo into a separate directory
+    - git clone $PANTHEON_REPO /pantheon
+    - cd /pantheon
+    - git fetch -a
+    - git checkout "$BITBUCKET_BRANCH"
+
+    # Copy the build version of the Bitbucket repo over the checked-out acquia version
+    - rsync -avh --progress --delete --include=".htaccess" --exclude=".*" --exclude=".*/" "$BITBUCKET_CLONE_DIR/" "/pantheon"
+
+    # Update the build file with the current tag and commit hash
+    - echo "$BITBUCKET_COMMIT" > "/pantheon/web/BUILD.txt"
+
+    # Enable maintenance mode on the sites
+    - terminus -n auth:login --email="$GIT_EMAIL" --machine-token="$TERMINUS_TOKEN"
+    - terminus drush $ALIAS sset system.maintenance_mode TRUE
+
+    # Commit and push results of build to Acquia
+    - git status
+    - git add .
+    - git commit --allow-empty -m "Committing build artifacts from BitBucket commit $BITBUCKET_COMMIT"
+    - git tag -a "$BITBUCKET_TAG" -m "Releasing tag"
+    - git push origin "$BITBUCKET_TAG"
+
+"deploy configuration to acquia": &deployConfiguration
+  name: Import config
+  image: quay.io/pantheon-public/build-tools-ci:6.x
+  script:
+    - *checkBranch
+    - *checkTag
+
+    - >
+      terminus -n auth:login --email="$GIT_EMAIL" --machine-token="$TERMINUS_TOKEN";
+      terminus -n drush $ALIAS cache-rebuild;
+      terminus -n drush $ALIAS updatedb --yes || exit 1;
+      terminus -n drush $ALIAS cim --yes || exit 1;
+      terminus -n drush $ALIAS cache-rebuild;
+
+pipelines:
+  default:
+    - step: *lintPhp
+    - step: *composerInstallDefault
+    - step: *testPHP
+
+  branches:
+    develop:
+      - step: *composerInstallDefault
+      - step:
+          <<: *deployCode
+          deployment: dev
+      - step: *deployConfiguration
+
+    stage:
+      - step: *composerInstallDefault
+      - step:
+          <<: *deployCode
+          deployment: stage
+      - step: *deployConfiguration
+
+    master:
+      - step: *composerInstallProduction
+      - step:
+          <<: *deployCode
+          deployment: prod
+      - step: *deployConfiguration
+
+  tags:
+    pantheon-*:
+      - step: *composerInstallProduction
+      - step:
+          <<: *deployCodeProd
+          deployment: live
+      - step: *waitForTrigger
+      - step: *deployConfiguration
+
+options:
+  docker: true
