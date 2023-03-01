@@ -1,0 +1,79 @@
+.node-meet_the_dogs {
+  .field--node--field_meet_main_image {
+    margin: 0 auto;
+    float: none;
+
+    @media (min-width: $small) {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 10px;
+
+      img {
+        min-width: 320px;
+      }
+    }
+  }
+
+  .node {
+    .field--body {
+      .embedded-entity {
+        margin: 10px 0 10px 20px;
+        width: 250px;
+        float: right;
+
+        @media (max-width: $small) {
+          float: none;
+          margin: 10px auto;
+        }
+  
+        .image-default {
+          width: auto;
+          margin: initial;
+          float: initial;
+        }
+
+        ~ .embedded-entity {
+          margin-right: 20px;
+          margin-left: 0;
+          float: left;
+
+          @media (max-width: $large) {
+            float: none;
+            margin: 10px auto;
+          }
+        }
+      }
+
+      .image-default {
+        width: 200px;
+        margin: 5px;
+        float: right;
+
+        @media (max-width: $small) {
+          float: none;
+          margin: 10px auto;
+        }
+      }
+
+      img[style*="left"] {
+        margin: 10px 20px 10px 0 !important;
+
+        @media (max-width: $small) {
+          float: none !important;
+          margin: 10px auto !important;
+          display: block;
+        }
+      }
+
+      img[style*="right"] {
+        margin: 10px 0 10px 20px !important;
+
+        @media (max-width: $small) {
+          float: none !important;
+          margin: 10px auto !important;
+          display: block;
+        }
+      }
+    } 
+  }
+}
