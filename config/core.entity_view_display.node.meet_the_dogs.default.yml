@@ -19,6 +19,11 @@ targetEntityType: node
 bundle: meet_the_dogs
 mode: default
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
   body:
     type: text_default
     label: hidden
@@ -79,5 +84,4 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden:
-  addtoany: true
+hidden: {  }
