@@ -10,7 +10,12 @@
 @mixin body-copy {
   font-family: $font-body;
   font-size: 1rem;
+  font-weight: 300;
   line-height: 1.6;
+
+  @media (max-width: $medium) {
+    font-size: 0.875rem;
+  }
 }
 
 @mixin clearfix {
