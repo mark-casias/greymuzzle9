@@ -1,0 +1,13 @@
+
+
+.field {
+  &--label-inline {
+    display: flex
+  }
+
+  &__label {
+    margin-right: .5rem;
+    font-weight: 700;
+  }
+}
+
