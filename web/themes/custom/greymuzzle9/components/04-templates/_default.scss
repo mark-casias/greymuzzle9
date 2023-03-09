@@ -74,7 +74,14 @@ $gutter: $space;
 .a2a_kit {
   position: absolute;
   right: 0;
-  top: -6rem;
+  top: -3.5rem;
+
+  @media (max-width: $medium) {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 0.67em 0 1.5rem;
+  }
 }
 
 .field {
