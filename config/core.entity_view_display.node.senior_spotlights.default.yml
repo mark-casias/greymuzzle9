@@ -218,7 +218,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: basic_400x400
+      view_mode: colorboxed
       link: false
     third_party_settings: {  }
     weight: 0
