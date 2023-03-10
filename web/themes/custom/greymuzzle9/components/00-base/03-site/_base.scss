@@ -17,6 +17,10 @@ body {
 .main {
   /* Fix for IE weirdness */
   display: block;
+
+  .node {
+    position: relative;
+  }
 }
 
 .visually-hidden,
