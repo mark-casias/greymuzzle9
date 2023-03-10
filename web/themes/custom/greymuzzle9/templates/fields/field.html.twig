@@ -41,18 +41,24 @@
   set div_classes = [
     'field',
     'field--' ~ entity_type,
-    'field--' ~ entity_type ~ '--' ~ field_name
+    'field--' ~ entity_type ~ '--' ~ field_name,
+    label_display == 'inline' ? 'field--label-inline'
   ]
 %}
 
-  {% if multiple %}
-    <div{{ attributes.addClass(div_classes) }}>
-      {% for item in items %}
-        <div{{ item.attributes }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(div_classes) }}>{{ item.content }}</div>
-    {% endfor %}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+    label_display == 'inline' ? 'field__label--inline'
+  ]
+%}
+<div{{ attributes.addClass(div_classes) }}>
+  {% if label_display != 'hidden' %}
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}:</div>
   {% endif %}
+  {% for item in items %}
+    <div{{ item.attributes }}>{{ item.content }}</div>
+  {% endfor %}
+</div>
+

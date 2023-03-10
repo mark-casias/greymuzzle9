@@ -1,0 +1,29 @@
+.field--node--field_ss_photos {
+  display: flex;
+  justify-content: center;
+
+  img {
+    margin: 0 .2rem;
+  }
+}
+
+.field--node--field_ss_dog_link{
+  margin: .5rem 0;
+  a {
+    font-size: 0.9rem;
+    display: block;
+    padding: 0.6rem 1.5rem;
+    position: relative;
+    background: #067799;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+  }
+}

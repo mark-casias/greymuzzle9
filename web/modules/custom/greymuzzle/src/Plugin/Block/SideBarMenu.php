@@ -4,7 +4,7 @@ namespace Drupal\greymuzzle\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Menu\MenuTreeParameters;
-use \Drupal\Core\Url;
+use Drupal\Core\Url;
 
 /**
  * Provides a SideMenuBlock.
@@ -52,14 +52,14 @@ class SideBarMenu extends BlockBase {
       if ($term) {
         $tid = $term->id();
         $menu_links = $menu_link_manager->loadLinksByRoute('entity.taxonomy_term.canonical', [
-        'taxonomy_term' => $tid]);
-        // Do the thing with a term id.
+          'taxonomy_term' => $tid
+        ]);
       }
     }
 
     if ($node && !$menu_links) {
       // No menu item.. lets see if we can find one from the parent.
-      $alias = \Drupal::service('path_alias.manager')->getAliasByPath('/node/'. $node->id());
+      $alias = \Drupal::service('path_alias.manager')->getAliasByPath('/node/' . $node->id());
       $parts = explode('/', $alias);
       $newAlias = $parts[1];
       if ($newAlias === 'supporters') {
@@ -89,28 +89,29 @@ class SideBarMenu extends BlockBase {
     }
     $build['title'] = $menu_link_manager->createInstance($parent)->getTitle();
     if ($build['title'] === 'Contact Us') {
-      $build['markup'] = true;
-    } else {
-    $params = new MenuTreeParameters();
-    $params->setRoot($parent);
-    $params->setMaxDepth(2);
-    if ($menu_link) {
-      $params->setActiveTrail([$parent, $menu_link->getPluginId()]);
+      $build['markup'] = TRUE;
     }
-    $menu_tree = \Drupal::menuTree();
-    $tree = $menu_tree->load($parent, $params);
+    else {
+      $params = new MenuTreeParameters();
+      $params->setRoot($parent);
+      $params->setMaxDepth(2);
+      if ($menu_link) {
+        $params->setActiveTrail([$parent, $menu_link->getPluginId()]);
+      }
+      $menu_tree = \Drupal::menuTree();
+      $tree = $menu_tree->load($parent, $params);
 
-    // Transform the tree using the manipulators you want.
-    $manipulators = [
-      // Only show links that are accessible for the current user.
-      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
-      // Use the default sorting of menu links.
-      ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
-    ];
-    $tree = $menu_tree->transform($tree, $manipulators);
+      // Transform the tree using the manipulators you want.
+      $manipulators = [
+        // Only show links that are accessible for the current user.
+        ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+        // Use the default sorting of menu links.
+        ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+      ];
+      $tree = $menu_tree->transform($tree, $manipulators);
 
-    $element = $menu_tree->build($tree);
-    $build['items'] = $element['#items'][$parent]['below'];
+      $element = $menu_tree->build($tree);
+      $build['items'] = $element['#items'][$parent]['below'];
     }
 
     if (empty($build['#cache']['contexts'])) {

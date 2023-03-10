@@ -1,0 +1,15 @@
+uuid: 362affe1-6eea-4084-9321-2a026f90b286
+langcode: en
+status: true
+dependencies: {  }
+name: meet_the_dogs
+label: 'Meet the Dogs'
+effects:
+  966ac474-937d-47d9-90b2-f1b458c45976:
+    uuid: 966ac474-937d-47d9-90b2-f1b458c45976
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 220
+      anchor: center-center
