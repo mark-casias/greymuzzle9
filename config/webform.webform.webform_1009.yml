@@ -12,92 +12,92 @@ id: webform_1009
 title: 'Senior Spotlight Request Form'
 description: null
 category: null
-elements: |
+elements: |-
   fieldset_organization:
     '#type': fieldset
     '#open': true
-    '#title': 'About your Organization' 
-    '#description': ""
+    '#title': 'About your Organization'
+    '#description': ''
     org_contact_name_1:
       '#type': textfield
       '#title_display': inline
-      '#title': 'Contact Name' 
-      '#description': ""
+      '#title': 'Contact Name'
+      '#description': ''
       '#required': true
     contact_e_mail_1:
       '#type': email
       '#size': 20
       '#title_display': inline
-      '#title': 'Contact E-Mail' 
-      '#description': ""
+      '#title': 'Contact E-Mail'
+      '#description': ''
       '#required': true
     organization_name_1:
       '#type': textfield
       '#title_display': inline
-      '#title': 'Organization Name' 
-      '#description': ""
+      '#title': 'Organization Name'
+      '#description': ''
       '#required': true
     org_website_1:
       '#type': textfield
       '#title_display': inline
-      '#title': 'Website' 
-      '#description': ""
+      '#title': Website
+      '#description': ''
   fieldset_about_your_adoptable_dog:
     '#type': fieldset
     '#open': true
-    '#title': 'About your Adoptable Dog' 
-    '#description': ""
+    '#title': 'About your Adoptable Dog'
+    '#description': ''
     dog_name_6:
       '#type': textfield
       '#title_display': inline
-      '#title': 'Dog Name' 
-      '#description': ""
+      '#title': 'Dog Name'
+      '#description': ''
       '#required': true
     approximate_age_6:
       '#type': textfield
       '#size': 20
-      '#min': 
-      '#max': 
-      '#step': 
+      '#min': null
+      '#max': null
+      '#step': null
       '#unique': false
       '#title_display': inline
-      '#title': 'Approximate Age' 
-      '#description': ""
+      '#title': 'Approximate Age'
+      '#description': ''
       '#required': true
     sex_6:
       '#type': select
       '#options':
-        M: 'Male'
-        F: 'Female'
+        M: Male
+        F: Female
       '#title_display': inline
-      '#title': 'Sex' 
-      '#description': ""
+      '#title': Sex
+      '#description': ''
     breed_6:
       '#type': textfield
       '#title_display': inline
-      '#title': 'Breed' 
-      '#description': ""
+      '#title': Breed
+      '#description': ''
       '#required': true
     approximate_weight_6:
       '#type': textfield
       '#size': 20
-      '#min': 
-      '#max': 
-      '#step': 
+      '#min': null
+      '#max': null
+      '#step': null
       '#unique': false
       '#title_display': inline
-      '#title': 'Approximate Weight' 
-      '#description': ""
+      '#title': 'Approximate Weight'
+      '#description': ''
     reason_at_shelter_rescue_6:
       '#type': select
       '#options':
-        stray: 'Stray'
-        surrendered: 'Surrendered'
+        stray: Stray
+        surrendered: Surrendered
         owner_passed: 'Owner Passed Away'
         rescued: 'Rescued (Seized)'
       '#title_display': inline
-      '#title': 'Reason at shelter/rescue' 
-      '#description': ""
+      '#title': 'Reason at shelter/rescue'
+      '#description': ''
       '#required': true
     home_preferences_6:
       '#type': checkboxes
@@ -108,70 +108,68 @@ elements: |
         adults: 'Adults Only'
       '#multiple': true
       '#title_display': inline
-      '#title': 'Home preferences' 
-      '#description': ""
+      '#title': 'Home preferences'
+      '#description': ''
     adoption_fee_6:
       '#type': textfield
       '#size': 20
-      '#min': 
-      '#max': 
-      '#step': 
+      '#min': null
+      '#max': null
+      '#step': null
       '#unique': false
       '#field_prefix': $
       '#title_display': inline
-      '#title': 'Adoption Fee' 
-      '#description': ""
+      '#title': 'Adoption Fee'
+      '#description': ''
       '#required': true
     adopt_out_of_area_6:
       '#type': radios
       '#options':
-        yes: 'Yes'
-        no: 'No'
+        'yes': 'Yes'
+        'no': 'No'
       '#title_display': inline
-      '#title': 'Adopt out of Area?' 
-      '#description': ""
+      '#title': 'Adopt out of Area?'
+      '#description': ''
       '#required': true
     bio_personality_6:
       '#type': textarea
-      '#title': 'Bio/Personality' 
-      '#description': ""
+      '#title': Bio/Personality
+      '#description': ''
       '#required': true
-    profile_link_6:
-      '#title_display': inline
-      '#title': 'Profile Link' 
-      '#description': ""
+    profile_link:
+      '#type': textfield
+      '#title': 'Profile Link'
   fieldset_upload_attachments:
     '#type': fieldset
     '#open': true
-    '#title': 'Upload Attachments' 
-    '#description': ""
+    '#title': 'Upload Attachments'
+    '#description': ''
     photo_1_18:
       '#type': managed_file
       '#max_filesize': '2'
       '#file_extensions': 'gif jpg jpeg png'
       '#title_display': inline
-      '#title': 'Photo 1' 
-      '#description': ""
+      '#title': 'Photo 1'
+      '#description': ''
       '#required': true
     photo_2_18:
       '#type': managed_file
       '#max_filesize': '2'
       '#file_extensions': 'gif jpg jpeg png'
       '#title_display': inline
-      '#title': 'Photo 2' 
-      '#description': ""
+      '#title': 'Photo 2'
+      '#description': ''
       '#required': true
     photo_3_18:
       '#type': managed_file
       '#max_filesize': '2'
       '#file_extensions': 'gif jpg jpeg png'
       '#title_display': inline
-      '#title': 'Photo 3' 
-      '#description': ""
-    youtube_video_link_18:
-      '#title_display': inline
-      '#title': 'YouTube video link' 
-      '#description': ""
+      '#title': 'Photo 3'
+      '#description': ''
+    youtube_video_link:
+      '#type': textfield
+      '#title': 'YouTube video link'
 css: ''
 javascript: ''
 settings:

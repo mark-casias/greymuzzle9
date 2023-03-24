@@ -12,135 +12,135 @@ id: webform_1097
 title: 'Grantee Stories'
 description: null
 category: null
-elements: |
+elements: |-
   name:
     '#type': textfield
-    '#title': 'Name' 
-    '#description': ""
+    '#title': Name
+    '#description': ''
     '#required': true
   email:
     '#type': email
     '#size': 20
-    '#title': 'Email' 
-    '#description': ""
+    '#title': Email
+    '#description': ''
     '#required': true
   organization_name:
     '#type': textfield
-    '#title': 'Organization Name' 
-    '#description': ""
+    '#title': 'Organization Name'
+    '#description': ''
     '#required': true
   grant_type:
     '#type': select
     '#options':
       seniors4seniors: 'Seniors for seniors'
-      medical: 'Medical'
-      dental: 'Dental'
+      medical: Medical
+      dental: Dental
       inhome: 'Keeping senior pets in homes'
       adoption: 'Adoption promotion'
-      other: 'Other'
-    '#title': 'Grant Type' 
-    '#description': ""
+      other: Other
+    '#title': 'Grant Type'
+    '#description': ''
     '#required': true
   fieldset_about_your_success_story:
     '#type': fieldset
     '#open': true
-    '#title': 'About your success story' 
-    '#description': ""
+    '#title': 'About your success story'
+    '#description': ''
     dogs_name_18:
       '#type': textfield
-      '#title': 'Dog"s Name' 
-      '#description': ""
+      '#title': 'Dog"s Name'
+      '#description': ''
       '#required': true
     approximate_age_18:
       '#type': textfield
       '#size': 20
-      '#min': 
-      '#max': 
-      '#step': 
+      '#min': null
+      '#max': null
+      '#step': null
       '#unique': false
-      '#title': 'Approximate Age' 
-      '#description': ""
+      '#title': 'Approximate Age'
+      '#description': ''
       '#required': true
     breed_18:
       '#type': textfield
-      '#title': 'Breed (if known)' 
-      '#description': ""
+      '#title': 'Breed (if known)'
+      '#description': ''
     reason_at_shelter_18:
       '#type': select
       '#options':
-        stray: 'Stray'
-        surrendered: 'Surrendered'
+        stray: Stray
+        surrendered: Surrendered
         passed: 'Owner Passed Away'
         owner-assistance: 'Owner Receiving Assistance'
-        rescue: 'Rescued'
+        rescue: Rescued
         cruelty: 'Cruelty / Neglect Case'
-      '#title': 'Reason at Shelter' 
-      '#description': ""
+      '#title': 'Reason at Shelter'
+      '#description': ''
     adoption_18:
       '#type': radios
       '#options':
-        yes: 'Yes'
-        no: 'No'
-      '#title': 'Currently available for adoption' 
-      '#description': ""
+        'yes': 'Yes'
+        'no': 'No'
+      '#title': 'Currently available for adoption'
+      '#description': ''
       '#required': true
     bio_18:
       '#type': textarea
-      '#title': 'Please tell us how the dog was helped by your Grey Muzzle grant' 
-      '#description': ""
+      '#title': 'Please tell us how the dog was helped by your Grey Muzzle grant'
+      '#description': ''
       '#required': true
     adoption_story_18:
       '#type': textarea
-      '#title': 'If the dog has been adopted, please provide any details about their adoption or quotes from the adopter' 
-      '#description': ""
+      '#title': 'If the dog has been adopted, please provide any details about their adoption or quotes from the adopter'
+      '#description': ''
     stay_in_home_story_18:
       '#type': textarea
-      '#title': 'If the dog recieved care in order to stay in their home, please provide any details or quotes from the owner' 
-      '#description': ""
+      '#title': 'If the dog recieved care in order to stay in their home, please provide any details or quotes from the owner'
+      '#description': ''
   fieldset_media_information:
     '#type': fieldset
     '#open': true
-    '#title': 'Media Information' 
-    '#description': ""
+    '#title': 'Media Information'
+    '#description': ''
     before_photo_17:
       '#type': managed_file
       '#max_filesize': '4'
       '#file_extensions': 'gif jpg jpeg png'
-      '#title': 'Before (or Intake) Photo' 
-      '#description': "Please submit a high resolution image."
+      '#title': 'Before (or Intake) Photo'
+      '#description': 'Please submit a high resolution image.'
       '#required': true
     after_photo_17:
       '#type': managed_file
       '#max_filesize': '4'
       '#file_extensions': 'gif jpg jpeg png'
-      '#title': 'After Photo' 
-      '#description': "Please submit a high resolution image."
+      '#title': 'After Photo'
+      '#description': 'Please submit a high resolution image.'
       '#required': true
     adoption_owner_photo_17:
       '#type': managed_file
       '#max_filesize': '4'
       '#file_extensions': 'gif jpg jpeg png'
-      '#title': 'Adoption or Owner Photo (whichever is applicable)' 
-      '#description': "*Please submit a high-resolution image."
+      '#title': 'Adoption or Owner Photo (whichever is applicable)'
+      '#description': '*Please submit a high-resolution image.'
     additional_photos_17:
       '#type': managed_file
       '#max_filesize': '4'
       '#file_extensions': 'gif jpg jpeg png'
-      '#title': 'Additional Photos' 
-      '#description': "Please submit a high resolution image."
+      '#title': 'Additional Photos'
+      '#description': 'Please submit a high resolution image.'
     youtube_17:
       '#type': textfield
-      '#title': 'YouTube' 
-      '#description': ""
-    profile_link_17:
-      '#title': 'Profile Link' 
-      '#description': ""
-    social_post_link_17:
-      '#title': 'Social Post Link' 
-      '#description': ""
-    media_story_link_17:
-      '#title': 'Media Story Link' 
-      '#description': ""
+      '#title': YouTube
+      '#description': ''
+    profile_link:
+      '#type': textfield
+      '#title': 'Profile Link'
+    social_post_link:
+      '#type': textfield
+      '#title': 'Social Post Link'
+    media_story_link:
+      '#type': textfield
+      '#title': 'Media Story Link'
 css: ''
 javascript: ''
 settings:
