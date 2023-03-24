@@ -136,7 +136,7 @@ elements: |-
       '#title': Bio/Personality
       '#description': ''
       '#required': true
-    profile_link:
+    profile_link_6:
       '#type': textfield
       '#title': 'Profile Link'
   fieldset_upload_attachments:
@@ -167,7 +167,7 @@ elements: |-
       '#title_display': inline
       '#title': 'Photo 3'
       '#description': ''
-    youtube_video_link:
+    youtube_video_link_18:
       '#type': textfield
       '#title': 'YouTube video link'
 css: ''

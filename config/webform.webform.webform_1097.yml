@@ -132,13 +132,13 @@ elements: |-
       '#type': textfield
       '#title': YouTube
       '#description': ''
-    profile_link:
+    profile_link_17:
       '#type': textfield
       '#title': 'Profile Link'
-    social_post_link:
+    social_post_link_17:
       '#type': textfield
       '#title': 'Social Post Link'
-    media_story_link:
+    media_story_link_17:
       '#type': textfield
       '#title': 'Media Story Link'
 css: ''
