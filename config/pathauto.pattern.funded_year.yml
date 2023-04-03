@@ -1,0 +1,22 @@
+uuid: 4010de89-15cd-4172-8518-0a0ec1d1f9f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: funded_year
+label: 'Taxonomy - Funded Year'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'funded-year/[term:name]'
+selection_criteria:
+  9cc18510-d1dd-414e-92a7-7bd0ddcfa53a:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 9cc18510-d1dd-414e-92a7-7bd0ddcfa53a
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      funded_year: funded_year
+selection_logic: and
+weight: -5
+relationships: {  }
