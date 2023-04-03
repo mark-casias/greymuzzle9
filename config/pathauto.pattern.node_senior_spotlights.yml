@@ -7,7 +7,7 @@ dependencies:
 id: node_senior_spotlights
 label: 'Content - Senior Spotlights'
 type: 'canonical_entities:node'
-pattern: 'meet-the-dogs/senior-spotlight/[node:title]'
+pattern: 'senior-spotlight/[node:title]'
 selection_criteria:
   0:
     id: node_type
@@ -16,10 +16,10 @@ selection_criteria:
       node: node
     bundles:
       senior_spotlights: senior_spotlights
-  4e663d03-443d-4164-a4b9-13cc642d85ec:
+  81616448-5d60-485f-9a46-e461a083b93e:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 4e663d03-443d-4164-a4b9-13cc642d85ec
+    uuid: 81616448-5d60-485f-9a46-e461a083b93e
     context_mapping:
       node: node
     bundles:
