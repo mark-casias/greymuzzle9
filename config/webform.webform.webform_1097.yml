@@ -10,8 +10,8 @@ template: false
 archive: false
 id: webform_1097
 title: 'Grantee Stories'
-description: null
-category: null
+description: ''
+category: ''
 elements: |-
   name:
     '#type': textfield
@@ -149,7 +149,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /grants/success-stories
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
