@@ -10,8 +10,8 @@ template: false
 archive: false
 id: webform_36
 title: 'Contact Us'
-description: null
-category: null
+description: ''
+category: ''
 elements: |
   name:
     '#type': textfield
@@ -62,7 +62,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /contact-us-0
   page_confirm_path: ''
   page_theme_name: ''
   form_title: both
