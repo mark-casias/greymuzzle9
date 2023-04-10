@@ -16,40 +16,40 @@ elements: |
   email:
     '#type': email
     '#size': 20
-    '#title': 'Email' 
+    '#title': 'Email'
     '#description': ""
     '#required': true
   first_name:
     '#type': textfield
-    '#title': 'First Name' 
+    '#title': 'First Name'
     '#description': ""
   last_name:
     '#type': textfield
-    '#title': 'Last Name' 
+    '#title': 'Last Name'
     '#description': ""
   address_1:
     '#type': textfield
-    '#title': 'Address 1' 
+    '#title': 'Address 1'
     '#description': ""
   address_2:
     '#type': textfield
-    '#title': 'Address 2' 
+    '#title': 'Address 2'
     '#description': ""
   city:
     '#type': textfield
-    '#title': 'City' 
+    '#title': 'City'
     '#description': ""
   state:
     '#type': textfield
-    '#title': 'State' 
+    '#title': 'State'
     '#description': ""
   zip:
     '#type': textfield
-    '#title': 'Zip' 
+    '#title': 'Zip'
     '#description': ""
   how_did_you_hear_about_us:
     '#type': textfield
-    '#title': 'How did you hear about us?' 
+    '#title': 'How did you hear about us?'
     '#description': ""
   data:
     '#type': checkboxes
@@ -60,7 +60,7 @@ elements: |
       noenews: 'Please do NOT send me the monthly e-newsletter'
     '#multiple': true
     '#title_display': invisible
-    '#title': '<none>' 
+    '#title': '<none>'
     '#description': ""
 css: ''
 javascript: ''
@@ -149,8 +149,6 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  wizard_page_type: container
-  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -198,6 +196,8 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   form_submit_label: ''
   wizard_complete: 1
 access:

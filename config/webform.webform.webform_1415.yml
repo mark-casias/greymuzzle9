@@ -15,16 +15,16 @@ category: ''
 elements: |
   name:
     '#type': textfield
-    '#title': 'Name' 
+    '#title': 'Name'
     '#description': ""
   email:
     '#type': email
     '#size': 20
-    '#title': 'Email' 
+    '#title': 'Email'
     '#description': ""
   more_information:
     '#type': textarea
-    '#title': 'More Information' 
+    '#title': 'More Information'
     '#description': "Please add the grantors name and confirmation The Grey Muzzle Organization is in their will."
 css: ''
 javascript: ''
@@ -113,8 +113,6 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  wizard_page_type: container
-  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -162,6 +160,8 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   form_submit_label: ''
   wizard_complete: 1
 access:

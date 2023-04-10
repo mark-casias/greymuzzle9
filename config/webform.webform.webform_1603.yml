@@ -15,40 +15,40 @@ category: ''
 elements: |
   first_name:
     '#type': textfield
-    '#title': 'First Name' 
+    '#title': 'First Name'
     '#description': ""
     '#required': true
   last_name:
     '#type': textfield
-    '#title': 'Last Name' 
+    '#title': 'Last Name'
     '#description': ""
     '#required': true
   email:
     '#type': email
     '#size': 20
-    '#title': 'Email' 
+    '#title': 'Email'
     '#description': ""
     '#required': true
   address:
     '#type': webform_address
     '#state_province__type': textfield
     '#title_display': invisible
-    '#title': 'Address' 
+    '#title': 'Address'
     '#description': ""
     '#required': true
   phone_number:
     '#type': textfield
-    '#title': 'Phone Number' 
+    '#title': 'Phone Number'
     '#description': ""
   website:
     '#type': textfield
-    '#title': 'Do you have a website or blog? What is the URL? ' 
+    '#title': 'Do you have a website or blog? What is the URL? '
     '#description': ""
   upload_a_resume:
     '#type': managed_file
     '#max_filesize': '2'
     '#file_extensions': 'pdf'
-    '#title': 'Upload a Resume' 
+    '#title': 'Upload a Resume'
     '#description': ""
   areas_of_interest:
     '#type': checkboxes
@@ -75,51 +75,51 @@ elements: |
       writing: 'Writing/Editing'
       other: 'Other'
     '#multiple': true
-    '#title': 'Grey Muzzle has many volunteer opportunities available. What area(s) interest you?' 
+    '#title': 'Grey Muzzle has many volunteer opportunities available. What area(s) interest you?'
     '#description': ""
   skills_or_interests:
     '#type': textarea
-    '#title': 'What are your special skills or interests? ' 
+    '#title': 'What are your special skills or interests? '
     '#description': ""
   time_commitment:
     '#type': textarea
-    '#title': 'How much time can you devote to volunteering for Grey Muzzle?' 
+    '#title': 'How much time can you devote to volunteering for Grey Muzzle?'
     '#description': ""
   how_learned_about:
     '#type': textarea
-    '#title': 'How did you learn about The Grey Muzzle Organization? ' 
+    '#title': 'How did you learn about The Grey Muzzle Organization? '
     '#description': ""
   other_organizations:
     '#type': textarea
-    '#title': 'Are you involved with any other animal welfare organization(s)? If so, which organization(s) and how do you participate? ' 
+    '#title': 'Are you involved with any other animal welfare organization(s)? If so, which organization(s) and how do you participate? '
     '#description': ""
   anything_else:
     '#type': textarea
-    '#title': 'Anything else you"d like to share with us?' 
+    '#title': 'Anything else you"d like to share with us?'
     '#description': ""
   committees:
     '#type': radios
     '#options':
       yes: 'Yes'
       no: 'no'
-    '#default_value': 'yes' 
-    '#title': 'Would you have an interest in managing one of our committees? ' 
+    '#default_value': 'yes'
+    '#title': 'Would you have an interest in managing one of our committees? '
     '#description': ""
   board_interest:
     '#type': radios
     '#options':
       yes: 'Yes'
       no: 'No'
-    '#default_value': 'yes' 
-    '#title': 'Would you have an interest in a future position on The Grey Muzzle Organization"s volunteer Board of Directors?' 
+    '#default_value': 'yes'
+    '#title': 'Would you have an interest in a future position on The Grey Muzzle Organization"s volunteer Board of Directors?'
     '#description': ""
   future_communications:
     '#type': radios
     '#options':
       yes: 'Yes'
       no: 'No'
-    '#default_value': 'yes' 
-    '#title': 'Would you like to receive communications from The Grey Muzzle Organization? We respect your privacy and never sell, rent or share your information.' 
+    '#default_value': 'yes'
+    '#title': 'Would you like to receive communications from The Grey Muzzle Organization? We respect your privacy and never sell, rent or share your information.'
     '#description': ""
 css: ''
 javascript: ''
@@ -208,8 +208,6 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  wizard_page_type: container
-  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -257,6 +255,8 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   form_submit_label: ''
   wizard_complete: 1
 access:
