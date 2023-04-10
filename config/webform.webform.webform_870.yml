@@ -17,24 +17,24 @@ elements: |
     '#type': processed_text
     '#format': full_html
     '#text': "<p>Pretty in pink and pearls, handsome in bow ties and tails, these adorable dogs are ready to dance the night away at The Grey Muzzle Organization’s first-ever Senior Dog Prom. Chosen from among dozens of darling dressed-for-prom dogs, our finalists are hoping to win the coveted titles of Senior Dog Prom King, Prom Queen and Cutest Couple. So, pick your favorite pups in each of the three categories below, <strong>click on their photos</strong>, then enter your email address to cast your vote. You can vote once a day between now and May 31, when the contest ends.&nbsp;Winners will be announced in early June.</p><p>Many of our finalists have loving families, but some—like thousands of old dogs at shelters and rescue groups nationwide—are just waiting to be asked, “Could I have this dance for the rest of my life?” To learn more about all the wonderful pets who participated in our Senior Dog Prom, please visit our <a href='https://www.facebook.com/GreyMuzzle/' target='2017Prom'>Facebook page</a>.</p>"
-    '#title': 'Introducing Grey Muzzle’s Senior Dog Prom Finalists' 
+    '#title': 'Introducing Grey Muzzle’s Senior Dog Prom Finalists'
     '#description': ""
   king:
-    '#title': 'Senior Dog Prom King Contenders' 
+    '#title': 'Senior Dog Prom King Contenders'
     '#description': ""
     '#required': true
   queen:
-    '#title': 'Contenders for Senior Dog Prom Queen' 
+    '#title': 'Contenders for Senior Dog Prom Queen'
     '#description': ""
     '#required': true
   couple:
-    '#title': 'Contenders for Cutest Couple ' 
+    '#title': 'Contenders for Cutest Couple '
     '#description': ""
     '#required': true
   email:
     '#type': email
     '#size': 20
-    '#title': 'Email' 
+    '#title': 'Email'
     '#description': ""
     '#required': true
   sign_up_for_our_newsletter:
@@ -44,7 +44,7 @@ elements: |
       1: ' Yes Please'
     '#multiple': true
     '#title_display': inline
-    '#title': 'Sign Up for our Newsletter?' 
+    '#title': 'Sign Up for our Newsletter?'
     '#description': ""
 css: ''
 javascript: ''
@@ -133,8 +133,6 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  wizard_page_type: container
-  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -182,6 +180,8 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   form_submit_label: ''
   wizard_complete: 1
 access:

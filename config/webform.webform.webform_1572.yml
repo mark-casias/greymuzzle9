@@ -17,63 +17,63 @@ elements: |
     '#type': processed_text
     '#format': full_html
     '#text': "<p>The Grey Muzzle Organization Bed Fund donates Kuranda cots and orthopedic pads to shelters for senior dogs at the shelter. The goal is to help make old dogs more comfortable and more adoptable.<br><br>This form allows animal shelters to request orthopedic bed donations from The Grey Muzzle Organization's Bed Fund. The beds are for use by senior dogs at your shelter.<br><br>Use the form below to request beds. You must be an authorized representative of the shelter in order to request beds. We also request that you provide a photo of one of the senior dogs helped by this donation.<br><br>Please note that not all applications may be approved. If your application is approved, we will send two beds of the type you request to the shipping address on this form. Please allow several months for delivery - we are an all-volunteer organization.<br><br>See http://www.greymuzzle.org/how-to-help/donate/donate-a-bed for more information. You can contact us at beds@greymuzzle.org.</p>"
-    '#title': 'Intro' 
+    '#title': 'Intro'
     '#description': ""
   non_profit_confirm:
     '#type': radios
     '#options':
       yes: 'Agreed'
-    '#title': 'Please confirm you are a registered non-profit or government run animal shelter and donated beds will benefit dogs living in a kennel environment.' 
+    '#title': 'Please confirm you are a registered non-profit or government run animal shelter and donated beds will benefit dogs living in a kennel environment.'
     '#description': ""
     '#required': true
   shelter_name:
     '#type': textfield
-    '#title': 'Shelter Name' 
+    '#title': 'Shelter Name'
     '#description': ""
     '#required': true
   address:
     '#type': webform_address
     '#state_province__type': textfield
     '#title_display': invisible
-    '#title': 'Address' 
+    '#title': 'Address'
     '#description': ""
     '#required': true
   contact_name:
     '#type': textfield
-    '#title': 'Contact Name' 
+    '#title': 'Contact Name'
     '#description': ""
     '#required': true
   contact_title:
     '#type': textfield
-    '#title': 'Contact Title' 
+    '#title': 'Contact Title'
     '#description': ""
     '#required': true
   contact_email:
     '#type': email
     '#size': 20
-    '#title': 'Contact Email' 
+    '#title': 'Contact Email'
     '#description': ""
     '#required': true
   contact_phone:
     '#type': textfield
-    '#title': 'Contact Phone' 
+    '#title': 'Contact Phone'
     '#description': ""
     '#required': true
   shelter_website:
     '#type': textfield
-    '#title': 'Shelter Website' 
+    '#title': 'Shelter Website'
     '#description': ""
     '#required': true
   shelter_bio:
     '#type': textarea
-    '#title': 'Tell us a bit about how you are trying to help senior dogs at your shelter' 
+    '#title': 'Tell us a bit about how you are trying to help senior dogs at your shelter'
     '#description': ""
     '#required': true
   apply_confirm:
     '#type': radios
     '#options':
       yes: 'I agree they will be used in a shelter facility environment'
-    '#title': 'I am applying for two Kuranda Slimline cots' 
+    '#title': 'I am applying for two Kuranda Slimline cots'
     '#description': ""
     '#required': true
   social_confirm:
@@ -81,7 +81,7 @@ elements: |
     '#options':
       yes: 'Yes'
       no: 'No'
-    '#title': 'If you receive beds from the Grey Muzzle Organization, would you be willing to share pictures of your senior dogs using the beds? The pictures will be used, with your permission, to illustrate how donations are used.' 
+    '#title': 'If you receive beds from the Grey Muzzle Organization, would you be willing to share pictures of your senior dogs using the beds? The pictures will be used, with your permission, to illustrate how donations are used.'
     '#description': ""
 css: ''
 javascript: ''
@@ -170,8 +170,6 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  wizard_page_type: container
-  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -219,6 +217,8 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   form_submit_label: ''
   wizard_complete: 1
 access:

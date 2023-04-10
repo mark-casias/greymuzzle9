@@ -227,8 +227,6 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  wizard_page_type: container
-  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -276,6 +274,8 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   form_submit_label: ''
   wizard_complete: 1
 access:
