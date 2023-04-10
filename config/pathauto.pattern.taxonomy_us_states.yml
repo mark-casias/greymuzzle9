@@ -1,0 +1,22 @@
+uuid: f3b44ff8-1277-446c-ade4-31f08af5463a
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_us_states
+label: 'Taxonomy - US States'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/taxonomy/term/[term:tid]'
+selection_criteria:
+  945a1248-b50a-4e42-b273-13791113fec2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 945a1248-b50a-4e42-b273-13791113fec2
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      u_s_states: u_s_states
+selection_logic: and
+weight: -5
+relationships: {  }
