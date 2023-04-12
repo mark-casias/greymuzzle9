@@ -114,6 +114,7 @@ settings:
     wide:
       title: Wide
       width: 1000
+  default_page: true
 assets:
   css: ''
   javascript: ''

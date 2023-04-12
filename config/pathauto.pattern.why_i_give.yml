@@ -7,12 +7,12 @@ dependencies:
 id: why_i_give
 label: 'Content - Why I Give'
 type: 'canonical_entities:node'
-pattern: 'supporters/why-i-give/[node:title]'
+pattern: '[node:title]'
 selection_criteria:
-  5c3f5cc4-081e-4680-8b09-082db28c5ce0:
+  db3e2c10-de6a-4214-ab07-5fe145bf70db:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 5c3f5cc4-081e-4680-8b09-082db28c5ce0
+    uuid: db3e2c10-de6a-4214-ab07-5fe145bf70db
     context_mapping:
       node: node
     bundles:

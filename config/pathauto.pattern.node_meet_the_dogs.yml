@@ -7,7 +7,7 @@ dependencies:
 id: node_meet_the_dogs
 label: 'Content - Meet the Dogs'
 type: 'canonical_entities:node'
-pattern: 'meet-the-dogs/[node:title]'
+pattern: 'about-us/meet-the-dogs/[node:title]'
 selection_criteria:
   0:
     id: node_type
@@ -16,10 +16,10 @@ selection_criteria:
       node: node
     bundles:
       meet_the_dogs: meet_the_dogs
-  0d766402-90b8-4cf5-9676-b8d5cf41579b:
+  edd61d30-f666-4031-8d5c-fc7a469767b5:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 0d766402-90b8-4cf5-9676-b8d5cf41579b
+    uuid: edd61d30-f666-4031-8d5c-fc7a469767b5
     context_mapping:
       node: node
     bundles:
