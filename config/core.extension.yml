@@ -21,7 +21,6 @@ module:
   custom_migrate: 0
   datetime: 0
   datetime_range: 0
-  dblog: 0
   devel: 0
   dl_file: 0
   dynamic_page_cache: 0
@@ -95,7 +94,6 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
-  views_ui: 0
   viewsreference: 0
   webform: 0
   webform_migrate: 0
