@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: 9bVDfWSa_In6VzTXmy04jJ_3ZQobihKjO9isuuUCPaw
+protect_all_forms: true
+unprotected_forms:
+  - user_login_form
+  - search_form
+  - search_block_form
+  - views_exposed_form
+  - honeypot_settings_form
+log: true
+element_name: tell-us-more
+time_limit: 30
+expire: 300
+form_settings:
+  user_register_form: false
+  user_pass: false
+  contact_message_feedback_form: false
+  contact_message_personal_form: false
+  node_about_our_volunteers_form: false
+  node_always_in_my_heart_form: false
+  node_article_form: false
+  node_blog_form: false
+  node_faqs_form: false
+  node_meet_the_dogs_form: false
+  node_news_form: false
+  node_organizations_form: false
+  node_our_volunteers_form: false
+  node_page_form: false
+  node_senior_spotlights_form: false
+  node_staff_form: false
+  node_webform_form: false
+  node_why_i_give_form: false
+  comment_node_comments_form: false

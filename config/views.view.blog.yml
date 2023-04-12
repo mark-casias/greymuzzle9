@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.blog
-    - system.menu.main
   module:
     - node
     - options
@@ -111,7 +110,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'More to come'
+            format: full_html
+          tokenize: false
       sorts:
         created:
           id: created
@@ -271,6 +283,29 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  feed_1:
+    id: feed_1
+    display_title: Feed
+    display_plugin: feed
+    position: 2
+    display_options:
+      row:
+        type: node_rss
+        options: {  }
+      display_extenders: {  }
+      path: rss/feeds/blog/%
+      displays:
+        embed_1: embed_1
+        default: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
