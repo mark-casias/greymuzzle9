@@ -24,7 +24,10 @@ dependencies:
     - comment
     - contextual
     - filter
+    - google_analytics
     - google_tag
+    - honeypot
+    - hotjar
     - image
     - metatag
     - node
@@ -35,7 +38,6 @@ dependencies:
     - stage_file_proxy
     - system
     - taxonomy
-    - views_ui
 _core:
   default_config_hash: Om6FEO7vZZMkPIbVvfxtdkWerQ2PvQM4sWUd6Q3ZnfI
 id: administrator
@@ -116,7 +118,6 @@ permissions:
   - 'administer url aliases'
   - 'administer users'
   - 'administer uuid'
-  - 'administer views'
   - 'administer youtube'
   - 'advanced migration information'
   - 'block IP addresses'
