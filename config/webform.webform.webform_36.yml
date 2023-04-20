@@ -223,7 +223,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Thank you for your interest in Grey Muzzle.'
-      body: "<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n[webform_submission:values]"
+      body: "<p><strong>Submitted on</strong> [webform_submission:created]</p>\r\n\r\n<p><strong>Submitted by:</strong> [webform_submission:user]</p>\r\n<strong>Name:</strong> [webform_submission:values:name]<br />\r\n<br />\r\n<strong>Email:</strong>&nbsp;[webform_submission:values:email]<br />\r\n<br />\r\n<strong>Phone:</strong>&nbsp;[webform_submission:values:phone]<br />\r\n<br />\r\n<strong>About:</strong>&nbsp;[webform_submission:values:about]<br />\r\n<br />\r\n<strong>Comment:</strong>&nbsp;[webform_submission:values:comment]<br />\r\n<br />\r\n<strong>Subscribed to newsletter:</strong>&nbsp;[webform_submission:values:subscribe_to_newsletter]<br />\r\n&nbsp;"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -260,7 +260,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Webform submission from: Contact Us'
-      body: "<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n[webform_submission:values]"
+      body: "<p><strong>Submitted on</strong> [webform_submission:created]</p>\r\n\r\n<p><strong>Submitted by:</strong> [webform_submission:user]</p>\r\n\r\n<p><strong>Name:</strong> [webform_submission:values:name]<br />\r\n<br />\r\n<strong>Email:</strong>&nbsp;[webform_submission:values:email]<br />\r\n<br />\r\n<strong>Phone:</strong>&nbsp;[webform_submission:values:phone]<br />\r\n<br />\r\n<strong>About:</strong>&nbsp;[webform_submission:values:about]<br />\r\n<br />\r\n<strong>Comment:</strong>&nbsp;[webform_submission:values:comment]<br />\r\n<br />\r\n<strong>Subscribed to newsletter:</strong>&nbsp;[webform_submission:values:subscribe_to_newsletter]<br />\r\n&nbsp;</p>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -297,7 +297,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Webform submission from: Contact Us'
-      body: "<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n[webform_submission:values]"
+      body: "<p><strong>Submitted on</strong> [webform_submission:created]</p>\r\n\r\n<p><strong>Submitted by:</strong> [webform_submission:user]</p>\r\n\r\n<p><strong>Name:</strong> [webform_submission:values:name]<br />\r\n<br />\r\n<strong>Email:</strong>&nbsp;[webform_submission:values:email]<br />\r\n<br />\r\n<strong>Phone:</strong>&nbsp;[webform_submission:values:phone]<br />\r\n<br />\r\n<strong>About:</strong>&nbsp;[webform_submission:values:about]<br />\r\n<br />\r\n<strong>Comment:</strong>&nbsp;[webform_submission:values:comment]<br />\r\n<br />\r\n<strong>Subscribed to newsletter:</strong>&nbsp;[webform_submission:values:subscribe_to_newsletter]<br />\r\n&nbsp;</p>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
