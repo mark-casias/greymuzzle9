@@ -218,27 +218,27 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@greymuzzle.org
+      to_mail: _default
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: info@greymuzzle.com
+      from_mail: _default
       from_options: {  }
-      from_name: default
+      from_name: _default
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: _default
+      body: "<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n[webform_submission:values]"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
       exclude_attachments: false
-      html: false
+      html: true
       attachments: false
       twig: false
       theme_name: ''
