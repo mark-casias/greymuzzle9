@@ -245,21 +245,21 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:contact_email:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:contact_name:raw]'
+      from_name: _default
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: _default
+      body: "<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n[webform_submission:values]"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
       exclude_attachments: false
-      html: false
+      html: true
       attachments: false
       twig: false
       theme_name: ''
@@ -284,22 +284,19 @@ handlers:
       cc_options: {  }
       from_mail: beds@greymuzzle.org
       from_options: {  }
-      from_name: default
+      from_name: _default
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
       subject: 'Thank you for your Application'
-      body: |2-
-         Thank you for submitting your bed application. Please note that not all applications may be approved. If your application is approved, we will notify you and send two beds of the type you requested to the shipping address on this form. We cannot ship to PO boxes.  Please allow several months for delivery - we are an all-volunteer organization and ship beds out once or twice per year.
-
-        See http://www.greymuzzle.org/how-to-help/donate/donate-a-bed for more information. You can contact us at beds@greymuzzle.org.
+      body: "<p>Thank you for submitting your bed application. Please note that not all applications may be approved. If your application is approved, we will notify you and send two beds of the type you requested to the shipping address on this form. We cannot ship to PO boxes. &nbsp;Please allow several months for delivery - we are an all-volunteer organization and ship beds out once or twice per year.<br />\r\n<br />\r\nSee <a href=\"http://www.greymuzzle.org/how-to-help/donate/donate-a-bed\" target=\"_blank\">http://www.greymuzzle.org/how-to-help/donate/donate-a-bed</a> for more information. You can contact us at beds@greymuzzle.org.</p>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
       exclude_attachments: false
-      html: false
+      html: true
       attachments: false
       twig: false
       theme_name: ''
