@@ -12,6 +12,9 @@ type: list_integer
 settings:
   allowed_values:
     -
+      value: 2023
+      label: '2023'
+    -
       value: 2022
       label: '2022'
     -
