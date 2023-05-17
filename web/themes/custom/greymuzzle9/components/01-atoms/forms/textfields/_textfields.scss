@@ -15,6 +15,15 @@
     margin-right: 2%;
     padding: 0.6em 0;
   }
+
+  &.form-required {
+
+    &:after {
+      margin-left: .5rem;
+      content: '*';
+      color: #FF0000;
+    }
+  }
 }
 
 .form-item__textfield {
